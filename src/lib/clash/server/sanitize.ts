@@ -105,7 +105,7 @@ export function publicUser(
   };
 }
 
-export function meUser(u: User & { grade?: Grade | null }) {
+export function meUser(u: User & { grade?: Grade | null; school?: { id: string; name: string } | null }) {
   return {
     id: u.id,
     email: u.email,
@@ -114,6 +114,8 @@ export function meUser(u: User & { grade?: Grade | null }) {
     role: u.role,
     gradeId: u.gradeId,
     gradeName: u.grade?.name ?? null,
+    schoolId: u.schoolId,
+    schoolName: u.school?.name ?? null,
     onboarded: u.onboarded,
     xp: u.xp,
     rating: u.rating,

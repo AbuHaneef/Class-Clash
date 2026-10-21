@@ -11,6 +11,8 @@ export type MeState = {
   role: string;
   gradeId: string | null;
   gradeName: string | null;
+  schoolId: string | null;
+  schoolName: string | null;
   onboarded: boolean;
   xp: number;
   rating: number;
@@ -33,17 +35,21 @@ type Store = {
   me: MeState | null;
   meLoading: boolean;
   soundOn: boolean;
+  liveMatchActive: boolean;
   fetchMe: () => Promise<MeState | null>;
   setMe: (me: MeState | null) => void;
   refreshBadges: () => void;
   setSound: (on: boolean) => void;
+  setLiveMatchActive: (v: boolean) => void;
 };
 
 export const useClash = create<Store>((set, get) => ({
   me: null,
   meLoading: true,
   soundOn: false,
+  liveMatchActive: false,
   setMe: (me) => set({ me, meLoading: false }),
+  setLiveMatchActive: (v) => set({ liveMatchActive: v }),
   setSound: (on) => {
     set({ soundOn: on });
     if (typeof window !== "undefined") localStorage.setItem("cc-sound", on ? "1" : "0");

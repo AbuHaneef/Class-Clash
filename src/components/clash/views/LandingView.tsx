@@ -5,7 +5,8 @@ import { navigate } from "@/lib/clash/client/router";
 import { apiGet } from "@/lib/clash/client/api";
 import { Avatar } from "@/lib/clash/avatars";
 import { SubjectIcon, Pill } from "@/components/clash/shared";
-import { Crown, Swords, Trophy, Zap, Flame, ArrowRight, Sparkles, GraduationCap, Medal } from "lucide-react";
+import { Crown, Swords, Trophy, Zap, Flame, ArrowRight, Sparkles, GraduationCap, Medal, Radio, Flag } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 type Structure = {
   subjects: { id: string; name: string; icon: string; color: string; description: string }[];
@@ -141,9 +142,11 @@ export default function LandingView() {
 
       {/* ── Game modes ── */}
       <section>
-        <h2 className="font-display text-2xl font-bold sm:text-3xl">Six ways to play</h2>
-        <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <h2 className="font-display text-2xl font-bold sm:text-3xl">Eight ways to play</h2>
+        <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {[
+            { icon: Radio, name: "Live Duels", desc: "Real-time battles — same questions, same clock, instant results.", hot: true },
+            { icon: Flag, name: "School Leagues", desc: "Found or join a school. Every win lifts your school up the table.", hot: true },
             { icon: Zap, name: "Quick Arena", desc: "7 rapid-fire timed questions. Pure clash." },
             { icon: Swords, name: "1v1 Duels", desc: "Head-to-head against a classmate. Same questions, one winner." },
             { icon: Crown, name: "Champion Challenge", desc: "Face the reigning champion. Beat them, take the crown." },
@@ -151,10 +154,14 @@ export default function LandingView() {
             { icon: Medal, name: "Daily Challenge", desc: "One shot every day. Climb your class daily board." },
             { icon: Trophy, name: "Tournaments", desc: "Bracket battles for ultimate glory. (Beta)" },
           ].map((m) => (
-            <div key={m.name} className="flex gap-3 rounded-2xl border border-border/60 bg-card/70 p-4">
-              <m.icon size={22} className="mt-0.5 shrink-0 text-yellow-400" aria-hidden />
+            <div key={m.name} className={cn("relative flex gap-3 rounded-2xl border p-4", "hot" in m && m.hot ? "border-pink-500/40 bg-gradient-to-b from-pink-500/10 to-transparent" : "border-border/60 bg-card/70")}>
+              <m.icon size={22} className={cn("mt-0.5 shrink-0", "hot" in m && m.hot ? "text-pink-400" : "text-yellow-400")} aria-hidden />
               <div>
-                <p className="font-display font-bold">{m.name}</p>
+                <p className="font-display font-bold">
+                  {m.name}{"hot" in m && m.hot && (
+                    <span className="ml-2 rounded-full bg-red-500/20 px-1.5 py-0.5 align-middle text-[9px] font-black text-red-400">NEW</span>
+                  )}
+                </p>
                 <p className="mt-0.5 text-sm text-muted-foreground">{m.desc}</p>
               </div>
             </div>

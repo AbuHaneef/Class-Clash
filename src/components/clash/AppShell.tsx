@@ -11,7 +11,7 @@ import { toast } from "sonner";
 import {
   Home, Swords, Trophy, BarChart3, User as UserIcon, Bell, Zap,
   GraduationCap, Settings, CalendarCheck, Medal, LogOut, ScrollText,
-  ShieldCheck, Flame, Crown, Gamepad2,
+  ShieldCheck, Flame, Crown, Gamepad2, Radio, Flag,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -26,6 +26,8 @@ const QuizPlayView = lazy(() => import("./views/QuizPlayView"));
 const ResultsView = lazy(() => import("./views/ResultsView"));
 const DuelsView = lazy(() => import("./views/DuelsView"));
 const DuelDetailView = lazy(() => import("./views/DuelDetailView"));
+const LiveDuelView = lazy(() => import("./views/LiveDuelView"));
+const SchoolLeagueView = lazy(() => import("./views/SchoolLeagueView"));
 const ChampionsView = lazy(() => import("./views/ChampionsView"));
 const ChampionProfileView = lazy(() => import("./views/ChampionProfileView"));
 const LeaderboardView = lazy(() => import("./views/LeaderboardView"));
@@ -43,7 +45,7 @@ const AdminView = lazy(() => import("./views/AdminView"));
 
 export default function AppShell() {
   const route = useRoute();
-  const { me, fetchMe, soundOn } = useClash();
+  const { me, fetchMe, soundOn, liveMatchActive } = useClash();
 
   // session bootstrap
   useEffect(() => {
@@ -72,6 +74,8 @@ export default function AppShell() {
 
   const [path0, path1, path2] = route.segments;
   const isQuiz = path0 === "quiz";
+  // immersive mode during an in-progress live duel
+  const isLiveMatch = path0 === "live" && liveMatchActive;
   const isLandingish = ["", "how-to-play", "help", "privacy", "terms", "login", "register", "share", "join"].includes(path0 ?? "");
 
   // ── Route guard: onboarding ──
@@ -85,14 +89,14 @@ export default function AppShell() {
 
   return (
     <div className="flex min-h-screen flex-col bg-background">
-      {!isQuiz && <TopBar me={me} hidden={isQuiz} />}
+      {!isQuiz && !isLiveMatch && <TopBar me={me} hidden={isQuiz} />}
       <div className="mx-auto flex w-full max-w-6xl flex-1 gap-6 px-3 pb-28 pt-4 sm:px-5 lg:pb-10">
-        {me && <SidebarNav path0={path0 ?? ""} />}
+        {me && !isLiveMatch && <SidebarNav path0={path0 ?? ""} />}
         <main className="min-w-0 flex-1" id="main">
           <Suspense fallback={<LoadingCard label="Loading…" />}>{view}</Suspense>
         </main>
       </div>
-      {me && !isQuiz && <BottomNav path0={path0 ?? ""} />}
+      {me && !isQuiz && !isLiveMatch && <BottomNav path0={path0 ?? ""} />}
       {!me && !isLandingish && null}
     </div>
   );
@@ -130,6 +134,10 @@ function renderRoute(segments: string[], signedIn: boolean): React.ReactNode {
       return <DuelsView />;
     case "duel":
       return <DuelDetailView challengeId={p1} />;
+    case "live":
+      return <LiveDuelView />;
+    case "leagues":
+      return <SchoolLeagueView />;
     case "champions":
       return <ChampionsView />;
     case "champion":
@@ -241,6 +249,7 @@ const NAV_ITEMS = [
   { path: "", label: "Home", icon: Home },
   { path: "subjects", label: "Learn", icon: GraduationCap },
   { path: "arena", label: "Arena", icon: Zap },
+  { path: "live", label: "Live", icon: Radio },
   { path: "champions", label: "Crowns", icon: Trophy },
   { path: "leaderboard", label: "Ranks", icon: BarChart3 },
 ];
@@ -281,10 +290,12 @@ const SIDE_ITEMS = [
   { path: "", label: "Dashboard", icon: Home },
   { path: "subjects", label: "Subjects & Practice", icon: GraduationCap },
   { path: "arena", label: "Quick Arena", icon: Zap },
+  { path: "live", label: "Live Duels", icon: Radio },
   { path: "daily", label: "Daily Challenge", icon: CalendarCheck },
   { path: "duels", label: "Duels & Challenges", icon: Swords },
   { path: "champions", label: "Champions", icon: Trophy },
   { path: "leaderboard", label: "Leaderboards", icon: BarChart3 },
+  { path: "leagues", label: "School Leagues", icon: Flag },
   { path: "achievements", label: "Achievements", icon: Medal },
   { path: "analytics", label: "My Progress", icon: Flame },
   { path: "tournaments", label: "Tournaments", icon: ScrollText },

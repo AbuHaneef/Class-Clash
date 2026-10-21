@@ -117,6 +117,8 @@ function HelpRules() {
         <li>Accounts, onboarding, profiles, guest demo quiz</li>
         <li>Question bank engine with server-validated answers & explanations</li>
         <li>Practice, Exam Prep, Quick Arena, Daily Challenge (per class)</li>
+        <li><strong>Real-time Live Duels:</strong> Quick Match matchmaking, instant Live Trainer bots and friend room codes — same questions, synced rounds, forfeit on leaving</li>
+        <li><strong>School Leagues:</strong> found or join a school with a code; every duel, champion match and live win scores league points for your school</li>
         <li>Asynchronous duels with invite links & codes; champion challenges with transaction-safe title transfers</li>
         <li>XP, levels, badges, streaks, missions, notifications, share cards</li>
         <li>Leaderboards (rating / season / XP), learning analytics, PWA installability</li>
@@ -126,10 +128,10 @@ function HelpRules() {
       <H2>What's foundation/beta (clearly labelled in-app)</H2>
       <ul className="list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-muted-foreground">
         <li><strong>Tournaments:</strong> registration & brackets work; match resolution is admin-confirmed for now.</li>
-        <li><strong>Real-time duels:</strong> duels are asynchronous today; live sync is a planned enhancement.</li>
-        <li><strong>School leagues & teacher dashboards:</strong> data model supports them; UI is on the roadmap.</li>
+        <li><strong>Teacher dashboards:</strong> teacher & school-admin roles exist; class dashboards are on the roadmap.</li>
         <li><strong>Google sign-in & email delivery:</strong> not configured in this environment — email/password works.</li>
         <li><strong>Offline practice caching:</strong> the PWA shell installs; question caching for offline play is planned.</li>
+        <li><strong>Live duels & school leagues on shared infrastructure:</strong> the live server keeps match state in memory — if the sandbox restarts mid-match, in-flight live duels are void (no rating change), and completed results are safely stored.</li>
       </ul>
 
       <H2>Demo content & accounts</H2>

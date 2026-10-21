@@ -32,6 +32,7 @@ export async function GET(req: NextRequest) {
           code: c.code,
           type: c.type,
           status: c.status,
+          isLive: c.isLive,
           subject: { id: c.subject.id, name: c.subject.name, color: c.subject.color, icon: c.subject.icon },
           gradeName: c.grade.name,
           opponent: openInvite

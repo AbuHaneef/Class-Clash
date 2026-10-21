@@ -14,6 +14,8 @@ export const CONFIG_DEFAULTS = {
   dailyTimePerQuestion: "30",
   sessionExpiryHours: "2",
   maxQuizQuestions: "20",
+  liveDuelQuestions: "8",
+  liveTimePerQuestion: "20",
 } as const;
 
 export type ConfigKey = keyof typeof CONFIG_DEFAULTS;

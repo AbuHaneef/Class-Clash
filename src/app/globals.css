@@ -210,8 +210,15 @@
 }
 .cc-slide-up { animation: cc-slide-up 0.4s ease-out both; }
 
+@keyframes cc-countdown-pop {
+  0% { transform: scale(2.2); opacity: 0; }
+  40% { transform: scale(0.95); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.cc-countdown-pop { animation: cc-countdown-pop 0.7s cubic-bezier(0.2, 0.9, 0.3, 1.2) both; }
+
 @media (prefers-reduced-motion: reduce) {
-  .cc-pop, .cc-shake, .cc-float, .cc-pulse-ring, .cc-slide-up, .cc-confetti-piece {
+  .cc-pop, .cc-shake, .cc-float, .cc-pulse-ring, .cc-slide-up, .cc-confetti-piece, .cc-countdown-pop {
     animation: none !important;
   }
   * { scroll-behavior: auto !important; }

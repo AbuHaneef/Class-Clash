@@ -301,9 +301,12 @@ export type ChallengeOutcome = {
  * Resolves a challenge when both participants have completed attempts.
  * Exactly-once guarantee: the status transition is claimed with a
  * conditional updateMany, so concurrent completions cannot double-award.
+ * `forcedWinnerId` (live duels: opponent left mid-match) overrides the
+ * score tie-break and must be one of the two participants.
  */
 export async function resolveChallengeIfReady(
-  challengeId: string
+  challengeId: string,
+  opts: { forcedWinnerId?: string } = {}
 ): Promise<ChallengeOutcome | null> {
   const challenge = await db.challenge.findUnique({
     where: { id: challengeId },
@@ -326,8 +329,11 @@ export async function resolveChallengeIfReady(
   if (!opponent) return null;
 
   // Published tie-break order: score → correct → total time → rating → draw
+  // (live-duel forfeits override this entirely)
   let winnerId: string | null = null;
-  if (creatorResult.score !== opponentResult.score) {
+  if (opts.forcedWinnerId && [challenge.creatorId, challenge.opponentId].includes(opts.forcedWinnerId)) {
+    winnerId = opts.forcedWinnerId;
+  } else if (creatorResult.score !== opponentResult.score) {
     winnerId =
       creatorResult.score > opponentResult.score ? challenge.creatorId : challenge.opponentId;
   } else if (creatorResult.correctCount !== opponentResult.correctCount) {

@@ -7,12 +7,12 @@ import { useClash } from "@/lib/clash/client/store";
 import { Avatar } from "@/lib/clash/avatars";
 import { LoadingCard, ErrorState, Pill, ResultBadge } from "@/components/clash/shared";
 import { toast } from "sonner";
-import { ArrowLeft, Play, Crown, Swords, Check, X, Timer } from "lucide-react";
+import { ArrowLeft, Play, Crown, Swords, Check, X, Timer, Radio } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 type ChallengeDetail = {
   challenge: {
-    id: string; code: string; type: string; status: string;
+    id: string; code: string; type: string; status: string; isLive?: boolean;
     subject: { id: string; name: string; color: string; icon: string };
     gradeName: string;
     creator: { id: string; displayName: string; avatar: string; isBot: boolean };
@@ -109,6 +109,11 @@ export default function DuelDetailView({ challengeId }: { challengeId?: string }
                 <Crown size={13} aria-hidden /> TITLE MATCH
               </p>
             )}
+            {c.isLive && (
+              <p className="mt-1 flex items-center justify-center gap-1 text-xs font-black text-red-400">
+                <Radio size={12} aria-hidden /> LIVE DUEL
+              </p>
+            )}
           </div>
           <PlayerCard
             name={c.opponent?.displayName ?? "Open invite"}
@@ -120,7 +125,9 @@ export default function DuelDetailView({ challengeId }: { challengeId?: string }
         </div>
         <p className="mt-3 text-sm text-muted-foreground">
           {c.subject.name} • {c.gradeName} • {c.questionCount} questions
-          {c.opponent?.isBot && " • Demo Guardian (fixed attempt, generated before you played)"}
+          {c.opponent?.isBot && (c.isLive
+            ? " • Live Trainer — answered in real time during your match"
+            : " • Demo Guardian (fixed attempt, generated before you played)")}
         </p>
 
         {/* status / actions */}

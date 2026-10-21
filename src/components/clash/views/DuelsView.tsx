@@ -8,12 +8,12 @@ import { Avatar } from "@/lib/clash/avatars";
 import { SubjectIcon, LoadingCard, EmptyState, Pill, SectionTitle, ResultBadge } from "@/components/clash/shared";
 import { toast } from "sonner";
 import {
-  Swords, Plus, Search, Link2, Check, X, ChevronRight, Users, Trophy, Crown, Ban,
+  Swords, Plus, Search, Link2, Check, X, ChevronRight, Users, Trophy, Crown, Ban, Radio,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 type Challenge = {
-  id: string; code: string; type: string; status: string;
+  id: string; code: string; type: string; status: string; isLive?: boolean;
   subject: { id: string; name: string; color: string; icon: string };
   gradeName: string;
   opponent: { id: string; displayName: string; avatar: string; isBot: boolean } | null;
@@ -121,6 +121,32 @@ export default function DuelsView() {
           ))}
         </div>
       </div>
+
+      {/* live duels entry point */}
+      <button
+        onClick={() => navigate("/live")}
+        className="cc-tap group relative flex w-full items-center gap-4 overflow-hidden rounded-3xl border-2 border-pink-500/40 bg-gradient-to-r from-pink-500/15 via-rose-500/10 to-transparent p-4 text-left transition-all hover:border-pink-500 active:scale-[0.99]"
+      >
+        <span className="relative flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-pink-500 to-rose-500 text-white shadow-lg">
+          <Radio size={22} aria-hidden />
+          <span className="absolute -right-1 -top-1 flex h-3 w-3">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-rose-400 opacity-75" />
+            <span className="relative inline-flex h-3 w-3 rounded-full bg-rose-500" />
+          </span>
+        </span>
+        <span className="min-w-0 flex-1">
+          <span className="flex items-center gap-2 font-display font-bold">
+            Live Duels — play in real time
+            <span className="flex items-center gap-1 rounded-full bg-red-500/20 px-2 py-0.5 text-[10px] font-black text-red-400">
+              <span className="h-1.5 w-1.5 rounded-full bg-red-500" /> LIVE
+            </span>
+          </span>
+          <span className="mt-0.5 block text-xs leading-relaxed text-muted-foreground">
+            Same questions, same clock, instant results. Quick Match, Live Trainer bots or friend rooms.
+          </span>
+        </span>
+        <ChevronRight size={18} className="shrink-0 text-pink-400 transition-transform group-hover:translate-x-1" aria-hidden />
+      </button>
 
       {tab === "new" ? (
         <section className="space-y-5 rounded-3xl border border-border/60 bg-card/70 p-5">
@@ -281,6 +307,11 @@ export default function DuelsView() {
                     <div className="min-w-0 flex-1">
                       <p className="truncate text-sm font-bold">
                         {c.type === "champion" && <Crown size={12} className="mr-1 inline text-yellow-400" aria-hidden />}
+                        {c.isLive && (
+                          <span className="mr-1.5 inline-flex items-center gap-1 rounded-full bg-red-500/20 px-1.5 py-0.5 text-[9px] font-black text-red-400">
+                            <span className="h-1 w-1 rounded-full bg-red-500" />LIVE
+                          </span>
+                        )}
                         {c.subject.name} vs {c.opponent?.displayName ?? "open"}
                       </p>
                       <p className="text-xs text-muted-foreground">

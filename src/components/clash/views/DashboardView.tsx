@@ -13,7 +13,7 @@ import { sfx } from "@/lib/clash/client/sound";
 import { toast } from "sonner";
 import {
   Zap, CalendarCheck, Swords, Trophy, Flame, ArrowRight, Play, Crown,
-  Target, Gift, ChevronRight, BookOpen, TrendingUp, Sparkles,
+  Target, Gift, ChevronRight, BookOpen, TrendingUp, Sparkles, Radio, Flag, Medal,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -59,6 +59,10 @@ type HomeData = {
 export default function DashboardView() {
   const [data, setData] = useState<HomeData | null>(null);
   const [loading, setLoading] = useState(true);
+  const [league, setLeague] = useState<{
+    mySchool: { name: string; color: string; rank: number | null; totalPoints: number; memberCount: number } | null;
+    leader: { name: string; totalPoints: number } | null;
+  } | null>(null);
   const refresh = useCallback(async () => {
     const r = await apiGet<HomeData>("/home");
     if (r.ok) setData(r as unknown as HomeData);
@@ -67,6 +71,17 @@ export default function DashboardView() {
 
   useEffect(() => {
     refresh();
+    apiGet<{ table: { name: string; color: string; rank: number; totalPoints: number; memberCount: number; isMySchool: boolean }[]; mySchool: { name: string; color: string; rank: number | null; totalPoints: number; memberCount: number } | null }>("/schools")
+      .then((r) => {
+        if (r.ok) {
+          const d = r as unknown as {
+            table: { name: string; color: string; rank: number; totalPoints: number; memberCount: number; isMySchool: boolean }[];
+            mySchool: { name: string; color: string; rank: number | null; totalPoints: number; memberCount: number } | null;
+          };
+          setLeague({ mySchool: d.mySchool, leader: d.table[0] ?? null });
+        }
+      })
+      .catch(() => {});
   }, [refresh]);
 
   if (loading) return <LoadingCard label="Loading your arena…" />;
@@ -103,12 +118,13 @@ export default function DashboardView() {
       </section>
 
       {/* ── Quick actions ── */}
-      <section className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+      <section className="grid grid-cols-2 gap-3 sm:grid-cols-5">
         {[
           { label: "Practice", icon: BookOpen, path: "/subjects", color: "#34d399" },
           { label: "Quick Arena", icon: Zap, path: "/arena", color: "#f5c518" },
           { label: "Daily", icon: CalendarCheck, path: "/daily", color: "#a855f7" },
-          { label: "Duel", icon: Swords, path: "/duels", color: "#f472b6" },
+          { label: "Live Duel", icon: Radio, path: "/live", color: "#f472b6" },
+          { label: "School League", icon: Flag, path: "/leagues", color: "#10b981" },
         ].map((a) => (
           <button
             key={a.path}
@@ -206,6 +222,52 @@ export default function DashboardView() {
                   />
                 ))}
               </div>
+            )}
+          </section>
+
+          {/* ── School league ── */}
+          <section>
+            <SectionTitle icon={Flag} title="School League" action={<button onClick={() => navigate("/leagues")} className="text-xs font-semibold text-yellow-400 hover:underline">Full table</button>} />
+            {league?.mySchool ? (
+              <button
+                onClick={() => navigate("/leagues")}
+                className="cc-tap flex w-full items-center gap-4 rounded-2xl border p-4 text-left transition-all hover:border-border"
+                style={{ borderColor: (league.mySchool.color ?? "#f5c518") + "55", background: `linear-gradient(135deg, ${(league.mySchool.color ?? "#f5c518")}14, transparent 65%)` }}
+              >
+                <span
+                  className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl font-display text-lg font-black"
+                  style={{ background: league.mySchool.color ?? "#f5c518", color: "#1a1a1a" }}
+                  aria-hidden
+                >
+                  {league.mySchool.name.slice(0, 2).toUpperCase()}
+                </span>
+                <div className="min-w-0 flex-1">
+                  <p className="truncate font-display font-bold">{league.mySchool.name}</p>
+                  <p className="text-xs text-muted-foreground">
+                    {league.mySchool.memberCount} members • {league.mySchool.totalPoints} league pts
+                    {league.leader && league.leader.name !== league.mySchool.name ? ` • ${league.leader.totalPoints - league.mySchool.totalPoints} pts off #1` : ""}
+                  </p>
+                </div>
+                <span className="flex items-center gap-1.5 rounded-xl bg-yellow-500/15 px-3 py-1.5 font-display text-sm font-bold text-yellow-300">
+                  <Medal size={14} aria-hidden /> #{league.mySchool.rank ?? "—"}
+                </span>
+              </button>
+            ) : (
+              <button
+                onClick={() => navigate("/leagues")}
+                className="cc-tap flex w-full items-center gap-4 rounded-2xl border-2 border-dashed border-emerald-500/40 p-4 text-left transition-all hover:bg-emerald-500/5 active:scale-[0.99]"
+              >
+                <span className="rounded-2xl bg-emerald-500/15 p-3">
+                  <Flag size={22} className="text-emerald-400" aria-hidden />
+                </span>
+                <div className="min-w-0 flex-1">
+                  <p className="font-display font-bold text-emerald-300">Represent your school</p>
+                  <p className="text-xs text-muted-foreground">
+                    Join with a code or found your school — every win scores league points.
+                  </p>
+                </div>
+                <ChevronRight size={17} className="text-emerald-400" aria-hidden />
+              </button>
             )}
           </section>
 

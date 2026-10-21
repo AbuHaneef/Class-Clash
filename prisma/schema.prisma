@@ -130,6 +130,7 @@ model User {
   avatar         String        @default("fox")
   role           String        @default("student") // student | teacher | school_admin | reviewer | admin
   gradeId        String?
+  schoolId       String?
   onboarded      Boolean       @default(false)
   xp             Int           @default(0)
   rating         Int           @default(1000)
@@ -146,6 +147,7 @@ model User {
   createdAt      DateTime      @default(now())
   updatedAt      DateTime      @updatedAt
   grade          Grade?        @relation(fields: [gradeId], references: [id])
+  school         School?       @relation(fields: [schoolId], references: [id])
   sessions       AuthSession[]
   quizSessions   QuizSession[]
   createdChallenges   Challenge[]     @relation("CreatorChallenges")
@@ -165,6 +167,22 @@ model User {
   shareLinks     ShareLink[]
   tournamentParticipants TournamentParticipant[]
   auditLogs      AuditLog[]
+}
+
+// ─────────────────────────────────────────────────────────────
+// School leagues
+// ─────────────────────────────────────────────────────────────
+
+model School {
+  id        String   @id @default(cuid())
+  name      String   @unique
+  slug      String   @unique
+  motto     String?
+  color     String   @default("#f5c518") // crest colour
+  joinCode  String   @unique
+  creatorId String?
+  createdAt DateTime @default(now())
+  members   User[]
 }
 
 model AuthSession {
@@ -242,6 +260,7 @@ model Challenge {
   questionIds       String // JSON array
   winnerId          String?
   draw              Boolean   @default(false)
+  isLive            Boolean   @default(false) // real-time duel (played on the live server)
   expiresAt         DateTime
   createdAt         DateTime  @default(now())
   completedAt       DateTime?

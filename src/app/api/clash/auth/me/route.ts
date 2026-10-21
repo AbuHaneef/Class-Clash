@@ -10,7 +10,7 @@ export async function GET(req: NextRequest) {
     const user = await getUserFromRequest(req);
     if (!user) return ok({ user: null });
     const me = meUser(
-      await db.user.findUnique({ where: { id: user.id }, include: { grade: true } }) ?? user
+      await db.user.findUnique({ where: { id: user.id }, include: { grade: true, school: { select: { id: true, name: true } } } }) ?? user
     );
     const unread = await db.notification.count({ where: { userId: user.id, read: false } });
     const myChampions = await db.champion.count({ where: { userId: user.id } });
