@@ -1,0 +1,539 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// ─────────────────────────────────────────────────────────────
+// Education structure
+// ─────────────────────────────────────────────────────────────
+
+model EducationLevel {
+  id     String  @id @default(cuid())
+  name   String  @unique
+  slug   String  @unique
+  order  Int     @default(0)
+  grades Grade[]
+}
+
+model Grade {
+  id               String          @id @default(cuid())
+  name             String          @unique
+  slug             String          @unique
+  educationLevelId String
+  order            Int             @default(0)
+  hasContent       Boolean         @default(false)
+  level            EducationLevel  @relation(fields: [educationLevelId], references: [id])
+  users            User[]
+  subjectGrades    SubjectGrade[]
+  questions        Question[]
+  champions        Champion[]
+  challenges       Challenge[]
+  quizSessions     QuizSession[]
+  dailyChallenges  DailyChallenge[]
+}
+
+model Subject {
+  id          String         @id @default(cuid())
+  name        String         @unique
+  slug        String         @unique
+  icon        String
+  color       String
+  description String
+  order       Int            @default(0)
+  grades      SubjectGrade[]
+  topics      Topic[]
+  questions   Question[]
+  champions   Champion[]
+  challenges  Challenge[]
+  quizSessions QuizSession[]
+  dailyChallenges DailyChallenge[]
+}
+
+model SubjectGrade {
+  subjectId String
+  gradeId   String
+  subject   Subject @relation(fields: [subjectId], references: [id])
+  grade     Grade   @relation(fields: [gradeId], references: [id])
+
+  @@id([subjectId, gradeId])
+}
+
+model Topic {
+  id          String     @id @default(cuid())
+  subjectId   String
+  name        String
+  description String?
+  order       Int        @default(0)
+  subject     Subject    @relation(fields: [subjectId], references: [id])
+  questions   Question[]
+
+  @@unique([subjectId, name])
+}
+
+// ─────────────────────────────────────────────────────────────
+// Question bank
+// ─────────────────────────────────────────────────────────────
+
+model Question {
+  id           String           @id @default(cuid())
+  gradeId      String
+  subjectId    String
+  topicId      String
+  difficulty   String           @default("medium") // easy | medium | hard
+  type         String           @default("mcq") // mcq | true_false
+  text         String
+  normalized   String           @unique
+  points       Int              @default(100)
+  timeLimit    Int              @default(30)
+  explanation  String
+  status       String           @default("pending") // pending | published | rejected | archived
+  reviewNote   String?
+  source       String           @default("ClassClash Demo Bank")
+  isDemo       Boolean          @default(true)
+  createdBy    String?
+  createdAt    DateTime         @default(now())
+  updatedAt    DateTime         @updatedAt
+  grade        Grade            @relation(fields: [gradeId], references: [id])
+  subject      Subject          @relation(fields: [subjectId], references: [id])
+  topic        Topic            @relation(fields: [topicId], references: [id])
+  options      QuestionOption[]
+  attempts     QuestionAttempt[]
+
+  @@index([gradeId, subjectId, status])
+  @@index([gradeId, subjectId, topicId, status])
+}
+
+model QuestionOption {
+  id         String   @id @default(cuid())
+  questionId String
+  text       String
+  isCorrect  Boolean  @default(false)
+  order      Int      @default(0)
+  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@index([questionId])
+}
+
+// ─────────────────────────────────────────────────────────────
+// Users & auth
+// ─────────────────────────────────────────────────────────────
+
+model User {
+  id             String        @id @default(cuid())
+  email          String        @unique
+  passwordHash   String?
+  displayName    String        @unique
+  avatar         String        @default("fox")
+  role           String        @default("student") // student | teacher | school_admin | reviewer | admin
+  gradeId        String?
+  onboarded      Boolean       @default(false)
+  xp             Int           @default(0)
+  rating         Int           @default(1000)
+  seasonPoints   Int           @default(0)
+  streakCount    Int           @default(0)
+  longestStreak  Int           @default(0)
+  lastStreakDate String?
+  isDemo         Boolean       @default(false)
+  isBot          Boolean       @default(false)
+  botSkill       Float?
+  soundEnabled   Boolean       @default(false)
+  suspendedUntil DateTime?
+  deletedAt      DateTime?
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+  grade          Grade?        @relation(fields: [gradeId], references: [id])
+  sessions       AuthSession[]
+  quizSessions   QuizSession[]
+  createdChallenges   Challenge[]     @relation("CreatorChallenges")
+  opponentChallenges  Challenge[]     @relation("OpponentChallenges")
+  challengeResults    ChallengeResult[]
+  champions      Champion[]
+  matches        MatchRecord[]  @relation("UserMatches")
+  opponentMatches MatchRecord[] @relation("OpponentMatches")
+  xpTransactions XPTransaction[]
+  userBadges     UserBadge[]
+  userMissions   UserMission[]
+  dailyEntries   DailyEntry[]
+  notifications  Notification[]
+  rivalries      Rivalry[]      @relation("RivalryOwner")
+  rivalOf        Rivalry[]      @relation("RivalryTarget")
+  reportsMade    Report[]       @relation("ReportReporter")
+  shareLinks     ShareLink[]
+  tournamentParticipants TournamentParticipant[]
+  auditLogs      AuditLog[]
+}
+
+model AuthSession {
+  token     String   @id
+  userId    String
+  expiresAt DateTime
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+// ─────────────────────────────────────────────────────────────
+// Quiz engine
+// ─────────────────────────────────────────────────────────────
+
+model QuizSession {
+  id              String        @id @default(cuid())
+  userId          String
+  mode            String // practice | quick_arena | exam | duel | champion | daily
+  gradeId         String
+  subjectId       String
+  topicId         String?
+  status          String        @default("in_progress") // in_progress | completed | expired
+  questionIds     String        // JSON array
+  currentIndex    Int           @default(0)
+  score           Int           @default(0)
+  correctCount    Int           @default(0)
+  totalCount      Int
+  timeLimitPer    Int           @default(0) // seconds, 0 = untimed
+  startedAt       DateTime      @default(now())
+  completedAt     DateTime?
+  suspicionScore  Int           @default(0)
+  config          String        @default("{}")
+  user            User          @relation(fields: [userId], references: [id])
+  grade           Grade         @relation(fields: [gradeId], references: [id])
+  subject         Subject       @relation(fields: [subjectId], references: [id])
+  attempts        QuestionAttempt[]
+  challengeCreator  Challenge?  @relation("CreatorSession")
+  challengeOpponent Challenge?  @relation("OpponentSession")
+  dailyEntry     DailyEntry?
+
+  @@index([userId, startedAt])
+  @@index([status])
+}
+
+model QuestionAttempt {
+  id             String      @id @default(cuid())
+  quizSessionId  String
+  questionId     String
+  selectedIndex  Int // -1 = timed out / skipped
+  isCorrect      Boolean
+  timeSpentMs    Int         @default(0)
+  points         Int         @default(0)
+  createdAt      DateTime    @default(now())
+  quizSession    QuizSession @relation(fields: [quizSessionId], references: [id], onDelete: Cascade)
+  question       Question    @relation(fields: [questionId], references: [id])
+
+  @@unique([quizSessionId, questionId])
+}
+
+// ─────────────────────────────────────────────────────────────
+// Challenges, duels & championship
+// ─────────────────────────────────────────────────────────────
+
+model Challenge {
+  id                String    @id @default(cuid())
+  code              String    @unique
+  type              String // duel | champion
+  status            String    @default("pending") // pending | accepted | in_progress | completed | expired | declined | cancelled
+  subjectId         String
+  gradeId           String
+  topicId           String?
+  creatorId         String
+  opponentId        String?
+  questionIds       String // JSON array
+  winnerId          String?
+  draw              Boolean   @default(false)
+  expiresAt         DateTime
+  createdAt         DateTime  @default(now())
+  completedAt       DateTime?
+  creatorSessionId  String?   @unique
+  opponentSessionId String?   @unique
+  subject           Subject   @relation(fields: [subjectId], references: [id])
+  grade             Grade     @relation(fields: [gradeId], references: [id])
+  creator           User      @relation("CreatorChallenges", fields: [creatorId], references: [id])
+  opponent          User?     @relation("OpponentChallenges", fields: [opponentId], references: [id])
+  creatorSession    QuizSession? @relation("CreatorSession", fields: [creatorSessionId], references: [id])
+  opponentSession   QuizSession? @relation("OpponentSession", fields: [opponentSessionId], references: [id])
+  results           ChallengeResult[]
+  matchRecords      MatchRecord[]
+
+  @@index([creatorId])
+  @@index([opponentId, status])
+}
+
+model ChallengeResult {
+  id          String    @id @default(cuid())
+  challengeId String
+  userId      String
+  score       Int
+  correctCount Int
+  totalCount  Int
+  totalTimeMs Int       @default(0)
+  detail      String    @default("[]") // JSON [{questionId, chosen, correct}]
+  completedAt DateTime  @default(now())
+  user        User      @relation(fields: [userId], references: [id])
+  challenge   Challenge @relation(fields: [challengeId], references: [id])
+
+  @@unique([challengeId, userId])
+}
+
+model Champion {
+  id        String   @id @default(cuid())
+  gradeId   String
+  subjectId String
+  userId    String
+  wonAt     DateTime @default(now())
+  defences  Int      @default(0)
+  grade     Grade    @relation(fields: [gradeId], references: [id])
+  subject   Subject  @relation(fields: [subjectId], references: [id])
+  user      User     @relation(fields: [userId], references: [id])
+
+  @@unique([gradeId, subjectId])
+}
+
+model ChampionshipHistory {
+  id               String    @id @default(cuid())
+  gradeId          String
+  subjectId        String
+  formerChampionId String?
+  newChampionId    String
+  challengeId      String?
+  note             String
+  wonAt            DateTime  @default(now())
+}
+
+model MatchRecord {
+  id           String     @id @default(cuid())
+  userId       String
+  opponentId   String
+  challengeId  String?
+  type         String // duel | champion
+  result       String // win | loss | draw
+  ratingBefore Int
+  ratingAfter  Int
+  score        Int
+  opponentScore Int
+  createdAt    DateTime   @default(now())
+  user         User       @relation("UserMatches", fields: [userId], references: [id])
+  opponent     User       @relation("OpponentMatches", fields: [opponentId], references: [id])
+  challenge    Challenge? @relation(fields: [challengeId], references: [id])
+
+  @@index([userId, createdAt])
+}
+
+// ─────────────────────────────────────────────────────────────
+// Gamification
+// ─────────────────────────────────────────────────────────────
+
+model XPTransaction {
+  id        String   @id @default(cuid())
+  userId    String
+  amount    Int
+  reason    String
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id])
+
+  @@index([userId, createdAt])
+}
+
+model Badge {
+  id          String      @id @default(cuid())
+  code        String      @unique
+  name        String
+  description String
+  icon        String
+  color       String
+  xpReward    Int         @default(0)
+  sort        Int         @default(0)
+  userBadges  UserBadge[]
+}
+
+model UserBadge {
+  id       String   @id @default(cuid())
+  userId   String
+  badgeId  String
+  earnedAt DateTime @default(now())
+  user     User     @relation(fields: [userId], references: [id])
+  badge    Badge    @relation(fields: [badgeId], references: [id])
+
+  @@unique([userId, badgeId])
+}
+
+model Mission {
+  id         String  @id @default(cuid())
+  code       String  @unique
+  name       String
+  description String
+  icon       String
+  metric     String // practice_complete | questions_answered | subject_questions | arena_play | duel_play | daily_play
+  target     Int
+  xpReward   Int
+  subjectId  String?
+  active     Boolean @default(true)
+}
+
+model UserMission {
+  id          String  @id @default(cuid())
+  userId      String
+  missionCode String
+  date        String // YYYY-MM-DD (player's local calendar day)
+  progress    Int     @default(0)
+  completed   Boolean @default(false)
+  claimed     Boolean @default(false)
+  user        User    @relation(fields: [userId], references: [id])
+
+  @@unique([userId, missionCode, date])
+}
+
+// ─────────────────────────────────────────────────────────────
+// Daily challenge
+// ─────────────────────────────────────────────────────────────
+
+model DailyChallenge {
+  id          String        @id @default(cuid())
+  date        String // YYYY-MM-DD
+  gradeId     String
+  subjectId   String
+  questionIds String // JSON array
+  grade       Grade         @relation(fields: [gradeId], references: [id])
+  subject     Subject       @relation(fields: [subjectId], references: [id])
+  entries     DailyEntry[]
+
+  @@unique([date, gradeId])
+}
+
+model DailyEntry {
+  id               String         @id @default(cuid())
+  dailyChallengeId String
+  userId           String
+  quizSessionId    String         @unique
+  score            Int
+  correctCount     Int
+  totalTimeMs      Int            @default(0)
+  completedAt      DateTime       @default(now())
+  dailyChallenge   DailyChallenge @relation(fields: [dailyChallengeId], references: [id])
+  user             User           @relation(fields: [userId], references: [id])
+  quizSession      QuizSession    @relation(fields: [quizSessionId], references: [id])
+
+  @@unique([dailyChallengeId, userId])
+}
+
+// ─────────────────────────────────────────────────────────────
+// Social, safety & admin
+// ─────────────────────────────────────────────────────────────
+
+model Notification {
+  id        String   @id @default(cuid())
+  userId    String
+  type      String
+  title     String
+  body      String
+  link      String?
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id])
+
+  @@index([userId, read])
+}
+
+model Rivalry {
+  id         String   @id @default(cuid())
+  userId     String
+  rivalId    String
+  createdAt  DateTime @default(now())
+  user       User     @relation("RivalryOwner", fields: [userId], references: [id])
+  rival      User     @relation("RivalryTarget", fields: [rivalId], references: [id])
+
+  @@unique([userId, rivalId])
+}
+
+model Report {
+  id         String   @id @default(cuid())
+  reporterId String
+  targetType String // user | question
+  targetId   String
+  reason     String
+  details    String?
+  status     String   @default("open") // open | resolved | dismissed
+  createdAt  DateTime @default(now())
+  reporter   User     @relation("ReportReporter", fields: [reporterId], references: [id])
+}
+
+model ShareLink {
+  id        String   @id @default(cuid())
+  token     String   @unique
+  userId    String
+  type      String // badge | champion | result | level
+  refId     String?
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id])
+}
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  actorId   String?
+  action    String
+  entity    String
+  entityId  String?
+  details   String?
+  createdAt DateTime @default(now())
+  actor     User?    @relation(fields: [actorId], references: [id])
+}
+
+model Announcement {
+  id        String   @id @default(cuid())
+  title     String
+  body      String
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+}
+
+model PlatformConfig {
+  key   String @id
+  value String
+}
+
+// ─────────────────────────────────────────────────────────────
+// Tournament foundation (single elimination first)
+// ─────────────────────────────────────────────────────────────
+
+model Tournament {
+  id             String  @id @default(cuid())
+  name           String
+  description    String
+  subjectId      String?
+  gradeId        String?
+  status         String  @default("draft") // draft | registration | active | completed | cancelled
+  format         String  @default("single_elim")
+  maxParticipants Int    @default(8)
+  startsAt       DateTime?
+  endsAt         DateTime?
+  createdAt      DateTime @default(now())
+  participants   TournamentParticipant[]
+  matches        TournamentMatch[]
+}
+
+model TournamentParticipant {
+  id           String    @id @default(cuid())
+  tournamentId String
+  userId       String
+  seed         Int       @default(0)
+  createdAt    DateTime  @default(now())
+  tournament   Tournament @relation(fields: [tournamentId], references: [id])
+  user         User      @relation(fields: [userId], references: [id])
+
+  @@unique([tournamentId, userId])
+}
+
+model TournamentMatch {
+  id           String     @id @default(cuid())
+  tournamentId String
+  round        Int
+  slot         Int
+  player1Id    String?
+  player2Id    String?
+  winnerId     String?
+  status       String     @default("scheduled") // scheduled | completed
+  tournament   Tournament @relation(fields: [tournamentId], references: [id])
+
+  @@index([tournamentId, round])
+}

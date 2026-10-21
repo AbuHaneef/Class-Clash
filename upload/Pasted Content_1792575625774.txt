@@ -1,0 +1,1302 @@
+# MASTER BUILD PROMPT: GAMIFIED STUDENT QUESTION BANK AND CHAMPIONSHIP PLATFORM
+
+## PROJECT MISSION
+
+Act as an elite multidisciplinary product team consisting of a senior product strategist, award-winning UI/UX designer, full-stack software engineer, educational assessment specialist, game designer, database architect, cybersecurity engineer, growth strategist, and quality assurance engineer.
+
+Your task is to design, build, test, and deliver a complete, production-oriented, mobile-first web application that combines an educational question bank, competitive quiz arena, school competition system, and subject-based championship platform.
+
+Do not merely create a landing page, wireframe, prototype, or collection of disconnected screens. Build a cohesive application with functional user journeys, persistent data, real quiz mechanics, accurate scoring, leaderboards, championship logic, administration tools, and a polished interface.
+
+The application's working title is **ClassClash**. Treat this as a configurable placeholder that can later be changed without rewriting the application.
+
+The central idea is:
+
+**LEARN. CHALLENGE. CLIMB. BECOME THE CHAMPION.**
+
+The platform must make academic practice feel like a game students genuinely enjoy. It must be visually exceptional, extremely easy to use, fast on low-end mobile devices, accessible to different categories of learners, and designed to encourage organic sharing and repeat engagement.
+
+Make sensible product decisions independently. Do not stop to ask questions that can be resolved through good design judgment.
+
+---
+
+# 1. PRODUCT VISION AND CORE EXPERIENCE
+
+Create an educational gaming ecosystem in which students can:
+
+- Practise questions across different subjects, classes, topics, and difficulty levels.
+- Participate in timed quizzes and competitive challenges.
+- Compete against other students in their class, school, region, or wider community.
+- Become the current champion of a particular subject and class.
+- Challenge existing champions and attempt to take their titles.
+- Earn experience points, trophies, badges, streaks, and seasonal achievements.
+- Track their academic progress and discover their strongest and weakest topics.
+- Challenge friends and share their achievements.
+- Participate in school-wide and platform-wide competitions.
+
+The experience should combine four complementary activities:
+
+1. **Learn:** Practise independently, explore topics, and improve through feedback.
+2. **Compete:** Enter quizzes, duels, tournaments, and ranked challenges.
+3. **Conquer:** Climb the leaderboard, challenge champions, and earn titles.
+4. **Return:** Complete daily missions, continue streaks, unlock rewards, and participate in new seasons.
+
+Learning must remain meaningful. Avoid designs that reward only tapping quickly, memorising question patterns, or spending the most time online.
+
+The product must be understandable within the first 30 seconds of a student's first visit. A new user should be able to discover a subject, begin a quiz, finish it, and understand their result without needing a tutorial.
+
+---
+
+# 2. TARGET USERS AND EDUCATIONAL STRUCTURE
+
+Design for students from primary school through secondary school, with a database structure that can support tertiary education in the future.
+
+The initial release should support the following configurable structure:
+
+- Education level.
+- Class or grade.
+- Subject.
+- Topic or chapter.
+- Question difficulty.
+- Curriculum or syllabus.
+- Academic session where applicable.
+
+For a Nigerian launch, include an initial configurable structure suitable for Nigerian primary and secondary school classes, with subjects relevant to the Nigerian curriculum. Allow administrators to add or edit classes and subjects without changing application code.
+
+Examples of subjects include Mathematics, English Language, Basic Science, Basic Technology, Chemistry, Physics, Biology, Agricultural Science, Computer Studies, Civic Education, Social Studies, Geography, and Economics.
+
+Do not assume that every subject applies to every class. Administrators must control which subjects are available at each level.
+
+Students must always be able to identify the class and subject to which a question or competition belongs.
+
+Future support should include school-based leagues, interschool competitions, teacher-created quizzes, and sponsored academic tournaments.
+
+---
+
+# 3. PRODUCT DESIGN AND VISUAL IDENTITY
+
+The application must look like a modern, premium gaming product rather than a traditional school portal.
+
+## Visual direction
+
+Create a distinctive visual identity inspired by the energy and clarity of leading mobile games, esports interfaces, and modern educational apps. Use these as general design references, not as designs to copy.
+
+The interface should feel:
+
+- Colourful, energetic, youthful, and polished.
+- Playful without appearing childish to older students.
+- Competitive without becoming intimidating.
+- Clean, uncluttered, intuitive, and highly readable.
+- Rewarding, with well-designed animations and satisfying visual feedback.
+- Consistent across all screens.
+
+Establish a coherent design system with a primary colour, complementary accent colours, neutral backgrounds, typography, spacing, iconography, card styles, and button variants.
+
+Use vivid accent colours for achievements, progress, and important game actions. Maintain adequate contrast and avoid excessive gradients, glows, decorative elements, or visual clutter.
+
+Use a strong display typeface for game titles and headings, paired with an exceptionally readable typeface for questions and educational content.
+
+## Gaming interface elements
+
+Design polished visual components for:
+
+- XP and level progression.
+- Champion crowns and title badges.
+- Rank indicators.
+- Progress bars.
+- Streak flames.
+- Trophy cabinets.
+- Achievement unlocks.
+- Challenge cards.
+- Question timers.
+- Correct and incorrect answers.
+- Victory and defeat screens.
+- Tournament brackets.
+- Profile avatars.
+- Leaderboard movement.
+- Daily missions.
+- Seasonal rewards.
+
+Use subtle motion for transitions, correct-answer feedback, title changes, level-ups, and achievements. Respect reduced-motion preferences and never let animation interrupt gameplay.
+
+Sound effects may be available as an optional setting, but sound must be off or unobtrusive by default. The game must remain fully usable without audio.
+
+Use custom-designed illustrations, CSS-based effects, SVG icons, or appropriately licensed assets. Do not rely on a collection of unrelated stock images.
+
+---
+
+# 4. MOBILE-FIRST EXPERIENCE
+
+Mobile usability is a non-negotiable requirement.
+
+Most students should be able to use the platform comfortably on an entry-level Android smartphone with a small screen and an inconsistent internet connection.
+
+Requirements:
+
+- Responsive layouts for mobile, tablet, laptop, and desktop.
+- A mobile-first design rather than a desktop website squeezed into a phone.
+- Large, comfortable touch targets.
+- Clear, readable questions and answers.
+- Minimal typing during gameplay.
+- Fast navigation between screens.
+- A persistent and intuitive mobile navigation system.
+- Optimised images, fonts, scripts, and network requests.
+- Skeleton loading states where appropriate.
+- Helpful empty states and error recovery.
+- No horizontal overflow or clipped content.
+- No unnecessary modal windows or repeated pop-ups.
+- Preserve quiz progress safely when the connection drops, whenever technically possible.
+- Prevent accidental loss of answers during navigation or refresh.
+- Avoid forcing students to install an app before they can play.
+
+Build the product as an installable Progressive Web App (PWA), with an appropriate manifest, icons, install experience, and service-worker caching where supported.
+
+Cache the application shell and suitable static assets. Make offline behaviour clear: cached practice content may be available offline, but do not pretend that online multiplayer, synchronisation, rankings, or server-validated championships work without a connection.
+
+Use graceful loading and error states. Never leave users staring at an infinite spinner.
+
+---
+
+# 5. ACCOUNT CREATION AND ONBOARDING
+
+Registration must be quick and frictionless.
+
+Support an appropriate combination of:
+
+- Email registration.
+- Email or password authentication.
+- Google sign-in where supported by the chosen authentication provider.
+- Guest practice mode, where feasible, so students can try a sample quiz before creating an account.
+
+Do not require unnecessary personal information.
+
+On first registration, ask the student to select:
+
+1. A display name.
+2. An avatar from a gallery of safe, predefined options.
+3. Their education level and class.
+4. Their preferred subjects.
+5. Their school, optionally, if school features are enabled.
+
+Provide a short onboarding experience that introduces the student to practice, challenges, champions, and rankings through a few clear steps.
+
+Allow students to skip optional steps and change their preferences later.
+
+Check display-name availability. Prevent impersonation, offensive names, spam, and names that expose sensitive personal information.
+
+Never expose passwords, private email addresses, or unnecessary personal details on public profiles or leaderboards.
+
+For children and younger teenagers, apply privacy-conscious defaults and appropriate parental, consent, and data-handling requirements for the launch jurisdiction.
+
+---
+
+# 6. THE STUDENT HOME DASHBOARD
+
+The dashboard is the heart of the experience. It should immediately communicate what the student can do next.
+
+Use a polished, visually appealing layout with the following elements.
+
+## A. Welcome section
+
+Display the student's chosen display name, avatar, current level, and a short motivational message that can rotate without becoming repetitive.
+
+## B. Daily challenge
+
+Feature a prominent card inviting the student to start the daily quiz.
+
+Include the subject, approximate duration, reward, participation status, and a clear start action.
+
+Use the same daily challenge for eligible participants within its configured competition scope and date. Do not allow repeated attempts to overwrite or manipulate the official daily score.
+
+## C. Continue learning
+
+Display recently practised subjects, incomplete practice sessions where available, and recommended topics based on recent performance.
+
+## D. Subject champions
+
+Display a selection of current champions, with the subject, eligible class, champion avatar, title, and challenge action.
+
+Make this one of the most visually engaging sections on the homepage.
+
+## E. Quick actions
+
+Make it easy to:
+
+- Start practice.
+- Enter a timed challenge.
+- Challenge a friend.
+- Explore subjects.
+- View leaderboards.
+- Join a tournament.
+
+## F. Progress and rewards
+
+Show XP, current level, next-level progress, active streak, earned achievements, and recent activity.
+
+## G. Friends and community
+
+Where enabled, show pending challenges, friend activity, upcoming competitions, and class rankings without exposing sensitive information.
+
+## H. Daily missions
+
+Examples include:
+
+- Answer 10 Mathematics questions.
+- Complete one English Language practice session.
+- Improve your previous score.
+- Finish a quiz in a subject you rarely practise.
+- Win a valid challenge.
+
+Missions should reward learning and persistence, not endless repetitive submissions.
+
+Personalise the dashboard based on the student's stage of learning, but do not overwhelm new users with too many components.
+
+---
+
+# 7. QUESTION BANK AND PRACTICE ENGINE
+
+Build a genuine question-bank engine with persistent question records and reusable question sets.
+
+## Question structure
+
+Each question should support the following fields where applicable:
+
+- Question text.
+- Education level.
+- Class or grade.
+- Subject.
+- Topic.
+- Subtopic.
+- Difficulty level: Easy, Medium, Hard, or an administrator-defined scale.
+- Question format.
+- Answer options where applicable.
+- Correct answer or answer key.
+- Explanation of the correct answer.
+- Optional image, diagram, audio, or other educational attachment.
+- Points or assessment weight.
+- Time allowance where relevant.
+- Source or curriculum reference.
+- Author or contributor.
+- Publication status.
+- Review status.
+- Creation and update timestamps.
+
+Support multiple-choice and true/false questions in the initial version. Make the question engine extensible to short-answer, matching, ordering, image-based, and other formats.
+
+Where subjective or short-answer questions are introduced, handle answer validation carefully. Do not mark them automatically using simplistic string matching when legitimate spelling variations, units, mathematical notation, or equivalent answers may exist.
+
+## Question discovery
+
+Students should be able to browse by education level, class, subject, topic, and difficulty.
+
+Include search and filtering where useful. Students must never see questions from an ineligible or incorrectly selected class simply because of a database query error.
+
+## Practice modes
+
+Provide:
+
+**Topic Practice:** Students select a topic and answer questions at their own pace.
+
+**Quick Quiz:** A short, convenient quiz designed to fit into a few spare minutes.
+
+**Timed Practice:** Questions are answered within configurable time limits.
+
+**Mixed Practice:** Questions from several topics within a selected subject.
+
+**Weak Topic Practice:** Use past performance to recommend topics requiring improvement.
+
+**Exam Preparation:** Longer question sets resembling appropriate school examinations. Ensure that published questions are reviewed and aligned with the intended syllabus.
+
+## Answer feedback
+
+After answering, provide clear feedback that may include:
+
+- Correct or incorrect status.
+- The correct answer.
+- A useful explanation.
+- Score earned.
+- Progress through the session.
+
+In learning mode, feedback can be immediate. In competitive modes, hide answers and explanations until the submission window closes or the match ends, according to the competition rules.
+
+Never reveal correct answers through frontend code, unsecured API responses, hidden client-side state, or predictable data structures before the appropriate time.
+
+## Difficulty and quality
+
+Difficulty should be assigned and reviewed by authorised question contributors. Where data becomes available, use measured student performance to help identify questions that are unusually easy, difficult, or potentially defective.
+
+Do not label questions as officially curriculum-aligned unless they have actually been reviewed against the relevant curriculum.
+
+The platform must contain a usable initial question dataset approved for public demonstration. If you generate sample questions, label them appropriately and never imply that they are already verified official examination questions.
+
+---
+
+# 8. THE COMPETITIVE GAME MODES
+
+Build an engaging collection of competition formats.
+
+## MODE 1: SOLO PRACTICE
+
+A relaxed learning environment where students can practise without risking their competitive rank.
+
+Students choose their class, subject, topic, difficulty, and quiz length.
+
+Award a modest amount of XP for legitimate completion and learning progress, subject to anti-abuse rules.
+
+Practice results should contribute to educational progress but must not automatically determine championship status.
+
+## MODE 2: QUICK ARENA
+
+A short competitive quiz that is easy to start and finish.
+
+Suggested default configuration:
+
+- Five to ten questions.
+- One selected subject and class.
+- A configurable time limit per question.
+- A clearly displayed score and remaining progress.
+- Final results as soon as the session is validated.
+
+Use randomised question selection from an approved pool. Eligible players within the same competitive event must face a comparable question set and scoring rules.
+
+## MODE 3: ONE-ON-ONE DUEL
+
+Students should be able to challenge friends or eligible opponents to a head-to-head quiz.
+
+The system should support:
+
+- Creating a challenge for a chosen subject and class.
+- Selecting a friend or sharing a private invitation link or code.
+- A challenge acceptance and expiry period.
+- Match status, such as Pending, Accepted, In Progress, Completed, Expired, or Cancelled.
+- A consistent question set or equivalent question sets of comparable difficulty.
+- A clear match duration and scoring rule.
+- Separate answer submission and server-side validation.
+- A result screen comparing the participants.
+- A rematch action.
+- A shareable result summary.
+
+For asynchronous duels, allow each participant to complete their attempt independently within the configured deadline.
+
+For real-time duels, synchronise match state and question progression through a reliable backend. Handle disconnections, reconnections, duplicate submissions, timeouts, and abandoned games.
+
+Do not simulate multiplayer by merely displaying two fake player profiles. If real-time infrastructure cannot be implemented reliably in the current environment, implement fully functional asynchronous duels first and clearly separate any planned real-time enhancement.
+
+## MODE 4: CHAMPION CHALLENGE
+
+This is the signature feature of the platform.
+
+Each eligible class-subject category has a current title holder.
+
+For example:
+
+- Mathematics Champion — Primary 6.
+- English Language Champion — JSS 2.
+- Chemistry Champion — SS 2.
+- Physics Champion — SS 3.
+
+A student should be able to open a subject page, see its current champion, inspect their publicly shareable competition record, and challenge the champion if eligible.
+
+The champion experience should display:
+
+- Champion's chosen name and avatar.
+- Subject and class category.
+- Title earned date.
+- Current title-defence record.
+- Recent verified results.
+- Eligible challengers.
+- A challenge action.
+- Challenge availability or cooldown information where applicable.
+
+### Champion eligibility
+
+Define eligibility using the selected education level, class, subject, and the competition's published rules.
+
+Students must not be allowed to defeat champions belonging to a different class category through incorrectly scoped challenges.
+
+### Champion selection
+
+Build the championship system using server-side rules, not manually changed frontend labels.
+
+A new champion may be crowned through a valid, completed Champion Challenge or an authorised championship tournament.
+
+Only a validated match with an official outcome may change title ownership.
+
+Implement transaction-safe title transfers so two simultaneous challenge completions cannot inconsistently award the same championship.
+
+Keep historical title records, including the former champion, new champion, event, result, and timestamp.
+
+### Title defences
+
+Allow the current champion to defend their title through accepted eligible challenges.
+
+Define clear rules for challenge acceptance, non-response, expiry, disconnection, and forfeiture before applying a result.
+
+Forfeits should not happen arbitrarily. Give students fair notice and reasonable opportunities to participate.
+
+### Protection against champion farming
+
+A champion must not be forced to respond to unlimited challenges every day.
+
+Implement configurable limits for pending challenges, challenge frequency, and match scheduling. Make these rules transparent.
+
+Do not allow repeated matches between the same players to inflate official leaderboard points without limit.
+
+A championship is an earned competitive title, not a permanent label automatically awarded to whichever profile has the most XP.
+
+## MODE 5: TOURNAMENTS
+
+Build the foundation for official tournaments with:
+
+- Tournament name and description.
+- Eligible classes and subjects.
+- Start and end times.
+- Registration period.
+- Participant limits.
+- Rules and rewards.
+- Match scheduling.
+- Bracket or round structure.
+- Results.
+- Tournament leaderboard.
+- Final standings.
+- Winner announcements.
+
+Support single-elimination tournaments first. Structure the database so additional formats, such as round-robin and league competitions, can be introduced later.
+
+Only authorised administrators should create and publish official tournaments.
+
+## MODE 6: DAILY CHALLENGE
+
+Provide an appealing daily challenge that encourages students to return.
+
+Use a clearly identified daily question set or event, with a published deadline and a single valid official entry per account for the relevant competition.
+
+Award XP or badges for participation and performance according to transparent rules.
+
+Allow students to compare their verified results with classmates and other eligible participants.
+
+## MODE 7: SCHOOL LEAGUE
+
+Where enabled, students can join a verified school community.
+
+Display:
+
+- School rankings.
+- Subject performance.
+- Class standings.
+- School tournaments.
+- Interclass competitions.
+- Interschool competitions.
+
+Prevent users from claiming to represent a school without the platform's required verification process.
+
+Provide a way for administrators or authorised school representatives to manage verified school profiles and membership.
+
+---
+
+# 9. LEADERBOARDS AND RANKINGS
+
+Leaderboards are central to the experience and must be attractive, understandable, trustworthy, and resistant to manipulation.
+
+Provide separate rankings for:
+
+- Each subject and class category.
+- Overall academic performance where the scoring rules support it.
+- Friends.
+- Classes.
+- Schools.
+- Daily and weekly competitions.
+- Monthly or seasonal competitions.
+- Tournament results.
+
+Where useful, include filters for education level, class, subject, school, and time period.
+
+Each leaderboard entry should display a public display name, avatar, rank, relevant points or record, and rank movement where meaningful.
+
+Design the top three positions with distinctive but tasteful visual treatment. Do not make all other entries difficult to read.
+
+The leaderboard must distinguish between different types of achievement:
+
+**Competitive Rating:** Measures performance in eligible ranked competitions.
+
+**XP:** Measures verified participation and learning activity.
+
+**Subject Champion:** Represents the current official title holder in a specific subject-class category.
+
+**Seasonal Ranking:** Represents results in the current defined competition season.
+
+Do not merge these into a single unexplained score.
+
+## Scoring requirements
+
+Create a configurable scoring service with rules such as:
+
+- Correct answers earn the majority of the points.
+- Incorrect answers receive zero points unless a published competition rule explicitly states otherwise.
+- Speed can provide a limited bonus but must never outweigh correctness unfairly.
+- Question difficulty may affect points only where the rules and question calibration justify it.
+- Ties must be resolved using a defined, reproducible tie-break procedure.
+
+Publish the scoring rules before a student enters an official competition.
+
+Ranked scoring must be calculated and validated on the server. The frontend must not be trusted to submit the final score.
+
+Keep completed match records immutable except through an authorised correction or dispute procedure with an audit trail.
+
+---
+
+# 10. GAME PROGRESSION AND REWARDS
+
+Create a rewarding progression system that encourages learning rather than empty repetition.
+
+## XP and levels
+
+Students earn experience points from eligible activities such as completing a valid quiz, improving a personal record, finishing an educational mission, and winning a verified competition.
+
+Create configurable level thresholds and achievement criteria.
+
+Show the current level, total XP, progress towards the next level, and a clear explanation of how XP is earned.
+
+## Badges and achievements
+
+Examples include:
+
+- First Quiz Completed.
+- Mathematics Explorer.
+- Science Star.
+- Five-Day Learning Streak.
+- Personal Best.
+- Perfect Score.
+- Comeback Winner.
+- Tournament Finalist.
+- School Champion.
+- Champion Defender.
+
+Achievements must be awarded by verified events or server-side conditions.
+
+Avoid making every trivial action a major achievement. The rewards should feel meaningful.
+
+## Streaks
+
+Reward consistent learning with streaks, daily goals, and recovery rules where appropriate.
+
+Count a streak using a defined local-calendar-day or rolling-time policy, and clearly explain it.
+
+Do not penalise students unfairly for network interruptions or minor technical failures.
+
+## Rewards and cosmetic customisation
+
+Allow students to earn non-monetary cosmetics such as profile frames, avatar accessories, or themed badges.
+
+Keep the core experience free from pay-to-win advantages.
+
+Do not introduce betting, gambling, paid competitive advantages, or rewards tied to the value of a monetary stake.
+
+---
+
+# 11. SOCIAL FEATURES AND VIRAL GROWTH
+
+The platform must include organic growth mechanisms from the beginning.
+
+Do not rely on invasive advertising, forced invitations, contact harvesting, spam, or deceptive notifications.
+
+Build sharing into moments when a student has something worth sharing.
+
+## Shareable achievement cards
+
+Automatically create attractive, mobile-friendly share cards after achievements such as:
+
+- Winning a duel.
+- Becoming a subject champion.
+- Reaching a new level.
+- Earning a prestigious badge.
+- Finishing at the top of a tournament.
+- Setting a personal best.
+
+The card should include the student's public display name, relevant achievement, subject, class category where appropriate, and the platform identity.
+
+Provide a native share action where supported, alongside copy-link and download-image options where feasible.
+
+Ensure share cards do not expose private profile information, email addresses, school membership details, or sensitive performance data.
+
+## Challenge links
+
+Allow users to invite friends to eligible challenges using a link or short code.
+
+When a recipient opens the link, the platform should show a clear preview of the challenge and make joining straightforward.
+
+The link must not bypass authentication requirements, eligibility restrictions, match validation, or privacy controls.
+
+Support invitations to existing users and a simple, privacy-conscious registration path for newcomers.
+
+## Rivalries
+
+Allow students to track selected rivals, see eligible public competition records, and request rematches.
+
+Encourage friendly competition with language focused on progress and improvement.
+
+Do not create toxic winner-versus-loser messaging or expose personal details to encourage harassment.
+
+## Friend system
+
+If friendship functionality is implemented, allow students to send, accept, and remove friend requests.
+
+Provide blocking and reporting controls.
+
+Do not include unrestricted public direct messaging or open chat rooms in the initial release, especially because the platform is intended for minors.
+
+## Referral system
+
+Track legitimate invitation conversions and award only modest, capped rewards for meaningful participation.
+
+Do not pay for fake sign-ups, repeated self-referrals, or automated accounts.
+
+Referral bonuses must never decide championships or ranked quiz outcomes.
+
+## Notification system
+
+Build an in-app notification centre for events such as:
+
+- A challenge invitation.
+- A challenge accepted.
+- A completed match.
+- A title being challenged.
+- An earned achievement.
+- A tournament opening.
+- A meaningful leaderboard change.
+
+Notifications must respect user preferences and applicable requirements for younger users.
+
+Avoid excessive reminders. Students should be able to control optional notifications.
+
+## Viral product principle
+
+The strongest growth loop must be:
+
+**Play a quiz → Earn something meaningful → Share your achievement → Challenge a friend → Bring another student into the experience → Compete again.**
+
+Every step should feel natural, optional, rewarding, and easy to complete.
+
+---
+
+# 12. STUDENT PROFILE
+
+Create an attractive public profile with a private settings area.
+
+Public profile elements may include:
+
+- Display name.
+- Chosen avatar.
+- Level and XP.
+- Selected public achievements.
+- Subject-specific competition records.
+- Current official championships.
+- Recent public results.
+- Public competitive statistics.
+
+Private profile elements should include authentication details, account recovery information, privacy settings, and other restricted personal data.
+
+Allow students to control which profile information is public.
+
+Include account settings for changing preferences, changing the display name subject to reasonable limits, choosing avatars, notification settings, signing out, and requesting account deletion.
+
+Provide data export and deletion workflows where appropriate.
+
+---
+
+# 13. STUDENT PERFORMANCE ANALYTICS
+
+The platform must improve learning, not merely produce winners.
+
+Create a performance dashboard displaying:
+
+- Accuracy by subject.
+- Accuracy by topic.
+- Questions answered.
+- Personal best scores.
+- Progress over time.
+- Time spent per question where meaningful.
+- Strongest topics.
+- Topics requiring improvement.
+- Recent practice history.
+- Comparison against the student's own previous performance.
+
+Avoid unsupported claims about intelligence, ability, or predicted examination grades.
+
+Where sample sizes are small, communicate that results are based on limited practice data.
+
+Offer helpful next steps, such as:
+
+"You are doing well in chemical bonding. Review balancing chemical equations, where you missed several recent questions."
+
+Generate recommendations from actual answer records and available topic metadata. Do not invent student performance data.
+
+---
+
+# 14. TEACHER AND SCHOOL FEATURES
+
+Design an extensible teacher and school-management area.
+
+Authorised teachers should be able to:
+
+- Create a class or manage assigned classes.
+- Build question sets from approved questions.
+- Assign practice activities.
+- Set deadlines.
+- Review student participation and performance.
+- Identify topics where students need additional help.
+- Organise classroom competitions.
+- View class-level reports.
+
+Teachers should not automatically have access to unrelated students' private data.
+
+Where teacher-created questions are allowed, provide a submission and review workflow if those questions are to be used in public ranked competitions.
+
+School administrators should be able to manage their authorised school profile, classes, membership, and approved school competitions.
+
+Teacher and school permissions must be implemented through real backend access controls, not just hidden menu items.
+
+---
+
+# 15. ADMINISTRATION DASHBOARD
+
+Build a secure administration panel with role-based permissions.
+
+At minimum, support the following roles:
+
+- Student.
+- Teacher.
+- School administrator.
+- Question reviewer or editor.
+- Platform administrator.
+
+Create appropriate permissions for each role.
+
+## Question management
+
+Administrators and authorised question editors must be able to:
+
+- Create questions.
+- Edit questions.
+- Review and approve questions.
+- Reject or archive questions.
+- Assign classes, subjects, topics, and difficulty.
+- Manage answer keys and explanations.
+- Preview questions before publication.
+- Upload questions in a structured format, such as a validated CSV template.
+- Inspect import errors.
+- Detect possible duplicate questions.
+- Track question history and review status.
+
+Do not allow ordinary students to alter published question answers.
+
+## Platform configuration
+
+Administrators must be able to manage:
+
+- Education levels.
+- Classes.
+- Subjects.
+- Topics.
+- Scoring parameters.
+- XP and level rules.
+- Badge criteria.
+- Tournament schedules.
+- Daily challenges.
+- Championship rules.
+- Reported content.
+- School verification.
+- User suspensions.
+- Platform announcements.
+- Feature settings.
+
+Changes to scoring, published competitions, and championship settings should be recorded in an audit log.
+
+## Moderation and monitoring
+
+Include tools for reviewing:
+
+- Reported users.
+- Inappropriate display names.
+- Suspected cheating.
+- Abusive behaviour.
+- Suspicious account activity.
+- Question quality complaints.
+- Disputed competition outcomes.
+
+Provide appropriate actions such as warnings, temporary restrictions, content removal, match review, and account suspension.
+
+Important administrative actions must record the actor, action, affected resource, timestamp, and reason.
+
+---
+
+# 16. DATABASE AND BACKEND ARCHITECTURE
+
+Choose a reliable architecture appropriate to the development environment.
+
+If starting from scratch and the builder supports it, use a maintainable TypeScript-based frontend, a robust relational database such as PostgreSQL, and a secure authentication and backend service such as Supabase.
+
+Prefer the environment's established architecture if one is already configured and suitable. Do not replace a working stack unnecessarily.
+
+Keep the code modular, type-safe, maintainable, and suitable for future extension.
+
+## Core entities
+
+Design a relational schema that includes, at minimum:
+
+- Users and profiles.
+- Roles and permissions.
+- Education levels.
+- Classes or grades.
+- Schools.
+- School memberships.
+- Subjects.
+- Topics.
+- Questions.
+- Answer options.
+- Question review records.
+- Quiz templates.
+- Quiz sessions.
+- Individual question attempts.
+- Challenges.
+- Challenge participants.
+- Match answers and results.
+- Current champions.
+- Championship history.
+- Competitive rating history.
+- XP transactions.
+- Levels.
+- Badges.
+- User achievements.
+- Daily missions.
+- Streak records.
+- Tournaments.
+- Tournament registrations.
+- Tournament rounds and matches.
+- Friend relationships.
+- Notifications.
+- User reports.
+- Administrative audit logs.
+
+Introduce additional tables or supporting entities as necessary.
+
+Use stable unique identifiers, timestamps, foreign keys, database constraints, appropriate indexes, and well-defined deletion policies.
+
+Avoid storing everything in a single user table or relying on local storage as the authoritative database.
+
+## Data integrity
+
+Implement:
+
+- Unique constraints where needed.
+- Transaction-safe champion changes.
+- Server-validated quiz submissions.
+- Idempotent match completion.
+- Protection against duplicate answer submissions.
+- Reliable match state transitions.
+- Consistent ranking updates.
+- Validated question eligibility.
+- Database-level ownership and access restrictions.
+
+A user's browser must never be able to directly award itself a win, XP, badge, or championship title by modifying client-side variables.
+
+## Backend and API design
+
+Create real backend operations for essential actions such as:
+
+- Starting a quiz.
+- Fetching an eligible question set.
+- Recording an answer.
+- Completing a practice session.
+- Submitting an official competitive attempt.
+- Validating match outcomes.
+- Creating and accepting challenges.
+- Completing a duel.
+- Updating competitive ratings.
+- Awarding XP and achievements.
+- Transferring a championship.
+- Calculating leaderboard data.
+- Registering for tournaments.
+- Managing school membership.
+- Moderating reported accounts.
+
+Validate all inputs on the server.
+
+Apply proper database transactions around actions that must succeed or fail together.
+
+Use pagination for large question banks, activity histories, and leaderboards.
+
+Do not download the entire question bank to the client.
+
+## Security
+
+Implement server-side authorisation, secure session handling, input validation, rate limiting, and abuse protection appropriate to the chosen stack.
+
+If using Supabase, configure Row Level Security for every relevant exposed table and create narrowly scoped database or server functions for sensitive operations.
+
+Do not expose service-role credentials, private API keys, answer keys for active competitions, or trusted scoring logic to the frontend.
+
+Use secure deployment configuration and environment variables.
+
+Review the security of challenge links, data exports, school membership, user-reported content, and account recovery.
+
+---
+
+# 17. FAIR PLAY AND ANTI-CHEATING
+
+The platform must protect the integrity of official competitions without making normal participation frustrating.
+
+Implement sensible protections, including:
+
+- Server-authoritative timing for ranked matches.
+- Server-side answer validation.
+- Controlled question selection.
+- Consistent official scoring.
+- Limited submission rates.
+- Duplicate submission prevention.
+- Match expiry and timeout rules.
+- Basic automated-abuse detection.
+- Suspicious activity flags.
+- Challenge frequency controls.
+- Validation of tournament eligibility.
+- Logs for disputed outcomes.
+
+Consider excessive answer speeds, repeated identical matchups, abnormal score patterns, and suspicious request frequency as signals for review rather than automatic proof of wrongdoing.
+
+Do not permanently ban students based solely on a weak heuristic.
+
+Avoid intrusive tracking, unnecessary device fingerprinting, or surveillance disproportionate to a student quiz platform.
+
+Where feasible, use equivalent question sets with comparable difficulty to reduce answer-sharing advantages. Never claim that browser-based measures can completely prevent cheating.
+
+Provide a clear process for reporting incorrect questions and disputing potentially invalid matches.
+
+---
+
+# 18. ACCESSIBILITY, TRUST, AND STUDENT SAFETY
+
+Make the experience usable by as many learners as possible.
+
+Implement:
+
+- Keyboard navigation.
+- Screen-reader-friendly controls and labels.
+- Sufficient colour contrast.
+- Text resizing without layout failure.
+- Clear focus indicators.
+- Reduced-motion support.
+- Readable mathematical notation where applicable.
+- Meaningful alternative text for educational images.
+- Non-colour indicators for correct and incorrect responses.
+- Clear error messages.
+- An optional way to report confusing, inappropriate, or incorrect content.
+
+Do not publicly shame students for low scores.
+
+Do not expose individual students' academic weaknesses to unrelated students, the public, or unauthorised school users.
+
+Avoid open chat rooms and unrestricted messaging in the initial product.
+
+Build a respectful environment with reporting, blocking, moderation, privacy controls, and age-appropriate defaults.
+
+Provide transparent explanations of how rankings, XP, titles, and rewards are calculated.
+
+---
+
+# 19. PERFORMANCE AND TECHNICAL RELIABILITY
+
+Prioritise speed and reliability from the start.
+
+The application should remain usable on budget devices and typical mobile internet connections.
+
+Technical expectations:
+
+- Efficient database queries.
+- Indexed lookup and ranking fields.
+- Paginated data retrieval.
+- Optimised asset delivery.
+- Lazy loading where useful.
+- Minimal unnecessary dependencies.
+- Reliable form validation.
+- Error boundaries and useful error messages.
+- Retry logic for recoverable network failures.
+- Protection against double-clicking actions.
+- Persistent quiz progress where appropriate.
+- Secure state recovery after reconnection.
+- Separation of development and production configuration.
+
+Use real-time infrastructure only where it provides clear value, such as real-time duel state, notifications, or leaderboard updates.
+
+Do not make every page depend on a real-time connection.
+
+Design for growth from an early community of hundreds of students to much larger usage, while avoiding unnecessary overengineering before the product has validated demand.
+
+---
+
+# 20. APPLICATION ROUTES AND REQUIRED SCREENS
+
+Create all essential screens and make their navigation functional.
+
+### Public screens
+
+- Landing page.
+- How to play.
+- Explore subjects and classes.
+- Public leaderboard.
+- Public subject championship page.
+- Login.
+- Registration.
+- Password recovery.
+- Privacy information.
+- Terms of use.
+- Help and support.
+
+### Student screens
+
+- Home dashboard.
+- Onboarding.
+- Subject browser.
+- Topic browser.
+- Question practice.
+- Quiz gameplay.
+- Quiz results.
+- Challenge creation.
+- Incoming and outgoing challenges.
+- Duel waiting room or match lobby.
+- Duel gameplay.
+- Duel results.
+- Champion profile.
+- Championship challenge.
+- Leaderboards.
+- Tournament directory.
+- Tournament details.
+- Tournament bracket and standings.
+- User profile.
+- Achievement collection.
+- Learning analytics.
+- Notifications.
+- Friends and rivals, if enabled.
+- Account settings.
+
+### Teacher and school screens
+
+- Teacher dashboard.
+- Class management.
+- Question-set builder.
+- Assignment management.
+- Student performance reports.
+- Classroom competitions.
+- School dashboard.
+- School membership and verification.
+
+### Administration screens
+
+- Administrator dashboard.
+- User and role management.
+- Question bank management.
+- Question import and review.
+- Subject, class, and topic configuration.
+- Championship management.
+- Tournament management.
+- School management.
+- Reports and moderation.
+- Audit logs.
+- Platform settings.
+
+These screens must share one consistent design system and real data structures. Do not create dead-end pages or meaningless menu items.
+
+Where a feature is not fully implemented, do not pretend it is functional. Clearly distinguish working features from future enhancements in an appropriate development note.
+
+---
+
+# 21. LANDING PAGE THAT MAKES STUDENTS WANT TO PLAY
+
+The public landing page must communicate the fun and competitive value immediately.
+
+Create a visually striking first screen with:
+
+- A short, memorable headline.
+- A concise explanation of the platform.
+- A prominent "Play Now" action.
+- A secondary "Explore Champions" action.
+- A tasteful visual representation of competing students, a trophy, question cards, or a championship leaderboard.
+- A preview of actual or clearly identified demonstration champions.
+- A quick explanation of subjects, challenges, and rewards.
+
+Possible headline direction:
+
+**Your Class. Your Subject. Your Crown.**
+
+Possible supporting copy:
+
+"Test what you know, challenge your rivals, and become the champion in your favourite subject."
+
+Follow with sections explaining how it works, available subjects, game modes, championship rankings, achievements, school competitions, and the process of getting started.
+
+Use meaningful calls to action rather than multiple competing buttons.
+
+Make the landing page attractive enough that a student would want to show a friend, but ensure that visual polish does not slow the application down.
+
+Do not fabricate statistics, testimonials, real school partnerships, competition winners, or current champion records.
+
+---
+
+# 22. CONTENT STRATEGY AND INITIAL DATA
+
+The application must be useful immediately after deployment.
+
+Create a sensible starter dataset that includes:
+
+- Initial education levels and classes.
+- A configurable subject catalogue.
+- Relevant topics for selected subjects.
+- A small collection of carefully written, reviewed demonstration questions.
+- Answer explanations.
+- Sample achievements and level thresholds.
+- Example challenge and tournament configurations where appropriate.
+
+Any fictional players or results used for preview purposes must be clearly labelled as demonstration content and kept separate from live competitive records.
+
+Do not seed fabricated results into real leaderboards.
+
+Do not populate the production system with thousands of unreviewed, repetitive AI-generated questions just to make the interface look full.
+
+Build a scalable question-import workflow so authorised staff can add substantial question collections later.
+
+---
+
+# 23. IMPLEMENTATION PRIORITIES
+
+Build the application in a sensible sequence while delivering the complete integrated experience.
+
+## Phase A: Functional foundation
+
+Implement authentication, onboarding, profiles, education levels, classes, subjects, database models, question management, and a usable responsive dashboard.
+
+## Phase B: Core learning
+
+Implement topic practice, quiz sessions, answer checking, explanations, results, learning history, and basic performance analytics.
+
+## Phase C: Competition engine
+
+Implement timed quizzes, challenge creation and acceptance, valid match outcomes, competitive ratings, subject-class leaderboards, champion titles, title transfers, and championship history.
+
+## Phase D: Engagement and growth
+
+Implement XP, levels, badges, streaks, daily challenges, share cards, invitation links, achievements, and notifications.
+
+## Phase E: Administration and school features
+
+Implement question review, school verification, teacher workflows, tournaments, moderation tools, and administrative reporting.
+
+## Phase F: Quality and launch readiness
+
+Test security, performance, mobile usability, accessibility, data consistency, error recovery, and all essential user journeys.
+
+These phases guide implementation; they are not permission to stop at a visual prototype. Complete the essential working product in the available environment. If the environment has practical limitations, prioritise the functional learning and championship engine, document the limitations, and do not invent working integrations.
+
+---
+
+# 24. ACCEPTANCE TESTS — THE PRODUCT IS NOT FINISHED UNTIL THESE WORK
+
+Use real test accounts and an appropriate test environment. Verify these end-to-end journeys.
+
+### Test 1: New student
+
+A student can register, select a class and subject, complete onboarding, open a quiz, answer questions, and see a correct result.
+
+### Test 2: Question management
+
+An authorised editor can create a question, select its class, subject and topic, supply answer options and an explanation, review it, and publish it. An ordinary student cannot modify the answer key.
+
+### Test 3: Practice and history
+
+A student's valid practice session is saved and appears in the student's learning history and relevant analytics.
+
+### Test 4: Competitive scoring
+
+Two students participate in an eligible competition. The backend validates the answers, applies the published scoring rules, resolves any tie according to the defined procedure, and records the correct result.
+
+### Test 5: Champion transfer
+
+The current champion accepts a valid challenge and loses the match. The platform updates the title holder once, preserves the previous champion in history, and shows the new champion consistently across the relevant screens.
+
+### Test 6: Concurrent challenges
+
+Simultaneous match completions do not create contradictory championship records or award the same exclusive title to multiple students.
+
+### Test 7: Fairness
+
+An unauthorised client cannot submit arbitrary points, alter its opponent's answers, replay a submission to gain extra rewards, or change the current champion directly.
+
+### Test 8: Sharing
+
+A completed achievement produces a working, privacy-safe share link or share card. The shared destination opens the correct achievement without revealing protected account information.
+
+### Test 9: Mobile usability
+
+The complete journey from registration to a completed quiz works on a narrow mobile screen without clipped controls, horizontal overflow, unreadable text, or inaccessible navigation.
+
+### Test 10: Error recovery
+
+A network interruption or failed request does not silently invent a win, duplicate an official result, or permanently destroy recoverable quiz progress.
+
+### Test 11: Role security
+
+A student cannot access administrator or teacher functions merely by editing a URL or manipulating frontend state.
+
+### Test 12: Clean deployment
+
+A new deployment can be configured using documented environment variables and database migrations. The app starts correctly, essential database operations work, and no secret credentials are exposed to the browser.
+
+Automate these tests where appropriate and add regression tests for championship transfers, scoring, role permissions, and question eligibility.
+
+Do not mark a test as passed merely because a screen looks correct.
+
+---
+
+# 25. FINAL PRODUCT QUALITY BAR
+
+Before considering the application complete, review it as five different people:
+
+**A 10-year-old student:** Is it fun, safe, and immediately understandable?
+
+**A secondary-school student:** Does it feel modern enough to use and share with friends?
+
+**A teacher:** Are the questions useful, the reports accurate, and the competitions educational?
+
+**A competitive player:** Are the rankings fair, the scoring transparent, and the championship titles meaningful?
+
+**A technical reviewer:** Are the backend, database, security, state transitions, and error handling reliable?
+
+Fix the highest-impact problems found in these reviews.
+
+Prioritise a polished, coherent experience over a large number of shallow features.
+
+Do not add distracting animations, excessive onboarding, complicated navigation, aggressive advertising, artificial scarcity, or exploitative engagement mechanics.
+
+Every important button must have a real outcome. Every major data view must be connected to the correct source of data. Every official competitive result must follow the published scoring rules.
+
+The platform must work on small screens, load efficiently, handle expected errors, and preserve the distinction between practice achievements and official competition records.
+
+## FINAL INSTRUCTION
+
+Build ClassClash as a real, connected, deployable application — not merely a concept or visual demonstration.
+
+Begin by inspecting the development environment and selecting a suitable implementation architecture. Establish the database, authentication, permissions, and core data models, then build the application around genuine end-to-end learning and championship journeys.
+
+Make the interface exceptional, keep the experience simple, and make competition exciting without compromising educational value, student safety, or fair play.
+
+At the end of implementation, provide a concise delivery report identifying:
+
+1. What is fully implemented and tested.
+2. What requires external credentials or service configuration.
+3. What has been intentionally deferred.
+4. How to create the first administrator account.
+5. How to configure classes, subjects, and questions.
+6. How to launch and deploy the platform.
+7. Any remaining security, performance, or operational limitations.
+
+Do not claim that an integration, test, or feature works unless it has actually been implemented and verified.
+
+**The ultimate goal: create a platform students open because they want to play, continue using because they are learning, and share because they want their friends to challenge them.**
