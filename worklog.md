@@ -108,3 +108,25 @@ Verification:
 
 Stage Summary:
 - Staff now get a real admin experience: logging in as admin/reviewer goes straight to the Admin Panel, reopening the site as staff keeps landing there, mobile has a one-tap shield button, and the student view is clearly labelled when staff deliberately browse it. Students are completely unaffected.
+
+---
+Task ID: 5
+Agent: Main agent (Z.ai)
+Task: Import the uploaded Master_Competition_Questions.docx (400+ competition questions) into the ClassClash question bank
+
+Work Log:
+- Parsed the docx with python-docx (scripts/parse-docx-questions.py), recovering BOLD formatting to detect the source's marked correct answers (lost in plain-text extraction). Result: 410 questions (Chemistry 80, Physics 70, Biology 70, Mathematics 70, English 70, General Knowledge 50), all with exactly 4 options and exactly 1 bold answer.
+- Hand-verified ALL 410 answers (computations recomputed: gas laws, Graham's law, circuits, integrals, sequences, reported speech, phonetics...). Found and corrected 7 source errors via correctOverride + audit reviewNote: Chem Q4 (+3000→−300 kJ/mol, exothermic), Chem Q23 (CO removed by ammoniacal CuCl), Chem Q32 (Zn, not Fe, displaces H from hot alkali), Bio Q6 (complete census is not a sampling method), Math Q42 (first equation typo 1→7; reconstructed from marked answer), Math Q63 (stem dropped "fourth root"; reconstructed), Eng Q16 (reported-speech backshift "had been"). Chem Q78 (capacitors) re-routed to Physics/Electricity.
+- Fixed 3 English questions sharing the identical stem "Select the wrongly spelt word:" — Q11/Q15 given distinct natural phrasings (normalized-text unique constraint).
+- Subject/topic mapping: created new subject "General Knowledge" (sparkles icon, #0ea5e9, SubjectGrade for SS3) + new topics (Physical Chemistry, Atomic Structure & Periodicity, Inorganic & Industrial Chemistry, Thermal Physics, Calculus, Oral English & Phonetics); reused existing topics where they matched. All 410 questions assigned to SS3 (competition level), status published, source "Master Competition Bank", isDemo false, points 100/125/150 by difficulty, timeLimit 45s for hard / 30s otherwise, concise explanations written for every question, options inserted in A–D order.
+- Import script (scripts/import-competition-bank.ts) is idempotent: seed-convention normalization, dedupe against existing normalized set, per-question metadata merge, post-import verification.
+
+Verification:
+- Import: 410/410 inserted (Chemistry 79 + Physics 71 incl. the re-routed capacitor question, Math 70, English 70, Biology 70, GK 50). DB checks: 0 questions without a correct option, 0 with multiple, 0 with no options.
+- Regression suite (test-real-platform.ts): 27/27 passing.
+- Browser E2E (admin): Admin Panel → Question Bank shows imported questions ("SS 3 • Chemistry • Physical Chemistry • easy • Master Competition Bank") with options + explanation; corrected Q4 renders with its audit note.
+- API E2E (SS3 student): GK subject visible in structure; subject detail shows new topics with counts (GK 50, Chem 87 total, Phys 79, Math 78, Eng 76, Bio 78 incl. pre-existing SS3 questions); practice quiz started from GK bank returned sanitized questions (no isCorrect leak).
+- Screenshot: download/classclash-competition-bank.png. Verification test accounts deleted afterwards.
+
+Stage Summary:
+- The question bank grew from 226 to 636 published questions. SS3 now has a full competition-level bank across 6 subjects (new General Knowledge subject included), every answer hand-verified with corrections tracked in reviewNote for full auditability.

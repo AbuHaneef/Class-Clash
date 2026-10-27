@@ -1,0 +1,10662 @@
+[
+ {
+  "section": "Chemistry",
+  "num": 1,
+  "stem": "According to the kinetic theory, an increase in temperature causes the kinetic energy of particles to:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Decrease"
+   },
+   {
+    "letter": "B",
+    "text": "Increase"
+   },
+   {
+    "letter": "C",
+    "text": "Remain constant"
+   },
+   {
+    "letter": "D",
+    "text": "Become zero"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 2,
+  "stem": "A fixed mass of gas has a volume of 92 cm³ at 3°C. What will be its volume at 18°C if the pressure remains constant?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "15.3 cm³"
+   },
+   {
+    "letter": "B",
+    "text": "87.3 cm³"
+   },
+   {
+    "letter": "C",
+    "text": "2.0 cm³"
+   },
+   {
+    "letter": "D",
+    "text": "97.0 cm³"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 3,
+  "stem": "What is the pH of a 0.001 mol dm⁻³ solution of sodium hydroxide?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "14"
+   },
+   {
+    "letter": "B",
+    "text": "13"
+   },
+   {
+    "letter": "C",
+    "text": "11"
+   },
+   {
+    "letter": "D",
+    "text": "12"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 4,
+  "stem": "0.46g of ethanol when burned raised the temperature of 50g of water by 14.3 K. The heat of combustion of ethanol is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "+3000 kJ/mol"
+   },
+   {
+    "letter": "B",
+    "text": "−3000 kJ/mol"
+   },
+   {
+    "letter": "C",
+    "text": "+300 kJ/mol"
+   },
+   {
+    "letter": "D",
+    "text": "−300 kJ/mol"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 5,
+  "stem": "The entropy change in the system for the reaction: NH3(g) + HCl(g) → NH4Cl(s) is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Positive"
+   },
+   {
+    "letter": "B",
+    "text": "Zero"
+   },
+   {
+    "letter": "C",
+    "text": "Negative"
+   },
+   {
+    "letter": "D",
+    "text": "Intermediate"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 6,
+  "stem": "What volume of 0.5 mol dm⁻³ H2SO4 will exactly neutralize 20 cm³ of 0.1 mol dm⁻³ NaOH solution?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "2.0 cm³"
+   },
+   {
+    "letter": "B",
+    "text": "5.0 cm³"
+   },
+   {
+    "letter": "C",
+    "text": "6.8 cm³"
+   },
+   {
+    "letter": "D",
+    "text": "8.3 cm³"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 7,
+  "stem": "The energy value of petrol can be determined by a:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Fractionating column"
+   },
+   {
+    "letter": "B",
+    "text": "Catalytic cracker"
+   },
+   {
+    "letter": "C",
+    "text": "Bomb calorimeter"
+   },
+   {
+    "letter": "D",
+    "text": "Thermometer"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 8,
+  "stem": "In the reaction: Cu2S(s) + O2(g) → 2Cu(s) + SO2(g), the oxidation state of copper changes from:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "+1 to 0"
+   },
+   {
+    "letter": "B",
+    "text": "0 to +2"
+   },
+   {
+    "letter": "C",
+    "text": "+2 to +1"
+   },
+   {
+    "letter": "D",
+    "text": "0 to +1"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 9,
+  "stem": "In the electrolysis of CuSO4(aq) using platinum electrodes, the reaction at the anode is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "4H+ + 4e- → 2H2"
+   },
+   {
+    "letter": "B",
+    "text": "4OH- - 4e- → 2H2O + O2"
+   },
+   {
+    "letter": "C",
+    "text": "Cu2+ + 2e- → Cu"
+   },
+   {
+    "letter": "D",
+    "text": "2OH- - 2e- → H2O + 1/2 O2"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 10,
+  "stem": "The partial pressure of oxygen in a sample of air is 452 mmHg and the total pressure is 780 mmHg. What is the mole fraction of oxygen?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "0.203"
+   },
+   {
+    "letter": "B",
+    "text": "0.579"
+   },
+   {
+    "letter": "C",
+    "text": "2.030"
+   },
+   {
+    "letter": "D",
+    "text": "5.790"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 11,
+  "stem": "Which of the following requires the largest quantity of electricity for discharge at an electrode?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "2.0 moles of Q3+"
+   },
+   {
+    "letter": "B",
+    "text": "2.5 moles of R2+"
+   },
+   {
+    "letter": "C",
+    "text": "3.0 moles of T-"
+   },
+   {
+    "letter": "D",
+    "text": "4.0 moles of Y-"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 12,
+  "stem": "Two equal bulbs, one containing ammonia and the other containing hydrogen chloride, are opened mouth-to-mouth. The entropy of the mixture will likely:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Remain unchanged"
+   },
+   {
+    "letter": "B",
+    "text": "Increase"
+   },
+   {
+    "letter": "C",
+    "text": "Decrease"
+   },
+   {
+    "letter": "D",
+    "text": "Become zero"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 13,
+  "stem": "A difference between a chemical and physical change is that in a chemical change:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Oxygen is consumed"
+   },
+   {
+    "letter": "B",
+    "text": "Heat is supplied"
+   },
+   {
+    "letter": "C",
+    "text": "A new substance is formed"
+   },
+   {
+    "letter": "D",
+    "text": "The reversible process occurs"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 14,
+  "stem": "According to Le Chatelier's principle, in the endothermic reaction N2O4(g) ⇌ 2NO2(g), more product is favored by:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Constant volume"
+   },
+   {
+    "letter": "B",
+    "text": "An increase in pressure"
+   },
+   {
+    "letter": "C",
+    "text": "A decrease in pressure"
+   },
+   {
+    "letter": "D",
+    "text": "A decrease in volume"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 15,
+  "stem": "In the reaction PCl5(g) ⇌ PCl3(g) + Cl2(g), a decrease in pressure will:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Decelerate the reaction"
+   },
+   {
+    "letter": "B",
+    "text": "Increase the yield of PCl3"
+   },
+   {
+    "letter": "C",
+    "text": "Increase the yield of PCl5"
+   },
+   {
+    "letter": "D",
+    "text": "Accelerate the reaction"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 16,
+  "stem": "What is the volume of oxygen required to burn 45 cm³ of methane at S.T.P?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "135.0 cm³"
+   },
+   {
+    "letter": "B",
+    "text": "150.0 cm³"
+   },
+   {
+    "letter": "C",
+    "text": "45.0 cm³"
+   },
+   {
+    "letter": "D",
+    "text": "90.0 cm³"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 17,
+  "stem": "A gas diffuses twice as fast as gas Y under the same conditions. If the relative molecular mass of X is 28, calculate the relative molecular mass of Y.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "112"
+   },
+   {
+    "letter": "B",
+    "text": "120"
+   },
+   {
+    "letter": "C",
+    "text": "56"
+   },
+   {
+    "letter": "D",
+    "text": "14"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 18,
+  "stem": "If 30 cm³ of oxygen diffuses through a porous plug in 7s, how long will it take 60 cm³ of chlorine to diffuse? (O=16, Cl=35.5)",
+  "options": [
+   {
+    "letter": "A",
+    "text": "12s"
+   },
+   {
+    "letter": "B",
+    "text": "14s"
+   },
+   {
+    "letter": "C",
+    "text": "21s"
+   },
+   {
+    "letter": "D",
+    "text": "30s"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 19,
+  "stem": "In order to remove one electron from the 3s orbital of a gaseous sodium atom, about 495 kJ/mol of energy is required. This energy is referred to as:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Electron affinity"
+   },
+   {
+    "letter": "B",
+    "text": "Ionization energy"
+   },
+   {
+    "letter": "C",
+    "text": "Activation energy"
+   },
+   {
+    "letter": "D",
+    "text": "Electronegativity"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 20,
+  "stem": "The weak attractive force that can be observed between two non-polar molecules is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Ionic"
+   },
+   {
+    "letter": "B",
+    "text": "Covalent"
+   },
+   {
+    "letter": "C",
+    "text": "Co-ordinate covalent"
+   },
+   {
+    "letter": "D",
+    "text": "van der Waals"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 21,
+  "stem": "Which of the noble gases has the greatest ionization energy?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "He"
+   },
+   {
+    "letter": "B",
+    "text": "Xe"
+   },
+   {
+    "letter": "C",
+    "text": "Ar"
+   },
+   {
+    "letter": "D",
+    "text": "Kr"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 22,
+  "stem": "Iron is often galvanized in order to:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Make it more malleable"
+   },
+   {
+    "letter": "B",
+    "text": "Remove impurities"
+   },
+   {
+    "letter": "C",
+    "text": "Protect it against corrosion"
+   },
+   {
+    "letter": "D",
+    "text": "Render it passive"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 23,
+  "stem": "In the industrial production of hydrogen from water gas, CO is removed by:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Washing under pressure"
+   },
+   {
+    "letter": "B",
+    "text": "Drying over phosphorus (V) oxide"
+   },
+   {
+    "letter": "C",
+    "text": "Passing the mixture into lime water"
+   },
+   {
+    "letter": "D",
+    "text": "Dissolving in ammoniacal copper (I) chloride"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 24,
+  "stem": "The gas that is most useful in protecting humans against solar ultraviolet radiation is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Chlorine"
+   },
+   {
+    "letter": "B",
+    "text": "Ozone"
+   },
+   {
+    "letter": "C",
+    "text": "Carbon (IV) oxide"
+   },
+   {
+    "letter": "D",
+    "text": "Hydrogen sulphide"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 25,
+  "stem": "Atomicity of ozone is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "1"
+   },
+   {
+    "letter": "B",
+    "text": "2"
+   },
+   {
+    "letter": "C",
+    "text": "3"
+   },
+   {
+    "letter": "D",
+    "text": "4"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 26,
+  "stem": "An element commonly used in the production of matches is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Nitrogen"
+   },
+   {
+    "letter": "B",
+    "text": "Aluminum"
+   },
+   {
+    "letter": "C",
+    "text": "Copper"
+   },
+   {
+    "letter": "D",
+    "text": "Sulphur"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 27,
+  "stem": "The elements that belong to the third period of the periodic table are:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Li, Be, Al"
+   },
+   {
+    "letter": "B",
+    "text": "Na, P, O, Cl"
+   },
+   {
+    "letter": "C",
+    "text": "B, C, N, O"
+   },
+   {
+    "letter": "D",
+    "text": "Na, Mg, S, Ar"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 28,
+  "stem": "Which of the following metals burns with a brick-red flame?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Pb"
+   },
+   {
+    "letter": "B",
+    "text": "Ca"
+   },
+   {
+    "letter": "C",
+    "text": "Na"
+   },
+   {
+    "letter": "D",
+    "text": "Mg"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 29,
+  "stem": "Which of the following gives a precipitate when treated with NaOH solution?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "AlCl3"
+   },
+   {
+    "letter": "B",
+    "text": "NH4Cl"
+   },
+   {
+    "letter": "C",
+    "text": "Na2CO3"
+   },
+   {
+    "letter": "D",
+    "text": "CH3COONa"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 30,
+  "stem": "Alloys are best prepared by:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Electroplating"
+   },
+   {
+    "letter": "B",
+    "text": "Arc-welding"
+   },
+   {
+    "letter": "C",
+    "text": "Cooling a molten mixture of the metals"
+   },
+   {
+    "letter": "D",
+    "text": "Reducing a mixture of their metallic oxides"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 31,
+  "stem": "Rare gases are stable because they:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Are monoatomic"
+   },
+   {
+    "letter": "B",
+    "text": "Form ions easily"
+   },
+   {
+    "letter": "C",
+    "text": "Have duplet or octet electronic configuration in their outermost shells"
+   },
+   {
+    "letter": "D",
+    "text": "Are volatile gases"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 32,
+  "stem": "Hydrogen can be displaced from a hot alkaline solution by:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Fe"
+   },
+   {
+    "letter": "B",
+    "text": "Cu"
+   },
+   {
+    "letter": "C",
+    "text": "Zn"
+   },
+   {
+    "letter": "D",
+    "text": "Sn"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 33,
+  "stem": "Which of the following physical properties decreases down a group in the periodic table?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Atomic radius"
+   },
+   {
+    "letter": "B",
+    "text": "Ionic radius"
+   },
+   {
+    "letter": "C",
+    "text": "Electropositivity"
+   },
+   {
+    "letter": "D",
+    "text": "Electronegativity"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 34,
+  "stem": "The oxidation state of Cr in K2Cr2O7 is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "+7"
+   },
+   {
+    "letter": "B",
+    "text": "+6"
+   },
+   {
+    "letter": "C",
+    "text": "+5"
+   },
+   {
+    "letter": "D",
+    "text": "+4"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 35,
+  "stem": "When steam is passed over red hot carbon, the substances produced are:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Hydrogen and trioxocarbonate (IV) acid"
+   },
+   {
+    "letter": "B",
+    "text": "Hydrogen, oxygen, and carbon (IV) oxide"
+   },
+   {
+    "letter": "C",
+    "text": "Hydrogen and carbon (II) oxide"
+   },
+   {
+    "letter": "D",
+    "text": "Hydrogen and carbon (IV) oxide"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 36,
+  "stem": "The substance used in the steel industry for the removal of carbon, sulphur, and phosphorus impurities from pig iron is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Oxygen"
+   },
+   {
+    "letter": "B",
+    "text": "Chlorine"
+   },
+   {
+    "letter": "C",
+    "text": "Nitrogen"
+   },
+   {
+    "letter": "D",
+    "text": "Hydrogen"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 37,
+  "stem": "Chlorine gas turns damp starch-iodide paper:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Pink"
+   },
+   {
+    "letter": "B",
+    "text": "Colourless"
+   },
+   {
+    "letter": "C",
+    "text": "Red"
+   },
+   {
+    "letter": "D",
+    "text": "Dark blue"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 38,
+  "stem": "Chlorine consisting of two isotopes of mass numbers 35 and 37 in the ratio 3:1 has an atomic mass of 35.5. Calculate the relative abundance of the isotope of mass number 37.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "20%"
+   },
+   {
+    "letter": "B",
+    "text": "25%"
+   },
+   {
+    "letter": "C",
+    "text": "60%"
+   },
+   {
+    "letter": "D",
+    "text": "75%"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 39,
+  "stem": "The s-block elements of the periodic table are made up of:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Groups 1, 2, and 3"
+   },
+   {
+    "letter": "B",
+    "text": "Groups 1 and 2"
+   },
+   {
+    "letter": "C",
+    "text": "Group 3 only"
+   },
+   {
+    "letter": "D",
+    "text": "Groups 3 to 7"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 40,
+  "stem": "In the electrolysis of brine, the anode is usually made of:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Platinum"
+   },
+   {
+    "letter": "B",
+    "text": "Copper"
+   },
+   {
+    "letter": "C",
+    "text": "Zinc"
+   },
+   {
+    "letter": "D",
+    "text": "Carbon"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 41,
+  "stem": "Vulcanization involves the removal or opening of:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Monomers"
+   },
+   {
+    "letter": "B",
+    "text": "The single bond"
+   },
+   {
+    "letter": "C",
+    "text": "The double bond"
+   },
+   {
+    "letter": "D",
+    "text": "A polymer"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 42,
+  "stem": "A suitable reagent to distinguish between ethanoic acid and ethanol is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Bromine water"
+   },
+   {
+    "letter": "B",
+    "text": "Fehling's solution"
+   },
+   {
+    "letter": "C",
+    "text": "Sodium hydrogen trioxocarbonate (IV)"
+   },
+   {
+    "letter": "D",
+    "text": "Ammoniacal silver trioxonitrate (V)"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 43,
+  "stem": "In the production of soap, concentrated sodium chloride solution is added to:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Increase the solubility of soap"
+   },
+   {
+    "letter": "B",
+    "text": "Decrease the solubility of the soap"
+   },
+   {
+    "letter": "C",
+    "text": "Saponify the soap"
+   },
+   {
+    "letter": "D",
+    "text": "Emulsify the soap"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 44,
+  "stem": "A liquid that will dissolve fat is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Hydrochloric acid"
+   },
+   {
+    "letter": "B",
+    "text": "Calcium hydroxide"
+   },
+   {
+    "letter": "C",
+    "text": "Kerosene"
+   },
+   {
+    "letter": "D",
+    "text": "Water"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 45,
+  "stem": "Which of the following types of alkanols undergo oxidation to produce alkanoic acids?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Primary, secondary, and tertiary"
+   },
+   {
+    "letter": "B",
+    "text": "Primary and secondary only"
+   },
+   {
+    "letter": "C",
+    "text": "Tertiary only"
+   },
+   {
+    "letter": "D",
+    "text": "Primary only"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 46,
+  "stem": "The number of structural isomers formed by C6H14 is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "4"
+   },
+   {
+    "letter": "B",
+    "text": "5"
+   },
+   {
+    "letter": "C",
+    "text": "2"
+   },
+   {
+    "letter": "D",
+    "text": "3"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 47,
+  "stem": "A compound contains 40.0% C, 6.7% H, and 53.3% O. If the molar mass is 180, find the molecular formula (H=1, C=12, O=16).",
+  "options": [
+   {
+    "letter": "A",
+    "text": "CH2O"
+   },
+   {
+    "letter": "B",
+    "text": "C3H6O3"
+   },
+   {
+    "letter": "C",
+    "text": "C6H12O6"
+   },
+   {
+    "letter": "D",
+    "text": "C6H12O3"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 48,
+  "stem": "Detergents are manufactured with straight hydrocarbon chains to make them:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Soluble"
+   },
+   {
+    "letter": "B",
+    "text": "Biodegradable"
+   },
+   {
+    "letter": "C",
+    "text": "Cheaper"
+   },
+   {
+    "letter": "D",
+    "text": "Foamy"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 49,
+  "stem": "If glucose is heated with concentrated tetraoxosulphate (VI) acid, it will be dehydrated to:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Carbon"
+   },
+   {
+    "letter": "B",
+    "text": "Carbon (IV) oxide"
+   },
+   {
+    "letter": "C",
+    "text": "Ethene"
+   },
+   {
+    "letter": "D",
+    "text": "Ethanol"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 50,
+  "stem": "Which of the following compounds can be represented by the molecular formula C2H6O?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Propanal"
+   },
+   {
+    "letter": "B",
+    "text": "Ethanol"
+   },
+   {
+    "letter": "C",
+    "text": "Methanoic acid"
+   },
+   {
+    "letter": "D",
+    "text": "Glucose"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 51,
+  "stem": "The principal constituent of natural gas is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Methane"
+   },
+   {
+    "letter": "B",
+    "text": "Ethane"
+   },
+   {
+    "letter": "C",
+    "text": "Propane"
+   },
+   {
+    "letter": "D",
+    "text": "Butane"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 52,
+  "stem": "One mole of a hydrocarbon contains 36g of carbon and its vapour density is 20. The structure of the hydrocarbon is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "CH3C≡CH"
+   },
+   {
+    "letter": "B",
+    "text": "CH3CH=CH2"
+   },
+   {
+    "letter": "C",
+    "text": "CH3CH2C≡CH"
+   },
+   {
+    "letter": "D",
+    "text": "CH3CH2CH3"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 53,
+  "stem": "Which of the following represents hybridization in ethyne?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "sp"
+   },
+   {
+    "letter": "B",
+    "text": "sp3"
+   },
+   {
+    "letter": "C",
+    "text": "sp2d"
+   },
+   {
+    "letter": "D",
+    "text": "sp2"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 54,
+  "stem": "The IUPAC nomenclature of the compound CH3CH2C≡CH is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "But-2-yne"
+   },
+   {
+    "letter": "B",
+    "text": "But-1-ene"
+   },
+   {
+    "letter": "C",
+    "text": "But-1-yne"
+   },
+   {
+    "letter": "D",
+    "text": "Prop-1-yne"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 55,
+  "stem": "Aromatic and aliphatic hydrocarbons can be distinguished from each other by the:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Action of bromine"
+   },
+   {
+    "letter": "B",
+    "text": "Use of polymerization reaction"
+   },
+   {
+    "letter": "C",
+    "text": "Action of heat"
+   },
+   {
+    "letter": "D",
+    "text": "Use of oxidation reaction"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 56,
+  "stem": "Which of the following compounds is a soapless detergent?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "C12H25OSO3Na"
+   },
+   {
+    "letter": "B",
+    "text": "C17H35COONa"
+   },
+   {
+    "letter": "C",
+    "text": "C6H5OH"
+   },
+   {
+    "letter": "D",
+    "text": "C4H9COOC2H5"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 57,
+  "stem": "The repeating unit in natural rubber is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Isoprene"
+   },
+   {
+    "letter": "B",
+    "text": "N-propene"
+   },
+   {
+    "letter": "C",
+    "text": "Alkyne"
+   },
+   {
+    "letter": "D",
+    "text": "Neoprene"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 58,
+  "stem": "Which of the following is used to hasten the ripening of fruits?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Ethene"
+   },
+   {
+    "letter": "B",
+    "text": "Ethanol"
+   },
+   {
+    "letter": "C",
+    "text": "Ethyne"
+   },
+   {
+    "letter": "D",
+    "text": "Ethane"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 59,
+  "stem": "The conversion of open chain alkanes into cycloalkanes and aromatic compounds is called:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Cracking"
+   },
+   {
+    "letter": "B",
+    "text": "Reforming"
+   },
+   {
+    "letter": "C",
+    "text": "Isomerisation"
+   },
+   {
+    "letter": "D",
+    "text": "Polymerization"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 60,
+  "stem": "Tartaric acid is used industrially to:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Make baking powder"
+   },
+   {
+    "letter": "B",
+    "text": "Make fruit juice"
+   },
+   {
+    "letter": "C",
+    "text": "Remove rust"
+   },
+   {
+    "letter": "D",
+    "text": "Dry substances"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 61,
+  "stem": "The filter in a cigarette reduces the nicotine content by:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Burning"
+   },
+   {
+    "letter": "B",
+    "text": "Absorption"
+   },
+   {
+    "letter": "C",
+    "text": "Evaporation"
+   },
+   {
+    "letter": "D",
+    "text": "Filtration"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 62,
+  "stem": "A small quantity of solid ammonium chloride is heated gently in a test tube. It disappears to produce two gases and forms a white cloudy deposit on the cooler part. This shows it underwent:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Distillation"
+   },
+   {
+    "letter": "B",
+    "text": "Sublimation"
+   },
+   {
+    "letter": "C",
+    "text": "Precipitation"
+   },
+   {
+    "letter": "D",
+    "text": "Evaporation"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 63,
+  "stem": "When salt loses its water of crystallization to the atmosphere on exposure, the process is called:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Efflorescence"
+   },
+   {
+    "letter": "B",
+    "text": "Deliquescence"
+   },
+   {
+    "letter": "C",
+    "text": "Effervescence"
+   },
+   {
+    "letter": "D",
+    "text": "Fluorescence"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 64,
+  "stem": "A major source of oxides of nitrogen is from the burning of:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Coal"
+   },
+   {
+    "letter": "B",
+    "text": "Wood"
+   },
+   {
+    "letter": "C",
+    "text": "Fuel"
+   },
+   {
+    "letter": "D",
+    "text": "Chlorofluorocarbons"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 65,
+  "stem": "The leachate of wood ash is used in local soap making because it contains:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Sodium chloride and potassium hydroxide"
+   },
+   {
+    "letter": "B",
+    "text": "Sodium hydroxide"
+   },
+   {
+    "letter": "C",
+    "text": "Potassium hydroxide"
+   },
+   {
+    "letter": "D",
+    "text": "Soluble carbonates and hydrogen carbonates"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 66,
+  "stem": "Which of the following results in the fall of acid rain?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Oxides of lead"
+   },
+   {
+    "letter": "B",
+    "text": "Particulate matter"
+   },
+   {
+    "letter": "C",
+    "text": "Oxides of sulphur and nitrogen"
+   },
+   {
+    "letter": "D",
+    "text": "Gaseous hydrocarbons"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 67,
+  "stem": "The furring of kettles is caused by the presence in the water of:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Calcium tetraoxosulphate (VI)"
+   },
+   {
+    "letter": "B",
+    "text": "Calcium hydrogentrioxocarbonate (IV)"
+   },
+   {
+    "letter": "C",
+    "text": "Calcium hydroxide"
+   },
+   {
+    "letter": "D",
+    "text": "Calcium trioxocarbonate (IV)"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 68,
+  "stem": "Permanent hardness of water can be removed by:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Boiling"
+   },
+   {
+    "letter": "B",
+    "text": "Adding slaked lime"
+   },
+   {
+    "letter": "C",
+    "text": "Filtration"
+   },
+   {
+    "letter": "D",
+    "text": "Adding washing soda (sodium carbonate)"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 69,
+  "stem": "The colour of methyl orange in an alkaline medium is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Pink"
+   },
+   {
+    "letter": "B",
+    "text": "Orange"
+   },
+   {
+    "letter": "C",
+    "text": "Red"
+   },
+   {
+    "letter": "D",
+    "text": "Yellow"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 70,
+  "stem": "A mixture of mercurous and mercuric nitrate is added to a food substance, a white precipitate forms, and when heated gently turns red. The food substance is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Protein"
+   },
+   {
+    "letter": "B",
+    "text": "Oil"
+   },
+   {
+    "letter": "C",
+    "text": "Carbohydrate"
+   },
+   {
+    "letter": "D",
+    "text": "Fat"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 71,
+  "stem": "The acid used in the electrolysis of water is dilute:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "HNO3"
+   },
+   {
+    "letter": "B",
+    "text": "CH3COOH"
+   },
+   {
+    "letter": "C",
+    "text": "H2SO4"
+   },
+   {
+    "letter": "D",
+    "text": "HCl"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 72,
+  "stem": "Which of the following particles has the smallest mass?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Proton"
+   },
+   {
+    "letter": "B",
+    "text": "Neutron"
+   },
+   {
+    "letter": "C",
+    "text": "Electron"
+   },
+   {
+    "letter": "D",
+    "text": "Alpha particle"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 73,
+  "stem": "An element X has an atomic number of 15. The electronic configuration of its ground state is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "1s² 2s² 2p⁶ 3s² 3p³"
+   },
+   {
+    "letter": "B",
+    "text": "1s² 2s² 2p⁶ 3s² 3p¹"
+   },
+   {
+    "letter": "C",
+    "text": "1s² 2s² 2p⁶ 3s² 3p²"
+   },
+   {
+    "letter": "D",
+    "text": "1s² 2s² 2p⁶ 3s¹ 3p⁴"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 74,
+  "stem": "In countries where the temperature falls below 273 K, salt is spilled on the roads in order to:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Increase the melting point of ice"
+   },
+   {
+    "letter": "B",
+    "text": "Increase the density of ice"
+   },
+   {
+    "letter": "C",
+    "text": "Make the ice impure"
+   },
+   {
+    "letter": "D",
+    "text": "Lower the freezing point of water"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 75,
+  "stem": "The maximum number of electrons in the L-shell of an atom is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "2"
+   },
+   {
+    "letter": "B",
+    "text": "8"
+   },
+   {
+    "letter": "C",
+    "text": "18"
+   },
+   {
+    "letter": "D",
+    "text": "32"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 76,
+  "stem": "Which of the following equimolar solutions will have the highest pH?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "CH3COONa"
+   },
+   {
+    "letter": "B",
+    "text": "NaOH"
+   },
+   {
+    "letter": "C",
+    "text": "HCl"
+   },
+   {
+    "letter": "D",
+    "text": "NH4OH"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 77,
+  "stem": "Which of the following is not a fraction of petroleum?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Bitumen"
+   },
+   {
+    "letter": "B",
+    "text": "Diesel"
+   },
+   {
+    "letter": "C",
+    "text": "Methane"
+   },
+   {
+    "letter": "D",
+    "text": "Kerosene"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 78,
+  "stem": "What is the effective capacitance of three capacitors of 3µF, 4µF, and 5µF connected in series?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "1.28 µF"
+   },
+   {
+    "letter": "B",
+    "text": "2.00 µF"
+   },
+   {
+    "letter": "C",
+    "text": "3.00 µF"
+   },
+   {
+    "letter": "D",
+    "text": "12.00 µF"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 79,
+  "stem": "The basicity of CH3COOH is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "1"
+   },
+   {
+    "letter": "B",
+    "text": "2"
+   },
+   {
+    "letter": "C",
+    "text": "3"
+   },
+   {
+    "letter": "D",
+    "text": "4"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Chemistry",
+  "num": 80,
+  "stem": "The gas that can be dried using concentrated tetraoxosulphate (VI) acid is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Ammonia"
+   },
+   {
+    "letter": "B",
+    "text": "Hydrogen sulphide"
+   },
+   {
+    "letter": "C",
+    "text": "Sulphur (IV) oxide"
+   },
+   {
+    "letter": "D",
+    "text": "Hydrogen bromide"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 1,
+  "stem": "A quantity which requires magnitude and direction to be specified is a:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Scalar quantity"
+   },
+   {
+    "letter": "B",
+    "text": "Fundamental quantity"
+   },
+   {
+    "letter": "C",
+    "text": "Vector quantity"
+   },
+   {
+    "letter": "D",
+    "text": "Derived quantity"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 2,
+  "stem": "What type of motion do the wheels of a moving car undergo?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Vibratory and translational motion"
+   },
+   {
+    "letter": "B",
+    "text": "Random and translational motion"
+   },
+   {
+    "letter": "C",
+    "text": "Rotational and oscillatory motion"
+   },
+   {
+    "letter": "D",
+    "text": "Translational and rotational motion"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 3,
+  "stem": "A car accelerates uniformly from rest at 3 m/s². Its velocity after traveling a distance of 24 m is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "12 m/s"
+   },
+   {
+    "letter": "B",
+    "text": "144 m/s"
+   },
+   {
+    "letter": "C",
+    "text": "72 m/s"
+   },
+   {
+    "letter": "D",
+    "text": "36 m/s"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 4,
+  "stem": "Calculate the escape velocity of a satellite launched from the earth's surface (g = 10 m/s², R = 6.4 x 10⁶ m).",
+  "options": [
+   {
+    "letter": "A",
+    "text": "25.3 km/s"
+   },
+   {
+    "letter": "B",
+    "text": "4.2 km/s"
+   },
+   {
+    "letter": "C",
+    "text": "4.0 km/s"
+   },
+   {
+    "letter": "D",
+    "text": "11.3 km/s"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 5,
+  "stem": "One of the conditions necessary for an object to be in equilibrium when acted upon by a number of parallel forces is that the vector sum of the forces is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Average"
+   },
+   {
+    "letter": "B",
+    "text": "Zero"
+   },
+   {
+    "letter": "C",
+    "text": "Negative"
+   },
+   {
+    "letter": "D",
+    "text": "Positive"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 6,
+  "stem": "What happens when three coplanar non-parallel forces are in equilibrium?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Their lines of action are parallel"
+   },
+   {
+    "letter": "B",
+    "text": "They are represented in magnitude only"
+   },
+   {
+    "letter": "C",
+    "text": "They are represented in direction only"
+   },
+   {
+    "letter": "D",
+    "text": "Their lines of action meet at a point"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 7,
+  "stem": "An object of mass 20 kg is released from a height of 10 m above the ground level. The kinetic energy of the object just before it hits the ground is (g = 10 m/s²):",
+  "options": [
+   {
+    "letter": "A",
+    "text": "200 J"
+   },
+   {
+    "letter": "B",
+    "text": "4000 J"
+   },
+   {
+    "letter": "C",
+    "text": "2000 J"
+   },
+   {
+    "letter": "D",
+    "text": "500 J"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 8,
+  "stem": "A machine whose efficiency is 75% is used to lift a load of 1000 N. Calculate the effort put into the machine if it has a Velocity Ratio of 4.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "343.32 N"
+   },
+   {
+    "letter": "B",
+    "text": "233.33 N"
+   },
+   {
+    "letter": "C",
+    "text": "333.33 N"
+   },
+   {
+    "letter": "D",
+    "text": "334.33 N"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 9,
+  "stem": "A wheel and an axle is used to raise a load whose weight is 800 N when an effort of 250 N is applied. If the radii of the wheel and axle are 800 mm and 200 mm respectively, the efficiency of the machine is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "90%"
+   },
+   {
+    "letter": "B",
+    "text": "80%"
+   },
+   {
+    "letter": "C",
+    "text": "85%"
+   },
+   {
+    "letter": "D",
+    "text": "87%"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 10,
+  "stem": "A force of 500 N is applied to a steel wire of cross-sectional area 0.2 m². The tensile stress is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "2.5 x 10⁴ N/m²"
+   },
+   {
+    "letter": "B",
+    "text": "1.0 x 10² N/m²"
+   },
+   {
+    "letter": "C",
+    "text": "1.0 x 10³ N/m²"
+   },
+   {
+    "letter": "D",
+    "text": "2.5 x 10³ N/m²"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 11,
+  "stem": "Impulse is equivalent to:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Momentum"
+   },
+   {
+    "letter": "B",
+    "text": "Change in momentum"
+   },
+   {
+    "letter": "C",
+    "text": "Rate of change of momentum"
+   },
+   {
+    "letter": "D",
+    "text": "Force multiplied by distance"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 12,
+  "stem": "An 800 kg car moving at 80 km/h overtakes a 1200 kg car moving at 40 km/h in the same direction. If the two cars stick together, the wreckage has an initial speed of:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "8 km/h"
+   },
+   {
+    "letter": "B",
+    "text": "40 km/h"
+   },
+   {
+    "letter": "C",
+    "text": "56 km/h"
+   },
+   {
+    "letter": "D",
+    "text": "60 km/h"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 13,
+  "stem": "In a circular motion, the force which is directed towards the centre is referred to as:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Centrifugal force"
+   },
+   {
+    "letter": "B",
+    "text": "Central force"
+   },
+   {
+    "letter": "C",
+    "text": "Circular force"
+   },
+   {
+    "letter": "D",
+    "text": "Centripetal force"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 14,
+  "stem": "Consider an object undergoing motion under a force. If the mass and the force are doubled, then the acceleration will:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Double"
+   },
+   {
+    "letter": "B",
+    "text": "Become thrice"
+   },
+   {
+    "letter": "C",
+    "text": "Become four times"
+   },
+   {
+    "letter": "D",
+    "text": "Remain the same"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 15,
+  "stem": "What is the equivalent of 20 K on the Celsius scale?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "20 °C"
+   },
+   {
+    "letter": "B",
+    "text": "-253 °C"
+   },
+   {
+    "letter": "C",
+    "text": "68 °C"
+   },
+   {
+    "letter": "D",
+    "text": "36 °C"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 16,
+  "stem": "The quantity of heat needed to raise the temperature of a body by 1 K is the body's:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Heat capacity"
+   },
+   {
+    "letter": "B",
+    "text": "Internal energy"
+   },
+   {
+    "letter": "C",
+    "text": "Specific heat capacity"
+   },
+   {
+    "letter": "D",
+    "text": "Latent heat of fusion"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 17,
+  "stem": "The temperature at which the water vapour present in the air is just sufficient to saturate the air is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Boiling point"
+   },
+   {
+    "letter": "B",
+    "text": "Ice point"
+   },
+   {
+    "letter": "C",
+    "text": "Saturation point"
+   },
+   {
+    "letter": "D",
+    "text": "Dew point"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 18,
+  "stem": "Heat transfer by convection in a liquid is due to the:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Latent heat of vaporization of the liquid"
+   },
+   {
+    "letter": "B",
+    "text": "Increased vibration of the molecules about their mean position"
+   },
+   {
+    "letter": "C",
+    "text": "Variation of density of the liquid"
+   },
+   {
+    "letter": "D",
+    "text": "Expansion of the liquid as it is heated"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 19,
+  "stem": "Anomalous expansion of water occurs between:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "0°C and 4°C"
+   },
+   {
+    "letter": "B",
+    "text": "4°C and 10°C"
+   },
+   {
+    "letter": "C",
+    "text": "10°C and 100°C"
+   },
+   {
+    "letter": "D",
+    "text": "-4°C and 0°C"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 20,
+  "stem": "A copper block has a heat capacity of 68 J/K. What is the mass of the block given that the specific heat capacity of copper is 400 J/kgK?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "0.07 kg"
+   },
+   {
+    "letter": "B",
+    "text": "0.17 kg"
+   },
+   {
+    "letter": "C",
+    "text": "0.76 kg"
+   },
+   {
+    "letter": "D",
+    "text": "0.97 kg"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 21,
+  "stem": "A 1.5 kg piece of aluminum at 210 °C is dropped into 5 kg of water at 10 °C. What will be the final temperature of the aluminum if the specific heat capacity of aluminum and water are 880 J/kgK and 4200 J/kgK respectively?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "22 °C"
+   },
+   {
+    "letter": "B",
+    "text": "33 °C"
+   },
+   {
+    "letter": "C",
+    "text": "42 °C"
+   },
+   {
+    "letter": "D",
+    "text": "56 °C"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 22,
+  "stem": "The vacuum in a thermos flask prevents heat losses by:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Conduction and convection"
+   },
+   {
+    "letter": "B",
+    "text": "Radiation only"
+   },
+   {
+    "letter": "C",
+    "text": "Convection and radiation"
+   },
+   {
+    "letter": "D",
+    "text": "Conduction only"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 23,
+  "stem": "When heat is applied to a brass metal, it expands because its molecules:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Vibrate with smaller amplitude"
+   },
+   {
+    "letter": "B",
+    "text": "Vibrate with greater amplitude"
+   },
+   {
+    "letter": "C",
+    "text": "Increase their speed of random motion"
+   },
+   {
+    "letter": "D",
+    "text": "Decrease their speed of random motion"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 24,
+  "stem": "The fundamental interval of a thermometer refers to the:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Distance between the ice point and steam point"
+   },
+   {
+    "letter": "B",
+    "text": "Temperature of the surroundings"
+   },
+   {
+    "letter": "C",
+    "text": "Difference between the upper fixed point and absolute zero"
+   },
+   {
+    "letter": "D",
+    "text": "Range of temperatures it can measure"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 25,
+  "stem": "The distance between two successive crests of a wave is 15 cm and the velocity is 300 m/s. Calculate the frequency.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "2.0 x 10² Hz"
+   },
+   {
+    "letter": "B",
+    "text": "4.5 x 10³ Hz"
+   },
+   {
+    "letter": "C",
+    "text": "2.0 x 10³ Hz"
+   },
+   {
+    "letter": "D",
+    "text": "4.5 x 10² Hz"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 26,
+  "stem": "A boy receives the echo of his clap reflected by a nearby hill 0.8 s later. How far is he from the hill? (Speed of sound = 340 m/s)",
+  "options": [
+   {
+    "letter": "A",
+    "text": "528 m"
+   },
+   {
+    "letter": "B",
+    "text": "66 m"
+   },
+   {
+    "letter": "C",
+    "text": "136 m"
+   },
+   {
+    "letter": "D",
+    "text": "264 m"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 27,
+  "stem": "An object is placed 10 m from a pinhole camera of length 25 cm. Calculate the linear magnification.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "2.5 x 10²"
+   },
+   {
+    "letter": "B",
+    "text": "2.5 x 10⁻²"
+   },
+   {
+    "letter": "C",
+    "text": "2.5 x 10⁻¹"
+   },
+   {
+    "letter": "D",
+    "text": "2.5 x 10¹"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 28,
+  "stem": "The focal length of a concave mirror is 2.0 cm. If an object is placed 8.0 cm from it, the image is at:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "2.7 cm"
+   },
+   {
+    "letter": "B",
+    "text": "2.0 cm"
+   },
+   {
+    "letter": "C",
+    "text": "2.3 cm"
+   },
+   {
+    "letter": "D",
+    "text": "2.5 cm"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 29,
+  "stem": "In a compound microscope, the objective and the eye piece focal lengths are:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "At infinity"
+   },
+   {
+    "letter": "B",
+    "text": "Long"
+   },
+   {
+    "letter": "C",
+    "text": "Short"
+   },
+   {
+    "letter": "D",
+    "text": "The same"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 30,
+  "stem": "When a telescope is in normal use, the final image is at:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Infinity"
+   },
+   {
+    "letter": "B",
+    "text": "The focus"
+   },
+   {
+    "letter": "C",
+    "text": "The radius of curvature"
+   },
+   {
+    "letter": "D",
+    "text": "The near point"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 31,
+  "stem": "The angle between the plane mirrors in a kaleidoscope is usually:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "90°"
+   },
+   {
+    "letter": "B",
+    "text": "45°"
+   },
+   {
+    "letter": "C",
+    "text": "60°"
+   },
+   {
+    "letter": "D",
+    "text": "0°"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 32,
+  "stem": "Short-sightedness is corrected by the use of a:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Diverging mirror"
+   },
+   {
+    "letter": "B",
+    "text": "Converging lens"
+   },
+   {
+    "letter": "C",
+    "text": "Converging mirror"
+   },
+   {
+    "letter": "D",
+    "text": "Diverging lens"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 33,
+  "stem": "Two plane mirrors inclined at 60° will produce how many images?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "3"
+   },
+   {
+    "letter": "B",
+    "text": "5"
+   },
+   {
+    "letter": "C",
+    "text": "6"
+   },
+   {
+    "letter": "D",
+    "text": "11"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 34,
+  "stem": "A ray makes an angle of incidence of 30° as it travels from air to glass of refractive index 1.5. The angle of refraction is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "19.5°"
+   },
+   {
+    "letter": "B",
+    "text": "48.6°"
+   },
+   {
+    "letter": "C",
+    "text": "45°"
+   },
+   {
+    "letter": "D",
+    "text": "50°"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 35,
+  "stem": "Which of the following attributes of a musical note helps the ear to differentiate between notes from different instruments?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Pitch"
+   },
+   {
+    "letter": "B",
+    "text": "Intensity"
+   },
+   {
+    "letter": "C",
+    "text": "Quality"
+   },
+   {
+    "letter": "D",
+    "text": "Loudness"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 36,
+  "stem": "The distance between two consecutive antinodes in a stationary wave is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "λ"
+   },
+   {
+    "letter": "B",
+    "text": "λ/2"
+   },
+   {
+    "letter": "C",
+    "text": "λ/3"
+   },
+   {
+    "letter": "D",
+    "text": "λ/4"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 37,
+  "stem": "A radio station transmits with a frequency of 2500 kHz. The wavelength of its waves is (c = 3 x 10⁸ m/s):",
+  "options": [
+   {
+    "letter": "A",
+    "text": "120 m"
+   },
+   {
+    "letter": "B",
+    "text": "83.3 m"
+   },
+   {
+    "letter": "C",
+    "text": "7500 m"
+   },
+   {
+    "letter": "D",
+    "text": "2000 m"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 38,
+  "stem": "Mirage is a result of:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Total reflection"
+   },
+   {
+    "letter": "B",
+    "text": "Total internal reflection"
+   },
+   {
+    "letter": "C",
+    "text": "Refraction"
+   },
+   {
+    "letter": "D",
+    "text": "Interference"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 39,
+  "stem": "Which of these has the greatest penetrating power?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Gamma rays"
+   },
+   {
+    "letter": "B",
+    "text": "X-rays"
+   },
+   {
+    "letter": "C",
+    "text": "Beta particles"
+   },
+   {
+    "letter": "D",
+    "text": "Alpha particles"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 40,
+  "stem": "When a negatively charged rod is brought near the cap of a charged gold leaf electroscope which has positive charges, the leaf:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Remains the same"
+   },
+   {
+    "letter": "B",
+    "text": "Collapses"
+   },
+   {
+    "letter": "C",
+    "text": "Collapses and diverges again"
+   },
+   {
+    "letter": "D",
+    "text": "Diverges"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 41,
+  "stem": "What charge is stored in a 0.1 F capacitor when a 10 V supply is connected across it?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "1 C"
+   },
+   {
+    "letter": "B",
+    "text": "5 C"
+   },
+   {
+    "letter": "C",
+    "text": "4 C"
+   },
+   {
+    "letter": "D",
+    "text": "2 C"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 42,
+  "stem": "The maximum power transfer occurs in a cell when the external resistance is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Twice the internal resistance of the cell"
+   },
+   {
+    "letter": "B",
+    "text": "The same as the internal resistance of the cell"
+   },
+   {
+    "letter": "C",
+    "text": "Greater than the internal resistance of the cell"
+   },
+   {
+    "letter": "D",
+    "text": "Less than the internal resistance of the cell"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 43,
+  "stem": "If a metal wire 4 m long and cross-sectional area 0.8 mm² has a resistance of 6 Ω, find the resistivity of the wire.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "5.3 x 10⁻⁷ Ωm"
+   },
+   {
+    "letter": "B",
+    "text": "3.0 x 10⁻⁵ Ωm"
+   },
+   {
+    "letter": "C",
+    "text": "1.2 x 10⁻⁶ Ωm"
+   },
+   {
+    "letter": "D",
+    "text": "3.2 x 10⁻⁶ Ωm"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 44,
+  "stem": "A circuit has a resistance of 200 Ω. The resistance of the circuit can be reduced to 120 Ω when:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "A 300 Ω resistor is connected to it in parallel"
+   },
+   {
+    "letter": "B",
+    "text": "An 80 Ω resistor is connected to it in series"
+   },
+   {
+    "letter": "C",
+    "text": "A 150 Ω resistor is connected to it in parallel"
+   },
+   {
+    "letter": "D",
+    "text": "A 240 Ω resistor is connected to it in series"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 45,
+  "stem": "PHCN (or utility companies) measures its electrical energy in:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "W"
+   },
+   {
+    "letter": "B",
+    "text": "kWh"
+   },
+   {
+    "letter": "C",
+    "text": "Wh"
+   },
+   {
+    "letter": "D",
+    "text": "J"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 46,
+  "stem": "What is the best method of demagnetizing a steel bar magnet?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Hammering"
+   },
+   {
+    "letter": "B",
+    "text": "Heating it"
+   },
+   {
+    "letter": "C",
+    "text": "Rough handling it"
+   },
+   {
+    "letter": "D",
+    "text": "Solenoid method with alternating current"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 47,
+  "stem": "The magnitude of the angle of dip at the equator is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "360°"
+   },
+   {
+    "letter": "B",
+    "text": "0°"
+   },
+   {
+    "letter": "C",
+    "text": "90°"
+   },
+   {
+    "letter": "D",
+    "text": "180°"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 48,
+  "stem": "Calculate the mass of copper deposited during electrolysis when a current of 4 A passes through a copper salt for 2 hours (z = 3.3 x 10⁻⁷ kg/C).",
+  "options": [
+   {
+    "letter": "A",
+    "text": "2.9 x 10⁵ kg"
+   },
+   {
+    "letter": "B",
+    "text": "9.5 x 10⁻⁷ kg"
+   },
+   {
+    "letter": "C",
+    "text": "9.5 x 10⁻³ kg"
+   },
+   {
+    "letter": "D",
+    "text": "2.9 x 10⁴ kg"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 49,
+  "stem": "The sum of all currents flowing into a junction is equal to the sum of the currents flowing out. This is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Ohm's Law"
+   },
+   {
+    "letter": "B",
+    "text": "Faraday's Law"
+   },
+   {
+    "letter": "C",
+    "text": "Kirchhoff's Current Law"
+   },
+   {
+    "letter": "D",
+    "text": "Bragg's Law"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 50,
+  "stem": "An inductance coil of 0.8 H is connected to a circuit with an alternating AC source of 50 Hz. The reactance of the coil is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "80 Ω"
+   },
+   {
+    "letter": "B",
+    "text": "40 Ω"
+   },
+   {
+    "letter": "C",
+    "text": "251.4 Ω"
+   },
+   {
+    "letter": "D",
+    "text": "40 x 10⁻³ Ω"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 51,
+  "stem": "A transformer with 600 turns of coil in the primary arm and 30 turns of secondary coil carries a current of 0.65 A in the primary arm. The current in the secondary coil is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "0.033 A"
+   },
+   {
+    "letter": "B",
+    "text": "20 A"
+   },
+   {
+    "letter": "C",
+    "text": "5 A"
+   },
+   {
+    "letter": "D",
+    "text": "13 A"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 52,
+  "stem": "Two resistances joined in parallel produced a resultant of 6/5 Ω. One of the resistance wires is broken and the effective resistance becomes 2 Ω. The resistance of the broken wire is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "2 Ω"
+   },
+   {
+    "letter": "B",
+    "text": "3 Ω"
+   },
+   {
+    "letter": "C",
+    "text": "3/5 Ω"
+   },
+   {
+    "letter": "D",
+    "text": "0.6/5 Ω"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 53,
+  "stem": "A 1000 W appliance is used 10 hours a day for 8 days per month. If the cost of electricity is N0.10 a kWh, how much does it cost to operate the appliance for a month?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "N10"
+   },
+   {
+    "letter": "B",
+    "text": "N8"
+   },
+   {
+    "letter": "C",
+    "text": "N67"
+   },
+   {
+    "letter": "D",
+    "text": "N200"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 54,
+  "stem": "In a transformer, the number of turns of the primary coil and secondary coil are 5 and 4 respectively. If 220 V is applied on the primary coil, the ratio of primary current to the secondary current will be:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "4:5"
+   },
+   {
+    "letter": "B",
+    "text": "5:4"
+   },
+   {
+    "letter": "C",
+    "text": "5:9"
+   },
+   {
+    "letter": "D",
+    "text": "9:5"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 55,
+  "stem": "When an atom undergoes a beta decay, the atomic number of the nucleus:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Remains unchanged"
+   },
+   {
+    "letter": "B",
+    "text": "Decreases by one"
+   },
+   {
+    "letter": "C",
+    "text": "Increases by one"
+   },
+   {
+    "letter": "D",
+    "text": "Becomes zero"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 56,
+  "stem": "In a common emitter configuration, the output voltage is through the:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Resistor"
+   },
+   {
+    "letter": "B",
+    "text": "Base"
+   },
+   {
+    "letter": "C",
+    "text": "Collector"
+   },
+   {
+    "letter": "D",
+    "text": "Emitter"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 57,
+  "stem": "When Lead-210 (atomic number 82) decays to Lead-206 (atomic number 80), it emits:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Two alpha and two beta particles"
+   },
+   {
+    "letter": "B",
+    "text": "An alpha particle"
+   },
+   {
+    "letter": "C",
+    "text": "One beta particle"
+   },
+   {
+    "letter": "D",
+    "text": "One alpha and two beta particles"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 58,
+  "stem": "What type of reaction is represented by the equation: 2H + 2H → 3He + 1n + Energy?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Ionization"
+   },
+   {
+    "letter": "B",
+    "text": "Fusion"
+   },
+   {
+    "letter": "C",
+    "text": "Fission"
+   },
+   {
+    "letter": "D",
+    "text": "Chain reaction"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 59,
+  "stem": "Cathode rays cause an object placed behind a perforated anode to cast a shadow on the screen. This observation shows that the rays:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Are positively charged"
+   },
+   {
+    "letter": "B",
+    "text": "Are negatively charged"
+   },
+   {
+    "letter": "C",
+    "text": "Have mass"
+   },
+   {
+    "letter": "D",
+    "text": "Travel in straight lines"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 60,
+  "stem": "The fundamental difference between the three states of matter is the:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Shape of their particles"
+   },
+   {
+    "letter": "B",
+    "text": "Number of particles in each state"
+   },
+   {
+    "letter": "C",
+    "text": "Shape of the container they occupy"
+   },
+   {
+    "letter": "D",
+    "text": "Degree of movement of their particles"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 61,
+  "stem": "A particle that contains 9 protons, 10 neutrons, and 10 electrons is a:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Positive ion"
+   },
+   {
+    "letter": "B",
+    "text": "Neutral atom of a metal"
+   },
+   {
+    "letter": "C",
+    "text": "Neutral atom of a non-metal"
+   },
+   {
+    "letter": "D",
+    "text": "Negative ion"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 62,
+  "stem": "Which of these is/are rechargeable?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Leclanche cell only"
+   },
+   {
+    "letter": "B",
+    "text": "Lead-acid accumulator only"
+   },
+   {
+    "letter": "C",
+    "text": "Both Leclanche and Lead-acid"
+   },
+   {
+    "letter": "D",
+    "text": "Dry cell"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 63,
+  "stem": "To produce direct current from a dynamo, we use:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Two slip rings"
+   },
+   {
+    "letter": "B",
+    "text": "A split ring (commutator)"
+   },
+   {
+    "letter": "C",
+    "text": "One slip ring"
+   },
+   {
+    "letter": "D",
+    "text": "Two split rings"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 64,
+  "stem": "Which of these will obey Ohm's law when connected to the terminals of a battery?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Tungsten wire"
+   },
+   {
+    "letter": "B",
+    "text": "Diode"
+   },
+   {
+    "letter": "C",
+    "text": "Electrolyte"
+   },
+   {
+    "letter": "D",
+    "text": "Transistor"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 65,
+  "stem": "A 50 kg mass is lifted up 5 meters in 5 seconds. If acceleration due to gravity is 10 m/s², the power utilized is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "200 W"
+   },
+   {
+    "letter": "B",
+    "text": "500 W"
+   },
+   {
+    "letter": "C",
+    "text": "250 W"
+   },
+   {
+    "letter": "D",
+    "text": "100 W"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 66,
+  "stem": "The energy in the nucleus of atoms produces heat which can be used to generate:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Kinetic energy"
+   },
+   {
+    "letter": "B",
+    "text": "Mechanical energy"
+   },
+   {
+    "letter": "C",
+    "text": "Electrical energy"
+   },
+   {
+    "letter": "D",
+    "text": "Potential energy"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 67,
+  "stem": "Calculate the resonance frequency of a circuit with a 4 H inductance coil and a 2 µF capacitor in series.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "56.0 Hz"
+   },
+   {
+    "letter": "B",
+    "text": "0.018 Hz"
+   },
+   {
+    "letter": "C",
+    "text": "0.02 Hz"
+   },
+   {
+    "letter": "D",
+    "text": "100 Hz"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 68,
+  "stem": "A crane lifts a load of weight 54500 N through a height of 15 m in 10 seconds. What is the power of the crane?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "3350 W"
+   },
+   {
+    "letter": "B",
+    "text": "4225 W"
+   },
+   {
+    "letter": "C",
+    "text": "6750 W"
+   },
+   {
+    "letter": "D",
+    "text": "81750 W"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 69,
+  "stem": "The period of an oscillating body is 0.08 sec. Its frequency is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "50 Hz"
+   },
+   {
+    "letter": "B",
+    "text": "78.6 Hz"
+   },
+   {
+    "letter": "C",
+    "text": "12.5 Hz"
+   },
+   {
+    "letter": "D",
+    "text": "70 Hz"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Physics",
+  "num": 70,
+  "stem": "If the force on a charge of 0.3 coulombs in an electric field is 4 N, then the electric field intensity of the field is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "13.3 N/C"
+   },
+   {
+    "letter": "B",
+    "text": "0.75 N/C"
+   },
+   {
+    "letter": "C",
+    "text": "3.7 N/C"
+   },
+   {
+    "letter": "D",
+    "text": "1.2 N/C"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 1,
+  "stem": "A tissue is composed of a group of:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Similar cells"
+   },
+   {
+    "letter": "B",
+    "text": "Tissues"
+   },
+   {
+    "letter": "C",
+    "text": "Systems"
+   },
+   {
+    "letter": "D",
+    "text": "Related organs"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 2,
+  "stem": "The population of different organisms that exist together in a habitat is called a:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Biome"
+   },
+   {
+    "letter": "B",
+    "text": "Biosphere"
+   },
+   {
+    "letter": "C",
+    "text": "Community"
+   },
+   {
+    "letter": "D",
+    "text": "Ecology"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 3,
+  "stem": "Which of the following serves as the brain box in man?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Skeleton"
+   },
+   {
+    "letter": "B",
+    "text": "Skull"
+   },
+   {
+    "letter": "C",
+    "text": "Head"
+   },
+   {
+    "letter": "D",
+    "text": "Spinal column"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 4,
+  "stem": "Which organ removes the largest amount of excess water from the body?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Liver"
+   },
+   {
+    "letter": "B",
+    "text": "Lungs"
+   },
+   {
+    "letter": "C",
+    "text": "Kidney"
+   },
+   {
+    "letter": "D",
+    "text": "Skin"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 5,
+  "stem": "The following parts are involved in the breathing process, except:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Mouth"
+   },
+   {
+    "letter": "B",
+    "text": "Nostrils"
+   },
+   {
+    "letter": "C",
+    "text": "Ribs"
+   },
+   {
+    "letter": "D",
+    "text": "Diaphragm"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 6,
+  "stem": "Which of these is not a sampling method for determining population size?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Capture and re-capture method"
+   },
+   {
+    "letter": "B",
+    "text": "Complete census"
+   },
+   {
+    "letter": "C",
+    "text": "Transect method"
+   },
+   {
+    "letter": "D",
+    "text": "Systematic sampling"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 7,
+  "stem": "A group of organisms of the same kind inhabiting the same environment is called a:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Ecosystem"
+   },
+   {
+    "letter": "B",
+    "text": "Habitat"
+   },
+   {
+    "letter": "C",
+    "text": "Population"
+   },
+   {
+    "letter": "D",
+    "text": "Species"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 8,
+  "stem": "The light-sensitive cells in the human eye are found in the:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Choroid"
+   },
+   {
+    "letter": "B",
+    "text": "Sclerotic layer"
+   },
+   {
+    "letter": "C",
+    "text": "Retina"
+   },
+   {
+    "letter": "D",
+    "text": "Cones"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 9,
+  "stem": "The earliest form of life in the animal kingdom belongs to the phylum:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Amphibia"
+   },
+   {
+    "letter": "B",
+    "text": "Pisces"
+   },
+   {
+    "letter": "C",
+    "text": "Protozoa"
+   },
+   {
+    "letter": "D",
+    "text": "Reptilia"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 10,
+  "stem": "Which of the following diseases is not sexually transmitted?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Gonorrhea"
+   },
+   {
+    "letter": "B",
+    "text": "Herpes"
+   },
+   {
+    "letter": "C",
+    "text": "Influenza"
+   },
+   {
+    "letter": "D",
+    "text": "Syphilis"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 11,
+  "stem": "One of the following diseases is caused by fungi:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Cassava mosaic"
+   },
+   {
+    "letter": "B",
+    "text": "Coffee leaf rust"
+   },
+   {
+    "letter": "C",
+    "text": "Leaf blight of cassava"
+   },
+   {
+    "letter": "D",
+    "text": "Rossette disease of groundnut"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 12,
+  "stem": "The by-product of photosynthesis is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "CO2"
+   },
+   {
+    "letter": "B",
+    "text": "O2"
+   },
+   {
+    "letter": "C",
+    "text": "C6H12O6"
+   },
+   {
+    "letter": "D",
+    "text": "H2O"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 13,
+  "stem": "Gaseous exchange in the mammalian lungs takes place in the:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Alveoli"
+   },
+   {
+    "letter": "B",
+    "text": "Bronchi"
+   },
+   {
+    "letter": "C",
+    "text": "Bronchioles"
+   },
+   {
+    "letter": "D",
+    "text": "Trachea"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 14,
+  "stem": "In eukaryotic cells, cellular respiration takes place in the:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Nucleus"
+   },
+   {
+    "letter": "B",
+    "text": "Cytoplasm"
+   },
+   {
+    "letter": "C",
+    "text": "Centrioles"
+   },
+   {
+    "letter": "D",
+    "text": "Mitochondrion"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 15,
+  "stem": "One of the following causes Ebola fever:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Bacteria"
+   },
+   {
+    "letter": "B",
+    "text": "Fungi"
+   },
+   {
+    "letter": "C",
+    "text": "Protozoa"
+   },
+   {
+    "letter": "D",
+    "text": "Viruses"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 16,
+  "stem": "The theory of survival of the fittest was propounded by:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Charles Darwin"
+   },
+   {
+    "letter": "B",
+    "text": "Robert Hooke"
+   },
+   {
+    "letter": "C",
+    "text": "Jean-Baptiste Lamarck"
+   },
+   {
+    "letter": "D",
+    "text": "Carolus Linnaeus"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 17,
+  "stem": "The deficiency of Vitamin D leads to:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Beriberi"
+   },
+   {
+    "letter": "B",
+    "text": "Pellagra"
+   },
+   {
+    "letter": "C",
+    "text": "Rickets"
+   },
+   {
+    "letter": "D",
+    "text": "Scurvy"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 18,
+  "stem": "One of these is used for excretion in the earthworm:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Contractile vacuole"
+   },
+   {
+    "letter": "B",
+    "text": "Flame cell"
+   },
+   {
+    "letter": "C",
+    "text": "Malpighian tubule"
+   },
+   {
+    "letter": "D",
+    "text": "Nephridium"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 19,
+  "stem": "The following groups of plants are primitive, except:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Bryophyta"
+   },
+   {
+    "letter": "B",
+    "text": "Pteridophyta"
+   },
+   {
+    "letter": "C",
+    "text": "Spermatophyta"
+   },
+   {
+    "letter": "D",
+    "text": "Thallophyta"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 20,
+  "stem": "Which of the following hormonal glands is located on top of the kidney?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Adrenal"
+   },
+   {
+    "letter": "B",
+    "text": "Gonads"
+   },
+   {
+    "letter": "C",
+    "text": "Pancreas"
+   },
+   {
+    "letter": "D",
+    "text": "Thyroid"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 21,
+  "stem": "One of these structures is present in both plant and animal cells:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Cell membrane"
+   },
+   {
+    "letter": "B",
+    "text": "Cell wall"
+   },
+   {
+    "letter": "C",
+    "text": "Chloroplast"
+   },
+   {
+    "letter": "D",
+    "text": "Large central vacuole"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 22,
+  "stem": "When the solute concentration of the cell and its surrounding medium are the same, the solution is said to be:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Hypertonic"
+   },
+   {
+    "letter": "B",
+    "text": "Hypotonic"
+   },
+   {
+    "letter": "C",
+    "text": "Isotonic"
+   },
+   {
+    "letter": "D",
+    "text": "Acidic"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 23,
+  "stem": "The primary consumer in the food chain: Green plants -> Grasshopper -> Lizard -> Snake -> Hawk is the:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Grasshopper"
+   },
+   {
+    "letter": "B",
+    "text": "Green plants"
+   },
+   {
+    "letter": "C",
+    "text": "Hawk"
+   },
+   {
+    "letter": "D",
+    "text": "Lizard"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 24,
+  "stem": "Angiosperms belong to the group:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Bryophyta"
+   },
+   {
+    "letter": "B",
+    "text": "Pteridophyta"
+   },
+   {
+    "letter": "C",
+    "text": "Spermatophyta"
+   },
+   {
+    "letter": "D",
+    "text": "Thallophyta"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 25,
+  "stem": "In the kidney, both useful substances and wastes are removed from the blood by:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Filtration"
+   },
+   {
+    "letter": "B",
+    "text": "Selective absorption"
+   },
+   {
+    "letter": "C",
+    "text": "Dialysis"
+   },
+   {
+    "letter": "D",
+    "text": "Excretion"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 26,
+  "stem": "Which of the following is not part of the mammalian male reproductive organ?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Epididymis"
+   },
+   {
+    "letter": "B",
+    "text": "Vas deferens"
+   },
+   {
+    "letter": "C",
+    "text": "Testis"
+   },
+   {
+    "letter": "D",
+    "text": "Vulva"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 27,
+  "stem": "Which of the following reagents is used for testing the presence of protein in food?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Benedict's solution"
+   },
+   {
+    "letter": "B",
+    "text": "Fehling's solution"
+   },
+   {
+    "letter": "C",
+    "text": "Millon's reagent"
+   },
+   {
+    "letter": "D",
+    "text": "Sudan III"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 28,
+  "stem": "The breaking down of food in the alimentary canal is called:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Digestion"
+   },
+   {
+    "letter": "B",
+    "text": "Egestion"
+   },
+   {
+    "letter": "C",
+    "text": "Excretion"
+   },
+   {
+    "letter": "D",
+    "text": "Ingestion"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 29,
+  "stem": "The following are functions of the kidneys, except:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Regulation of water content in the blood"
+   },
+   {
+    "letter": "B",
+    "text": "Maintenance of blood pH and homeostasis"
+   },
+   {
+    "letter": "C",
+    "text": "Excretion of CO2"
+   },
+   {
+    "letter": "D",
+    "text": "Removal of waste products from the blood"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 30,
+  "stem": "The following activities disrupt the balance in an ecosystem, except:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Afforestation"
+   },
+   {
+    "letter": "B",
+    "text": "Deforestation"
+   },
+   {
+    "letter": "C",
+    "text": "Migration"
+   },
+   {
+    "letter": "D",
+    "text": "Pollution"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 31,
+  "stem": "The following animals are viviparous, except:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Cow"
+   },
+   {
+    "letter": "B",
+    "text": "Dog"
+   },
+   {
+    "letter": "C",
+    "text": "Goat"
+   },
+   {
+    "letter": "D",
+    "text": "Pigeon"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 32,
+  "stem": "The following animals are invertebrates, except:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Flatworms"
+   },
+   {
+    "letter": "B",
+    "text": "Roundworms"
+   },
+   {
+    "letter": "C",
+    "text": "Chordates"
+   },
+   {
+    "letter": "D",
+    "text": "Protozoans"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 33,
+  "stem": "The following are kidney diseases, except:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Diuresis"
+   },
+   {
+    "letter": "B",
+    "text": "Hepatitis"
+   },
+   {
+    "letter": "C",
+    "text": "Nephritis"
+   },
+   {
+    "letter": "D",
+    "text": "Oedema"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 34,
+  "stem": "The glands that release hormones directly into the blood are part of the:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Digestive system"
+   },
+   {
+    "letter": "B",
+    "text": "Endocrine system"
+   },
+   {
+    "letter": "C",
+    "text": "Circulatory system"
+   },
+   {
+    "letter": "D",
+    "text": "Respiratory system"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 35,
+  "stem": "One of the following is called the emergency hormone in man:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Adrenalin"
+   },
+   {
+    "letter": "B",
+    "text": "Prolactin"
+   },
+   {
+    "letter": "C",
+    "text": "Testosterone"
+   },
+   {
+    "letter": "D",
+    "text": "Thyroxine"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 36,
+  "stem": "Which of these responses is not voluntarily controlled by the brain?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Dancing"
+   },
+   {
+    "letter": "B",
+    "text": "Eating"
+   },
+   {
+    "letter": "C",
+    "text": "Sneezing"
+   },
+   {
+    "letter": "D",
+    "text": "Writing"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 37,
+  "stem": "The scientific study of life is called:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Botany"
+   },
+   {
+    "letter": "B",
+    "text": "Biology"
+   },
+   {
+    "letter": "C",
+    "text": "Zoology"
+   },
+   {
+    "letter": "D",
+    "text": "Ecology"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 38,
+  "stem": "The artery supplying the liver with oxygenated blood is called the:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Hepatic artery"
+   },
+   {
+    "letter": "B",
+    "text": "Mesenteric artery"
+   },
+   {
+    "letter": "C",
+    "text": "Renal artery"
+   },
+   {
+    "letter": "D",
+    "text": "Subclavian artery"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 39,
+  "stem": "One of the following organisms exists as a colony:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Euglena"
+   },
+   {
+    "letter": "B",
+    "text": "Paramecium"
+   },
+   {
+    "letter": "C",
+    "text": "Spirogyra"
+   },
+   {
+    "letter": "D",
+    "text": "Volvox"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 40,
+  "stem": "The translucency spot test in food shows the presence of:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Fats"
+   },
+   {
+    "letter": "B",
+    "text": "Starch"
+   },
+   {
+    "letter": "C",
+    "text": "Water"
+   },
+   {
+    "letter": "D",
+    "text": "Protein"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 41,
+  "stem": "The following are examples of oviparous animals, except:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Crocodile"
+   },
+   {
+    "letter": "B",
+    "text": "Dove"
+   },
+   {
+    "letter": "C",
+    "text": "Rat"
+   },
+   {
+    "letter": "D",
+    "text": "Tilapia"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 42,
+  "stem": "The part of the cell that is responsible for the production of energy is the:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Cell membrane"
+   },
+   {
+    "letter": "B",
+    "text": "Cytoplasm"
+   },
+   {
+    "letter": "C",
+    "text": "Mitochondrion"
+   },
+   {
+    "letter": "D",
+    "text": "Nucleus"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 43,
+  "stem": "Hormones that help regulate blood calcium levels are produced by the:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Adrenal gland"
+   },
+   {
+    "letter": "B",
+    "text": "Thyroid gland"
+   },
+   {
+    "letter": "C",
+    "text": "Pancreas"
+   },
+   {
+    "letter": "D",
+    "text": "Parathyroid gland"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 44,
+  "stem": "Which of the following statements is NOT true of a fish?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Respires with the use of gills"
+   },
+   {
+    "letter": "B",
+    "text": "Covered with scales"
+   },
+   {
+    "letter": "C",
+    "text": "They are homeothermic"
+   },
+   {
+    "letter": "D",
+    "text": "They are poikilothermic"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 45,
+  "stem": "Which of the following is NOT a waste product of plants?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Auxins"
+   },
+   {
+    "letter": "B",
+    "text": "Gum"
+   },
+   {
+    "letter": "C",
+    "text": "Resins"
+   },
+   {
+    "letter": "D",
+    "text": "Tannins"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 46,
+  "stem": "An association between bacteria and the root nodules of a legume is an example of:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Commensalism"
+   },
+   {
+    "letter": "B",
+    "text": "Mutualism"
+   },
+   {
+    "letter": "C",
+    "text": "Parasitism"
+   },
+   {
+    "letter": "D",
+    "text": "Saprophytism"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 47,
+  "stem": "Which of these is not detected by the nerve endings of the skin?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Cold"
+   },
+   {
+    "letter": "B",
+    "text": "Pain"
+   },
+   {
+    "letter": "C",
+    "text": "Pressure"
+   },
+   {
+    "letter": "D",
+    "text": "Weakness"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 48,
+  "stem": "Behavioural conditioning was extensively described by:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Felix Dujardin"
+   },
+   {
+    "letter": "B",
+    "text": "Gregor Mendel"
+   },
+   {
+    "letter": "C",
+    "text": "Ivan Pavlov"
+   },
+   {
+    "letter": "D",
+    "text": "Mathias Schleiden"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 49,
+  "stem": "The process by which organisms keep their internal condition relatively stable is called:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Metabolism"
+   },
+   {
+    "letter": "B",
+    "text": "Evolution"
+   },
+   {
+    "letter": "C",
+    "text": "Gametogenesis"
+   },
+   {
+    "letter": "D",
+    "text": "Homeostasis"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 50,
+  "stem": "The following exist as free-living organisms, except:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Amoeba"
+   },
+   {
+    "letter": "B",
+    "text": "Chlamydomonas"
+   },
+   {
+    "letter": "C",
+    "text": "Euglena"
+   },
+   {
+    "letter": "D",
+    "text": "Spirogyra (filamentous)"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 51,
+  "stem": "The basic functional unit of the kidney is the:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Nephron"
+   },
+   {
+    "letter": "B",
+    "text": "Bowman's capsule"
+   },
+   {
+    "letter": "C",
+    "text": "Glomerulus"
+   },
+   {
+    "letter": "D",
+    "text": "Loop of Henle"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 52,
+  "stem": "Snails belong to the phylum:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Annelida"
+   },
+   {
+    "letter": "B",
+    "text": "Mollusca"
+   },
+   {
+    "letter": "C",
+    "text": "Echinodermata"
+   },
+   {
+    "letter": "D",
+    "text": "Nematoda"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 53,
+  "stem": "Which of the following is not a pest of agricultural crops?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Bird"
+   },
+   {
+    "letter": "B",
+    "text": "Rodent"
+   },
+   {
+    "letter": "C",
+    "text": "Bed bug"
+   },
+   {
+    "letter": "D",
+    "text": "Grasshopper"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 54,
+  "stem": "Another name for a fertilized egg is a:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Placenta"
+   },
+   {
+    "letter": "B",
+    "text": "Zygote"
+   },
+   {
+    "letter": "C",
+    "text": "Foetus"
+   },
+   {
+    "letter": "D",
+    "text": "Ovum"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 55,
+  "stem": "Plants that survive in marine (saltwater) habitats are called:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Halophytes"
+   },
+   {
+    "letter": "B",
+    "text": "Hydrophytes"
+   },
+   {
+    "letter": "C",
+    "text": "Mesophytes"
+   },
+   {
+    "letter": "D",
+    "text": "Xerophytes"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 56,
+  "stem": "The study of plants is called:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Zoology"
+   },
+   {
+    "letter": "B",
+    "text": "Entomology"
+   },
+   {
+    "letter": "C",
+    "text": "Parasitology"
+   },
+   {
+    "letter": "D",
+    "text": "Botany"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 57,
+  "stem": "The following are examples of air-borne diseases, except:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Chicken pox"
+   },
+   {
+    "letter": "B",
+    "text": "Cholera"
+   },
+   {
+    "letter": "C",
+    "text": "Common cold"
+   },
+   {
+    "letter": "D",
+    "text": "Whooping cough"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 58,
+  "stem": "Which of the following is an end product of the digestion of oils and fats?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Glucose"
+   },
+   {
+    "letter": "B",
+    "text": "Glycerol"
+   },
+   {
+    "letter": "C",
+    "text": "Amino acid"
+   },
+   {
+    "letter": "D",
+    "text": "Glycogen"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 59,
+  "stem": "The part that supplies food and oxygen from the mother to the foetus is the:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Amnion"
+   },
+   {
+    "letter": "B",
+    "text": "Chorion"
+   },
+   {
+    "letter": "C",
+    "text": "Umbilical Cord"
+   },
+   {
+    "letter": "D",
+    "text": "Placenta"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 60,
+  "stem": "Which of these is NOT a part of the human eye?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Cochlea"
+   },
+   {
+    "letter": "B",
+    "text": "Conjunctiva"
+   },
+   {
+    "letter": "C",
+    "text": "Cornea"
+   },
+   {
+    "letter": "D",
+    "text": "Iris"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 61,
+  "stem": "De-oxygenated blood is transported from the heart to the lungs through the:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Renal vein"
+   },
+   {
+    "letter": "B",
+    "text": "Hepatic portal vein"
+   },
+   {
+    "letter": "C",
+    "text": "Pulmonary artery"
+   },
+   {
+    "letter": "D",
+    "text": "Pulmonary vein"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 62,
+  "stem": "The basic structural and functional unit of life is the:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Cell"
+   },
+   {
+    "letter": "B",
+    "text": "Tissue"
+   },
+   {
+    "letter": "C",
+    "text": "Organ"
+   },
+   {
+    "letter": "D",
+    "text": "System"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 63,
+  "stem": "The following are examples of a true fruit, except:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Mango"
+   },
+   {
+    "letter": "B",
+    "text": "Oil palm"
+   },
+   {
+    "letter": "C",
+    "text": "Orange"
+   },
+   {
+    "letter": "D",
+    "text": "Pineapple"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 64,
+  "stem": "The vector that transmits the trypanosome parasite is the:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Butterfly"
+   },
+   {
+    "letter": "B",
+    "text": "Housefly"
+   },
+   {
+    "letter": "C",
+    "text": "Mosquito"
+   },
+   {
+    "letter": "D",
+    "text": "Tsetse fly"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 65,
+  "stem": "The following are ductless (endocrine) glands, except the:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Adrenal gland"
+   },
+   {
+    "letter": "B",
+    "text": "Pancreas"
+   },
+   {
+    "letter": "C",
+    "text": "Parathyroid"
+   },
+   {
+    "letter": "D",
+    "text": "Salivary gland"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 66,
+  "stem": "White blood cells are also scientifically known as:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Erythrocytes"
+   },
+   {
+    "letter": "B",
+    "text": "Leucocytes"
+   },
+   {
+    "letter": "C",
+    "text": "Lymphocytes"
+   },
+   {
+    "letter": "D",
+    "text": "Phagocytes"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 67,
+  "stem": "The removal of remnant, undigested particles of food from the body is called:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Assimilation"
+   },
+   {
+    "letter": "B",
+    "text": "Egestion"
+   },
+   {
+    "letter": "C",
+    "text": "Elimination"
+   },
+   {
+    "letter": "D",
+    "text": "Excretion"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 68,
+  "stem": "The enzyme ptyalin acts on starch primarily in the:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Oesophagus"
+   },
+   {
+    "letter": "B",
+    "text": "Large intestine"
+   },
+   {
+    "letter": "C",
+    "text": "Mouth"
+   },
+   {
+    "letter": "D",
+    "text": "Stomach"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 69,
+  "stem": "The structure that carries genetic information from parent to offspring is the:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Ribosome"
+   },
+   {
+    "letter": "B",
+    "text": "Lysosome"
+   },
+   {
+    "letter": "C",
+    "text": "Chromosome"
+   },
+   {
+    "letter": "D",
+    "text": "Golgi body"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Biology",
+  "num": 70,
+  "stem": "The genotype of an individual who is a carrier of the sickle cell trait is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "AA"
+   },
+   {
+    "letter": "B",
+    "text": "AS"
+   },
+   {
+    "letter": "C",
+    "text": "SS"
+   },
+   {
+    "letter": "D",
+    "text": "SC"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 1,
+  "stem": "Find the value of 110111₂ + 10100₂.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "1101011₂"
+   },
+   {
+    "letter": "B",
+    "text": "1001001₂"
+   },
+   {
+    "letter": "C",
+    "text": "1001011₂"
+   },
+   {
+    "letter": "D",
+    "text": "1001111₂"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 2,
+  "stem": "A woman bought a grinder for N60,000. She sold it at a loss of 15%. How much did she sell it?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "N53,000"
+   },
+   {
+    "letter": "B",
+    "text": "N52,000"
+   },
+   {
+    "letter": "C",
+    "text": "N51,000"
+   },
+   {
+    "letter": "D",
+    "text": "N50,000"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 3,
+  "stem": "Express the product of 0.00043 and 2000 in standard form.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "8.6 x 10⁻³"
+   },
+   {
+    "letter": "B",
+    "text": "8.3 x 10⁻²"
+   },
+   {
+    "letter": "C",
+    "text": "8.6 x 10⁻¹"
+   },
+   {
+    "letter": "D",
+    "text": "8.6 x 10¹"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 4,
+  "stem": "A man donates 10% of his monthly net earnings to his church. If it amounts to N4,500, what is his net monthly income?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "N40,500"
+   },
+   {
+    "letter": "B",
+    "text": "N45,000"
+   },
+   {
+    "letter": "C",
+    "text": "N52,500"
+   },
+   {
+    "letter": "D",
+    "text": "N62,000"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 5,
+  "stem": "If log 7.5 = 0.8751, evaluate 2 log 75 + log 750.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "6.6252"
+   },
+   {
+    "letter": "B",
+    "text": "6.6253"
+   },
+   {
+    "letter": "C",
+    "text": "66.252"
+   },
+   {
+    "letter": "D",
+    "text": "66.253"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 6,
+  "stem": "Solve for x in 8x⁻² = 2/25.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "4"
+   },
+   {
+    "letter": "B",
+    "text": "6"
+   },
+   {
+    "letter": "C",
+    "text": "8"
+   },
+   {
+    "letter": "D",
+    "text": "10"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 7,
+  "stem": "Simplify (2√2 - √3) / (√2 + √3).",
+  "options": [
+   {
+    "letter": "A",
+    "text": "3√6 - 7"
+   },
+   {
+    "letter": "B",
+    "text": "3√6 + 7"
+   },
+   {
+    "letter": "C",
+    "text": "3√6 - 1"
+   },
+   {
+    "letter": "D",
+    "text": "3√6 + 1"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 8,
+  "stem": "Evaluate Log₂ 8 + Log₂ 16 - Log₂ 4.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "3"
+   },
+   {
+    "letter": "B",
+    "text": "4"
+   },
+   {
+    "letter": "C",
+    "text": "5"
+   },
+   {
+    "letter": "D",
+    "text": "6"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 9,
+  "stem": "If P = {1, 2, 3, 4, 5} and P ∪ Q = {1, 2, 3, 4, 5, 6, 7}, list the elements in Q.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "{6}"
+   },
+   {
+    "letter": "B",
+    "text": "{7}"
+   },
+   {
+    "letter": "C",
+    "text": "{6, 7}"
+   },
+   {
+    "letter": "D",
+    "text": "{5, 6}"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 10,
+  "stem": "If gt² - k - w = 0, make g the subject of the formula.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "(k + w) / t²"
+   },
+   {
+    "letter": "B",
+    "text": "(k - w) / t²"
+   },
+   {
+    "letter": "C",
+    "text": "(k + w) / t"
+   },
+   {
+    "letter": "D",
+    "text": "(k - w) / t"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 11,
+  "stem": "Factorize 2y² - 15xy + 18x².",
+  "options": [
+   {
+    "letter": "A",
+    "text": "(2y - 3x)(y + 6x)"
+   },
+   {
+    "letter": "B",
+    "text": "(2y - 3x)(y - 6x)"
+   },
+   {
+    "letter": "C",
+    "text": "(2y + 3x)(y - 6x)"
+   },
+   {
+    "letter": "D",
+    "text": "(3y + 2x)(y - 6x)"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 12,
+  "stem": "Find the value of k if y - 1 is a factor of y³ + 4y² + ky - 6.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "-6"
+   },
+   {
+    "letter": "B",
+    "text": "-2"
+   },
+   {
+    "letter": "C",
+    "text": "1"
+   },
+   {
+    "letter": "D",
+    "text": "2"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 13,
+  "stem": "y varies directly as w². When y = 8, w = 2. Find y when w = 3.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "18"
+   },
+   {
+    "letter": "B",
+    "text": "12"
+   },
+   {
+    "letter": "C",
+    "text": "9"
+   },
+   {
+    "letter": "D",
+    "text": "6"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 14,
+  "stem": "P varies directly as Q and inversely as R. When Q = 36 and R = 16, P = 27. Find the relation between P, Q and R.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "P = Q / (12R)"
+   },
+   {
+    "letter": "B",
+    "text": "P = 12Q / R"
+   },
+   {
+    "letter": "C",
+    "text": "P = 12QR"
+   },
+   {
+    "letter": "D",
+    "text": "P = 12 / (QR)"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 15,
+  "stem": "What is the solution of (x - 5) / (x + 3) < -1?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "-3 < x < 1"
+   },
+   {
+    "letter": "B",
+    "text": "x < -3 or x > 1"
+   },
+   {
+    "letter": "C",
+    "text": "-3 < x < 5"
+   },
+   {
+    "letter": "D",
+    "text": "x < -3 or x > 5"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 16,
+  "stem": "Evaluate the inequality x/2 + 3/4 ≤ 5x/6 - 7/12.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "x ≥ 4"
+   },
+   {
+    "letter": "B",
+    "text": "x ≤ 3"
+   },
+   {
+    "letter": "C",
+    "text": "x ≥ -3"
+   },
+   {
+    "letter": "D",
+    "text": "x ≤ -4"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 17,
+  "stem": "The 4th term of an A.P. is 13 while the 10th term is 31. Find the 24th term.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "89"
+   },
+   {
+    "letter": "B",
+    "text": "75"
+   },
+   {
+    "letter": "C",
+    "text": "73"
+   },
+   {
+    "letter": "D",
+    "text": "69"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 18,
+  "stem": "What is the common ratio of the G.P. (√10 + √5) + (√10 + 2√5) + ...?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "√2"
+   },
+   {
+    "letter": "B",
+    "text": "√5"
+   },
+   {
+    "letter": "C",
+    "text": "3"
+   },
+   {
+    "letter": "D",
+    "text": "5"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 19,
+  "stem": "A binary operation * is defined by x * y = x^y. If x * 2 = 12 - x, find the possible values of x.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "3, 4"
+   },
+   {
+    "letter": "B",
+    "text": "3, -4"
+   },
+   {
+    "letter": "C",
+    "text": "-3, 4"
+   },
+   {
+    "letter": "D",
+    "text": "-3, -4"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 20,
+  "stem": "Find the value of x if the determinant of the 2x2 matrix [-x, 12; -1, 4] is -12.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "-6"
+   },
+   {
+    "letter": "B",
+    "text": "-2"
+   },
+   {
+    "letter": "C",
+    "text": "3"
+   },
+   {
+    "letter": "D",
+    "text": "6"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 21,
+  "stem": "How many sides has a regular polygon whose interior angle is 135°?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "12"
+   },
+   {
+    "letter": "B",
+    "text": "10"
+   },
+   {
+    "letter": "C",
+    "text": "9"
+   },
+   {
+    "letter": "D",
+    "text": "8"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 22,
+  "stem": "A cylindrical tank has a capacity of 6160 m³. What is the depth of the tank if the radius of its base is 28 m? (Take π = 22/7)",
+  "options": [
+   {
+    "letter": "A",
+    "text": "8.0 m"
+   },
+   {
+    "letter": "B",
+    "text": "7.5 m"
+   },
+   {
+    "letter": "C",
+    "text": "5.0 m"
+   },
+   {
+    "letter": "D",
+    "text": "2.5 m"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 23,
+  "stem": "The locus of a dog tethered to a pole with a rope of 4m is a:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Circle with diameter 4m"
+   },
+   {
+    "letter": "B",
+    "text": "Circle with radius 4m"
+   },
+   {
+    "letter": "C",
+    "text": "Semi-circle with diameter 4m"
+   },
+   {
+    "letter": "D",
+    "text": "Semi-circle with radius 4m"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 24,
+  "stem": "Find the mid-point of S(-5, 4) and T(-3, -2).",
+  "options": [
+   {
+    "letter": "A",
+    "text": "(-4, 2)"
+   },
+   {
+    "letter": "B",
+    "text": "(4, -2)"
+   },
+   {
+    "letter": "C",
+    "text": "(-4, 1)"
+   },
+   {
+    "letter": "D",
+    "text": "(4, -1)"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 25,
+  "stem": "The gradient of a line joining (x, 4) and (1, 2) is 1/2. Find the value of x.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "5"
+   },
+   {
+    "letter": "B",
+    "text": "3"
+   },
+   {
+    "letter": "C",
+    "text": "-3"
+   },
+   {
+    "letter": "D",
+    "text": "-5"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 26,
+  "stem": "Find the equation of the straight line passing through (-2, 3) and perpendicular to 4x + 3y - 5 = 0.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "3x - 4y + 18 = 0"
+   },
+   {
+    "letter": "B",
+    "text": "3x + 2y - 18 = 0"
+   },
+   {
+    "letter": "C",
+    "text": "4x + 5y + 3 = 0"
+   },
+   {
+    "letter": "D",
+    "text": "5x - 2y - 11 = 0"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 27,
+  "stem": "If sin θ = 12/13, find the value of 1 + cos θ (for acute θ).",
+  "options": [
+   {
+    "letter": "A",
+    "text": "25/13"
+   },
+   {
+    "letter": "B",
+    "text": "18/13"
+   },
+   {
+    "letter": "C",
+    "text": "8/13"
+   },
+   {
+    "letter": "D",
+    "text": "5/13"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 28,
+  "stem": "If y = 4x³ - 2x² + x, find dy/dx.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "8x² - 2x + 1"
+   },
+   {
+    "letter": "B",
+    "text": "8x² - 4x + 1"
+   },
+   {
+    "letter": "C",
+    "text": "12x² - 2x + 1"
+   },
+   {
+    "letter": "D",
+    "text": "12x² - 4x + 1"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 29,
+  "stem": "If y = cos 3x, find dy/dx.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "1/3 sin 3x"
+   },
+   {
+    "letter": "B",
+    "text": "-1/3 sin 3x"
+   },
+   {
+    "letter": "C",
+    "text": "3 sin 3x"
+   },
+   {
+    "letter": "D",
+    "text": "-3 sin 3x"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 30,
+  "stem": "Find the minimum value of y = x² - 2x - 3.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "4"
+   },
+   {
+    "letter": "B",
+    "text": "1"
+   },
+   {
+    "letter": "C",
+    "text": "-1"
+   },
+   {
+    "letter": "D",
+    "text": "-4"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 31,
+  "stem": "Evaluate the integral of sin 2x dx.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "cos 2x + k"
+   },
+   {
+    "letter": "B",
+    "text": "1/2 cos 2x + k"
+   },
+   {
+    "letter": "C",
+    "text": "-1/2 cos 2x + k"
+   },
+   {
+    "letter": "D",
+    "text": "-cos 2x + k"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 32,
+  "stem": "Evaluate the integral of (2x + 3)^(1/2) dx.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "1/12 (2x + 3)^6 + k"
+   },
+   {
+    "letter": "B",
+    "text": "1/3 (2x + 3)^(1/2) + k"
+   },
+   {
+    "letter": "C",
+    "text": "1/3 (2x + 3)^(3/2) + k"
+   },
+   {
+    "letter": "D",
+    "text": "1/12 (2x + 3)^(3/4) + k"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 33,
+  "stem": "The mean of 2 - t, 4 + t, 3 - 2t and 2 + t, t - 1 is: (sum of 5 items)",
+  "options": [
+   {
+    "letter": "A",
+    "text": "t"
+   },
+   {
+    "letter": "B",
+    "text": "-t"
+   },
+   {
+    "letter": "C",
+    "text": "2"
+   },
+   {
+    "letter": "D",
+    "text": "-2"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 34,
+  "stem": "Find the median of 5, 9, 1, 10, 3, 8, 9, 2, 4, 5, 5, 7, 3 and 6.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "6"
+   },
+   {
+    "letter": "B",
+    "text": "5"
+   },
+   {
+    "letter": "C",
+    "text": "4"
+   },
+   {
+    "letter": "D",
+    "text": "3"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 35,
+  "stem": "Find the standard deviation of 5, 4, 3, 2, 1.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "√2"
+   },
+   {
+    "letter": "B",
+    "text": "√3"
+   },
+   {
+    "letter": "C",
+    "text": "√6"
+   },
+   {
+    "letter": "D",
+    "text": "√10"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 36,
+  "stem": "In how many ways can a team of 3 girls be selected from 7 girls?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "7! / 3!"
+   },
+   {
+    "letter": "B",
+    "text": "7! / 4!"
+   },
+   {
+    "letter": "C",
+    "text": "7! / (3! 4!)"
+   },
+   {
+    "letter": "D",
+    "text": "7! / (2! 5!)"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 37,
+  "stem": "A die is thrown 100 times. The frequencies of 1 to 6 are 18, 22, 20, 16, 10, 14 respectively. What is the probability of obtaining at least a 4?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "1/5"
+   },
+   {
+    "letter": "B",
+    "text": "1/2"
+   },
+   {
+    "letter": "C",
+    "text": "2/5"
+   },
+   {
+    "letter": "D",
+    "text": "3/4"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 38,
+  "stem": "A number is chosen at random from 10 to 30 both inclusive. What is the probability that the number is divisible by 3?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "2/15"
+   },
+   {
+    "letter": "B",
+    "text": "1/10"
+   },
+   {
+    "letter": "C",
+    "text": "1/3"
+   },
+   {
+    "letter": "D",
+    "text": "2/5"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 39,
+  "stem": "A pie chart shows a man's monthly salary distribution. If he spent N8,000 on rice (represented by an 80° sector), how much did he spend on yam (represented by a 160° sector)?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "N42,000"
+   },
+   {
+    "letter": "B",
+    "text": "N18,000"
+   },
+   {
+    "letter": "C",
+    "text": "N16,000"
+   },
+   {
+    "letter": "D",
+    "text": "N12,000"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 40,
+  "stem": "What is the equation of the line that passes through the y-axis at (0, 5) and the x-axis at (5, 0)?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "y = x + 5"
+   },
+   {
+    "letter": "B",
+    "text": "y = -x + 5"
+   },
+   {
+    "letter": "C",
+    "text": "y = x - 5"
+   },
+   {
+    "letter": "D",
+    "text": "y = -x - 5"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 41,
+  "stem": "Find the sum of the first 8 terms of the G.P: 4, 8, 16, ...",
+  "options": [
+   {
+    "letter": "A",
+    "text": "34"
+   },
+   {
+    "letter": "B",
+    "text": "1024"
+   },
+   {
+    "letter": "C",
+    "text": "512"
+   },
+   {
+    "letter": "D",
+    "text": "1020"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 42,
+  "stem": "Solve the simultaneous equations 2x - 3y = 1 and 5x + 2y = 8. Find x² - xy.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "16"
+   },
+   {
+    "letter": "B",
+    "text": "32"
+   },
+   {
+    "letter": "C",
+    "text": "6"
+   },
+   {
+    "letter": "D",
+    "text": "8"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 43,
+  "stem": "If 132 in base X equals 42 in base 10, find X.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "6"
+   },
+   {
+    "letter": "B",
+    "text": "5"
+   },
+   {
+    "letter": "C",
+    "text": "8"
+   },
+   {
+    "letter": "D",
+    "text": "4"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 44,
+  "stem": "The sum of angles in a triangle is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Two right angles"
+   },
+   {
+    "letter": "B",
+    "text": "Three right angles"
+   },
+   {
+    "letter": "C",
+    "text": "Four right angles"
+   },
+   {
+    "letter": "D",
+    "text": "One right angle"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 45,
+  "stem": "Which of the following numbers is prime?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "117"
+   },
+   {
+    "letter": "B",
+    "text": "147"
+   },
+   {
+    "letter": "C",
+    "text": "159"
+   },
+   {
+    "letter": "D",
+    "text": "149"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 46,
+  "stem": "The eighth term of the arithmetic progression 9, 6, 3, 0... is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "8"
+   },
+   {
+    "letter": "B",
+    "text": "-12"
+   },
+   {
+    "letter": "C",
+    "text": "-14"
+   },
+   {
+    "letter": "D",
+    "text": "6"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 47,
+  "stem": "The expression log 2 + log 7 - log 14 is equal to:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Log 2"
+   },
+   {
+    "letter": "B",
+    "text": "Log 7"
+   },
+   {
+    "letter": "C",
+    "text": "Log 3"
+   },
+   {
+    "letter": "D",
+    "text": "0 (or Log 1)"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 48,
+  "stem": "Two numbers are such that their sum is 18. If one is 8 greater than the other, find the numbers.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "13 and 5"
+   },
+   {
+    "letter": "B",
+    "text": "10 and 8"
+   },
+   {
+    "letter": "C",
+    "text": "-13 and 5"
+   },
+   {
+    "letter": "D",
+    "text": "-10 and 8"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 49,
+  "stem": "For what values of x is the expression (x² - 4x) / (x² + x - 2) undefined?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "-2, 1"
+   },
+   {
+    "letter": "B",
+    "text": "-3, 2"
+   },
+   {
+    "letter": "C",
+    "text": "-1, 4"
+   },
+   {
+    "letter": "D",
+    "text": "-5, 2"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 50,
+  "stem": "The bearing of A from B is N10°W. Find the bearing of B from A.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "170°"
+   },
+   {
+    "letter": "B",
+    "text": "180°"
+   },
+   {
+    "letter": "C",
+    "text": "165°"
+   },
+   {
+    "letter": "D",
+    "text": "120°"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 51,
+  "stem": "If the mean of 5, x, 8, 14, 10, 16 is 10, find the median.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "12"
+   },
+   {
+    "letter": "B",
+    "text": "9"
+   },
+   {
+    "letter": "C",
+    "text": "11"
+   },
+   {
+    "letter": "D",
+    "text": "13"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 52,
+  "stem": "The first term of an A.P is 3. If the sum of the first 8 terms is 80, then the common difference is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "2"
+   },
+   {
+    "letter": "B",
+    "text": "7"
+   },
+   {
+    "letter": "C",
+    "text": "9"
+   },
+   {
+    "letter": "D",
+    "text": "4"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 53,
+  "stem": "Find x if log_x 64 = 3.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "-8"
+   },
+   {
+    "letter": "B",
+    "text": "5"
+   },
+   {
+    "letter": "C",
+    "text": "8"
+   },
+   {
+    "letter": "D",
+    "text": "4"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 54,
+  "stem": "The gradient of the straight line joining the points (5, -7) and (-2, -3) is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "-4/7"
+   },
+   {
+    "letter": "B",
+    "text": "4/7"
+   },
+   {
+    "letter": "C",
+    "text": "-7/4"
+   },
+   {
+    "letter": "D",
+    "text": "7/4"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 55,
+  "stem": "Factorize completely: x + y - ax - ay",
+  "options": [
+   {
+    "letter": "A",
+    "text": "(x - y)(1 - a)"
+   },
+   {
+    "letter": "B",
+    "text": "(x + y)(1 - a)"
+   },
+   {
+    "letter": "C",
+    "text": "(x + y)(a + 1)"
+   },
+   {
+    "letter": "D",
+    "text": "(x - y)(1 + a)"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 56,
+  "stem": "Find the sum of the squares of 2, 5, and 9.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "65"
+   },
+   {
+    "letter": "B",
+    "text": "256"
+   },
+   {
+    "letter": "C",
+    "text": "32"
+   },
+   {
+    "letter": "D",
+    "text": "110"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 57,
+  "stem": "If the determinant of the matrix [4, 2; a, 9] is 4, find the value of a.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "4"
+   },
+   {
+    "letter": "B",
+    "text": "25"
+   },
+   {
+    "letter": "C",
+    "text": "16"
+   },
+   {
+    "letter": "D",
+    "text": "18"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 58,
+  "stem": "The point of intersection of the straight lines 3x + y - 7 = 0 and 2x - 3y - 1 = 0 is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "(2, 1)"
+   },
+   {
+    "letter": "B",
+    "text": "(1, 2)"
+   },
+   {
+    "letter": "C",
+    "text": "(-2, 1)"
+   },
+   {
+    "letter": "D",
+    "text": "(-1, 3)"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 59,
+  "stem": "A trader sold an article for N6,900 and made a profit of 15%. How much did he buy it?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "N6,150"
+   },
+   {
+    "letter": "B",
+    "text": "N5,400"
+   },
+   {
+    "letter": "C",
+    "text": "N6,000"
+   },
+   {
+    "letter": "D",
+    "text": "N7,800"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 60,
+  "stem": "Evaluate (625)^(-1/4).",
+  "options": [
+   {
+    "letter": "A",
+    "text": "3/11"
+   },
+   {
+    "letter": "B",
+    "text": "1/7"
+   },
+   {
+    "letter": "C",
+    "text": "1/5"
+   },
+   {
+    "letter": "D",
+    "text": "9/10"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 61,
+  "stem": "The perpendicular distance of a chord from the centre of a circle of radius 10 cm is 6 cm. Find the length of the chord.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "16 cm"
+   },
+   {
+    "letter": "B",
+    "text": "26 cm"
+   },
+   {
+    "letter": "C",
+    "text": "9 cm"
+   },
+   {
+    "letter": "D",
+    "text": "32 cm"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 62,
+  "stem": "At what point does the curve y = x² - 3x + 2 cut the x-axis (line y = 0)?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "x = 2, x = 1"
+   },
+   {
+    "letter": "B",
+    "text": "x = -1, x = -2"
+   },
+   {
+    "letter": "C",
+    "text": "x = -2, x = 1"
+   },
+   {
+    "letter": "D",
+    "text": "x = 2, x = -1"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 63,
+  "stem": "If x varies directly as √y and x = 4 when y = 9, then the value of x when y = 16/9 is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "9"
+   },
+   {
+    "letter": "B",
+    "text": "16/3"
+   },
+   {
+    "letter": "C",
+    "text": "16"
+   },
+   {
+    "letter": "D",
+    "text": "8/3"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 64,
+  "stem": "Ann walks 5m from point A to point B Northwards. From B, she walks eastwards to point C on a bearing of 090°. If BC is 12m, how far is she from A?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "17 m"
+   },
+   {
+    "letter": "B",
+    "text": "13 m"
+   },
+   {
+    "letter": "C",
+    "text": "15 m"
+   },
+   {
+    "letter": "D",
+    "text": "10 m"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 65,
+  "stem": "Find the length of an arc of a circle of radius 6 cm if it subtends an angle of 108° at the centre. (Take π = 22/7)",
+  "options": [
+   {
+    "letter": "A",
+    "text": "24.8 cm"
+   },
+   {
+    "letter": "B",
+    "text": "34.8 cm"
+   },
+   {
+    "letter": "C",
+    "text": "11.3 cm"
+   },
+   {
+    "letter": "D",
+    "text": "8.91 cm"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 66,
+  "stem": "There are 5 blue, 7 green and 3 red balls in a bag. A ball is drawn at random. What is the probability that it is not green?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "8/15"
+   },
+   {
+    "letter": "B",
+    "text": "7/15"
+   },
+   {
+    "letter": "C",
+    "text": "3/15"
+   },
+   {
+    "letter": "D",
+    "text": "1/3"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 67,
+  "stem": "The gradient of the curve y = 5x³ + 3x² at x = 2 is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "48"
+   },
+   {
+    "letter": "B",
+    "text": "60"
+   },
+   {
+    "letter": "C",
+    "text": "72"
+   },
+   {
+    "letter": "D",
+    "text": "36"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 68,
+  "stem": "Solve for x if 3^(2x) = 1/9.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "-2/5"
+   },
+   {
+    "letter": "B",
+    "text": "-1"
+   },
+   {
+    "letter": "C",
+    "text": "-4/7"
+   },
+   {
+    "letter": "D",
+    "text": "-1/2"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 69,
+  "stem": "The remainder on dividing x³ - 6x + 1 by x - 3 is:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "1"
+   },
+   {
+    "letter": "B",
+    "text": "2"
+   },
+   {
+    "letter": "C",
+    "text": "10"
+   },
+   {
+    "letter": "D",
+    "text": "16"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "Mathematics",
+  "num": 70,
+  "stem": "Which of the following quadratic equations has roots x = -2 and x = 7?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "x² + 2x - 7 = 0"
+   },
+   {
+    "letter": "B",
+    "text": "x² - 2x + 7 = 0"
+   },
+   {
+    "letter": "C",
+    "text": "x² - 5x + 14 = 0"
+   },
+   {
+    "letter": "D",
+    "text": "x² - 5x - 14 = 0"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 1,
+  "stem": "The main source of ___ to the government is taxation.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Production"
+   },
+   {
+    "letter": "B",
+    "text": "Revenue"
+   },
+   {
+    "letter": "C",
+    "text": "Development"
+   },
+   {
+    "letter": "D",
+    "text": "Capital"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 2,
+  "stem": "Taxation can be direct or indirect. While the former is based on one's ___, the latter is imposed on goods...",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Income"
+   },
+   {
+    "letter": "B",
+    "text": "Profits"
+   },
+   {
+    "letter": "C",
+    "text": "Services"
+   },
+   {
+    "letter": "D",
+    "text": "Wealth"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 3,
+  "stem": "The latter is imposed on goods and ___.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Re-numeration"
+   },
+   {
+    "letter": "B",
+    "text": "Surpluses"
+   },
+   {
+    "letter": "C",
+    "text": "Resources"
+   },
+   {
+    "letter": "D",
+    "text": "Services"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 4,
+  "stem": "By altering the pattern of ___ through the raising of duty against certain foreign goods.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Consumption"
+   },
+   {
+    "letter": "B",
+    "text": "Production"
+   },
+   {
+    "letter": "C",
+    "text": "Development"
+   },
+   {
+    "letter": "D",
+    "text": "Growth"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 5,
+  "stem": "Choose the option that best completes the sentence: He did not attend the final burial ___.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Rite"
+   },
+   {
+    "letter": "B",
+    "text": "Rights"
+   },
+   {
+    "letter": "C",
+    "text": "Rites"
+   },
+   {
+    "letter": "D",
+    "text": "Right"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 6,
+  "stem": "Select the wrongly spelt word:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Occurrence"
+   },
+   {
+    "letter": "B",
+    "text": "Surprise"
+   },
+   {
+    "letter": "C",
+    "text": "Personnel"
+   },
+   {
+    "letter": "D",
+    "text": "Posses"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 7,
+  "stem": "I have the ___ of meeting him.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Previlege"
+   },
+   {
+    "letter": "B",
+    "text": "Privilege"
+   },
+   {
+    "letter": "C",
+    "text": "Previledge"
+   },
+   {
+    "letter": "D",
+    "text": "Priviledge"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 8,
+  "stem": "Choose the option that best fills the gap: The choice to go is ___.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Yours'"
+   },
+   {
+    "letter": "B",
+    "text": "Your"
+   },
+   {
+    "letter": "C",
+    "text": "Yours"
+   },
+   {
+    "letter": "D",
+    "text": "Your's"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 9,
+  "stem": "Mrs Godwin ___ in this school since 2001.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Taught"
+   },
+   {
+    "letter": "B",
+    "text": "Was teaching"
+   },
+   {
+    "letter": "C",
+    "text": "Teaches"
+   },
+   {
+    "letter": "D",
+    "text": "Has been teaching"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 10,
+  "stem": "It has been confirmed that the election ___ held in July next year.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Will be"
+   },
+   {
+    "letter": "B",
+    "text": "Is being"
+   },
+   {
+    "letter": "C",
+    "text": "Has been"
+   },
+   {
+    "letter": "D",
+    "text": "Have being"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 11,
+  "stem": "Select the wrongly spelt word:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Quite"
+   },
+   {
+    "letter": "B",
+    "text": "Beleive"
+   },
+   {
+    "letter": "C",
+    "text": "Proceed"
+   },
+   {
+    "letter": "D",
+    "text": "Advice"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 12,
+  "stem": "If the armed robbers ___ caught, they would have been lynched.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Would be"
+   },
+   {
+    "letter": "B",
+    "text": "Have been"
+   },
+   {
+    "letter": "C",
+    "text": "Care"
+   },
+   {
+    "letter": "D",
+    "text": "Had been"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 13,
+  "stem": "Shakespearian ___ are generally the victims of circumstance.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Heros"
+   },
+   {
+    "letter": "B",
+    "text": "Heroses"
+   },
+   {
+    "letter": "C",
+    "text": "Hero"
+   },
+   {
+    "letter": "D",
+    "text": "Heroes"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 14,
+  "stem": "The brave officer ___ the time bomb.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Diffused"
+   },
+   {
+    "letter": "B",
+    "text": "Druse"
+   },
+   {
+    "letter": "C",
+    "text": "Defused"
+   },
+   {
+    "letter": "D",
+    "text": "Difused"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 15,
+  "stem": "Select the wrongly spelt word:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Disappointed"
+   },
+   {
+    "letter": "B",
+    "text": "Embarassed"
+   },
+   {
+    "letter": "C",
+    "text": "Equipped"
+   },
+   {
+    "letter": "D",
+    "text": "Restaurant"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 16,
+  "stem": "The trader complained that he ___ robbed.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Had been"
+   },
+   {
+    "letter": "B",
+    "text": "Has been"
+   },
+   {
+    "letter": "C",
+    "text": "Was being"
+   },
+   {
+    "letter": "D",
+    "text": "Is being"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 17,
+  "stem": "Four persons accused of currency ___ are being held by the security agents.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Traficking"
+   },
+   {
+    "letter": "B",
+    "text": "Trafiking"
+   },
+   {
+    "letter": "C",
+    "text": "Trafficking"
+   },
+   {
+    "letter": "D",
+    "text": "Traffic"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 18,
+  "stem": "Each of the contestants ___ a chance now.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Has"
+   },
+   {
+    "letter": "B",
+    "text": "Have"
+   },
+   {
+    "letter": "C",
+    "text": "Get"
+   },
+   {
+    "letter": "D",
+    "text": "Gets"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 19,
+  "stem": "Toyosi arrived late, she ___ the right route.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Cannot have taken"
+   },
+   {
+    "letter": "B",
+    "text": "Could not have take"
+   },
+   {
+    "letter": "C",
+    "text": "Could not had taken"
+   },
+   {
+    "letter": "D",
+    "text": "Could not have taken"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 20,
+  "stem": "It was a funny episode, I ___.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Can't help to laugh"
+   },
+   {
+    "letter": "B",
+    "text": "Couldn't help laugh"
+   },
+   {
+    "letter": "C",
+    "text": "Couldn't help laughing"
+   },
+   {
+    "letter": "D",
+    "text": "Couldn't help to laugh"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 21,
+  "stem": "They ___ our donation with thanks.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Recieved"
+   },
+   {
+    "letter": "B",
+    "text": "Receipt"
+   },
+   {
+    "letter": "C",
+    "text": "Received"
+   },
+   {
+    "letter": "D",
+    "text": "Recceived"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 22,
+  "stem": "Whilst the thief was ___ the passengers kept apologizing...",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Rabbing"
+   },
+   {
+    "letter": "B",
+    "text": "Rubbing"
+   },
+   {
+    "letter": "C",
+    "text": "Robbing"
+   },
+   {
+    "letter": "D",
+    "text": "Rubbying"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 23,
+  "stem": "My ___ is for you to refuse the ___ of the wicked.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Advise/advice"
+   },
+   {
+    "letter": "B",
+    "text": "Advice/advice"
+   },
+   {
+    "letter": "C",
+    "text": "Advice/advise"
+   },
+   {
+    "letter": "D",
+    "text": "Advise/advise"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 24,
+  "stem": "That single ___ was enough to spoil a whole lifetime of good living.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Occurrence"
+   },
+   {
+    "letter": "B",
+    "text": "Occurence"
+   },
+   {
+    "letter": "C",
+    "text": "Ocurrence"
+   },
+   {
+    "letter": "D",
+    "text": "Occurense"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 25,
+  "stem": "The officer was compelled to ___ the suspect's car.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Seize"
+   },
+   {
+    "letter": "B",
+    "text": "Cease"
+   },
+   {
+    "letter": "C",
+    "text": "Sieze"
+   },
+   {
+    "letter": "D",
+    "text": "Sease"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 26,
+  "stem": "For taking part in the unsuccessful ___, the mutineers were court-martialed.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Coope"
+   },
+   {
+    "letter": "B",
+    "text": "Copes"
+   },
+   {
+    "letter": "C",
+    "text": "Coup"
+   },
+   {
+    "letter": "D",
+    "text": "Coupe"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 27,
+  "stem": "He missed the point because he took the statement ___.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Literally"
+   },
+   {
+    "letter": "B",
+    "text": "Litaraily"
+   },
+   {
+    "letter": "C",
+    "text": "Literary"
+   },
+   {
+    "letter": "D",
+    "text": "Unlitaterally"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 28,
+  "stem": "Most of his personal ___ stolen.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Effects were"
+   },
+   {
+    "letter": "B",
+    "text": "Affects was"
+   },
+   {
+    "letter": "C",
+    "text": "Effects was"
+   },
+   {
+    "letter": "D",
+    "text": "Defects"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 29,
+  "stem": "The ___ in an attempt to please the workers promised to provide for them an ___ as soon as possible.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Commitee/ accommondation"
+   },
+   {
+    "letter": "B",
+    "text": "Comittee/ acommodation"
+   },
+   {
+    "letter": "C",
+    "text": "Committe/accommodasion"
+   },
+   {
+    "letter": "D",
+    "text": "Committee/ accommodation"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 30,
+  "stem": "You think she hasn't got any friends? Of course she's got ___.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Many more"
+   },
+   {
+    "letter": "B",
+    "text": "Quite much"
+   },
+   {
+    "letter": "C",
+    "text": "Quite a few"
+   },
+   {
+    "letter": "D",
+    "text": "Few"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 31,
+  "stem": "The carpenter asked for ten packets of ___ nails.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Fifteen-centimetres"
+   },
+   {
+    "letter": "B",
+    "text": "Fifteen-centremetres"
+   },
+   {
+    "letter": "C",
+    "text": "Fifteen-centimetre"
+   },
+   {
+    "letter": "D",
+    "text": "Fifteen-centemeters"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 32,
+  "stem": "I am sorry ___ to attend the meeting yesterday.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "For failure"
+   },
+   {
+    "letter": "B",
+    "text": "In Failing"
+   },
+   {
+    "letter": "C",
+    "text": "To having failed"
+   },
+   {
+    "letter": "D",
+    "text": "For failing"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 33,
+  "stem": "John reported to his manager that he ___ oversees.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Has never been"
+   },
+   {
+    "letter": "B",
+    "text": "Had never been"
+   },
+   {
+    "letter": "C",
+    "text": "Never"
+   },
+   {
+    "letter": "D",
+    "text": "Is never"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 34,
+  "stem": "My colleagues ___ before I arrived.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Have been writing"
+   },
+   {
+    "letter": "B",
+    "text": "Started writing"
+   },
+   {
+    "letter": "C",
+    "text": "Wrote"
+   },
+   {
+    "letter": "D",
+    "text": "Had started writing"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 35,
+  "stem": "The man preaches egalitarianism without matching it up with action.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Salvation"
+   },
+   {
+    "letter": "B",
+    "text": "Equality"
+   },
+   {
+    "letter": "C",
+    "text": "Kindness"
+   },
+   {
+    "letter": "D",
+    "text": "Dedication"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 36,
+  "stem": "It was surprising how we took to the stranger at once.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Talked so long with"
+   },
+   {
+    "letter": "B",
+    "text": "Introduced ourselves"
+   },
+   {
+    "letter": "C",
+    "text": "Formed a liking for"
+   },
+   {
+    "letter": "D",
+    "text": "Started fighting"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 37,
+  "stem": "Surely, Toritseju is a ball of fire.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "A quarrelsome person"
+   },
+   {
+    "letter": "B",
+    "text": "A hot hearted activist"
+   },
+   {
+    "letter": "C",
+    "text": "A fiery speaker"
+   },
+   {
+    "letter": "D",
+    "text": "A very energetic person"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 38,
+  "stem": "It would need a high flyer to make a first class degree.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "A smart performer"
+   },
+   {
+    "letter": "B",
+    "text": "An outright genius"
+   },
+   {
+    "letter": "C",
+    "text": "An outstanding scholar"
+   },
+   {
+    "letter": "D",
+    "text": "An unmitigated swot"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 39,
+  "stem": "Hers was a chequered career.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "An interesting career"
+   },
+   {
+    "letter": "B",
+    "text": "A career full of sorrow"
+   },
+   {
+    "letter": "C",
+    "text": "A bright career"
+   },
+   {
+    "letter": "D",
+    "text": "A career full of ups and downs"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 40,
+  "stem": "The manager said the new loaf is the last word in bakery.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "The loaf was the last"
+   },
+   {
+    "letter": "B",
+    "text": "The loaf was the best ever baked"
+   },
+   {
+    "letter": "C",
+    "text": "The loaf was the last to be baked"
+   },
+   {
+    "letter": "D",
+    "text": "The loaf was the worst"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 41,
+  "stem": "Ovie's account with the commercial bank is in red.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Written in red"
+   },
+   {
+    "letter": "B",
+    "text": "In danger"
+   },
+   {
+    "letter": "C",
+    "text": "Overdrawn"
+   },
+   {
+    "letter": "D",
+    "text": "Special"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 42,
+  "stem": "The police ran the criminal to earth.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Jailed"
+   },
+   {
+    "letter": "B",
+    "text": "Knocked him down"
+   },
+   {
+    "letter": "C",
+    "text": "Discovered him"
+   },
+   {
+    "letter": "D",
+    "text": "Buried him"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 43,
+  "stem": "Choose the word opposite in meaning to the italicized/underlined word: The flock suddenly became restive after midday.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Quiet"
+   },
+   {
+    "letter": "B",
+    "text": "Disorderly"
+   },
+   {
+    "letter": "C",
+    "text": "Hardy"
+   },
+   {
+    "letter": "D",
+    "text": "Fidgety"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 44,
+  "stem": "Choose the word opposite in meaning: Edesiri's aberrant behavior attracted attention.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Rascally"
+   },
+   {
+    "letter": "B",
+    "text": "Hardy"
+   },
+   {
+    "letter": "C",
+    "text": "Normal"
+   },
+   {
+    "letter": "D",
+    "text": "Selfish"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 45,
+  "stem": "Choose the word opposite in meaning: The judge always takes a hardline on such issues.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Complex stand"
+   },
+   {
+    "letter": "B",
+    "text": "Disobedient"
+   },
+   {
+    "letter": "C",
+    "text": "Uncompromising"
+   },
+   {
+    "letter": "D",
+    "text": "Compromising"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 46,
+  "stem": "Choose the word opposite in meaning: Okoro is an amateur wrestler.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Skillful"
+   },
+   {
+    "letter": "B",
+    "text": "Good"
+   },
+   {
+    "letter": "C",
+    "text": "Professional"
+   },
+   {
+    "letter": "D",
+    "text": "Strong"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 47,
+  "stem": "Choose the word opposite in meaning: The college was worried by Ejiro's garrulous tendencies.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Reticent"
+   },
+   {
+    "letter": "B",
+    "text": "Loquacious"
+   },
+   {
+    "letter": "C",
+    "text": "Quarrelsome"
+   },
+   {
+    "letter": "D",
+    "text": "Outspoken"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 48,
+  "stem": "Choose the word opposite in meaning: The economic situation is responsible for the recent discord in many families.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Division"
+   },
+   {
+    "letter": "B",
+    "text": "Resourcefulness"
+   },
+   {
+    "letter": "C",
+    "text": "Harmony"
+   },
+   {
+    "letter": "D",
+    "text": "Suffering"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 49,
+  "stem": "Choose the word that has the same vowel sound as 'Seat'.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Hide"
+   },
+   {
+    "letter": "B",
+    "text": "Peasant"
+   },
+   {
+    "letter": "C",
+    "text": "Head"
+   },
+   {
+    "letter": "D",
+    "text": "People"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 50,
+  "stem": "Choose the word that has the same vowel sound as 'Pass'.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Earth"
+   },
+   {
+    "letter": "B",
+    "text": "Clerk"
+   },
+   {
+    "letter": "C",
+    "text": "Pass"
+   },
+   {
+    "letter": "D",
+    "text": "Man"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 51,
+  "stem": "Choose the word that has the same vowel sound as 'Power'.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Flour"
+   },
+   {
+    "letter": "B",
+    "text": "Higher"
+   },
+   {
+    "letter": "C",
+    "text": "Liar"
+   },
+   {
+    "letter": "D",
+    "text": "Flier"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 52,
+  "stem": "Choose the word that rhymes with 'Fret'.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Freight"
+   },
+   {
+    "letter": "B",
+    "text": "Height"
+   },
+   {
+    "letter": "C",
+    "text": "Threat"
+   },
+   {
+    "letter": "D",
+    "text": "Thread"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 53,
+  "stem": "Choose the word that has the same vowel sound as 'Done'.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Don"
+   },
+   {
+    "letter": "B",
+    "text": "Sun"
+   },
+   {
+    "letter": "C",
+    "text": "Clown"
+   },
+   {
+    "letter": "D",
+    "text": "Dawn"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 54,
+  "stem": "Choose the word that rhymes with 'Breeze'.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Stress"
+   },
+   {
+    "letter": "B",
+    "text": "Chess"
+   },
+   {
+    "letter": "C",
+    "text": "Free"
+   },
+   {
+    "letter": "D",
+    "text": "Trees"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 55,
+  "stem": "Choose the word that has the same consonant sound as the underlined letters in 'Hang'.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Hinge"
+   },
+   {
+    "letter": "B",
+    "text": "Tinge"
+   },
+   {
+    "letter": "C",
+    "text": "Song"
+   },
+   {
+    "letter": "D",
+    "text": "Balm"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 56,
+  "stem": "Choose the word that has the same vowel sound as 'Purse'.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Journey"
+   },
+   {
+    "letter": "B",
+    "text": "Pays"
+   },
+   {
+    "letter": "C",
+    "text": "Heart"
+   },
+   {
+    "letter": "D",
+    "text": "Course"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 57,
+  "stem": "Choose the word that has the same vowel sound as 'Shoe'.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Full"
+   },
+   {
+    "letter": "B",
+    "text": "Food"
+   },
+   {
+    "letter": "C",
+    "text": "Put"
+   },
+   {
+    "letter": "D",
+    "text": "Blood"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 58,
+  "stem": "In which syllable does the primary stress occur in 'EDUCATION'?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "E-du-ca-tion"
+   },
+   {
+    "letter": "B",
+    "text": "e-DU-ca-tion"
+   },
+   {
+    "letter": "C",
+    "text": "e-du-CA-tion"
+   },
+   {
+    "letter": "D",
+    "text": "e-du-ca-TION"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 59,
+  "stem": "Choose the word that rhymes with 'Pale'.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Pail"
+   },
+   {
+    "letter": "B",
+    "text": "Palm"
+   },
+   {
+    "letter": "C",
+    "text": "Mall"
+   },
+   {
+    "letter": "D",
+    "text": "Haul"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 60,
+  "stem": "Choose the word that rhymes with 'Tenderly'.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Actually"
+   },
+   {
+    "letter": "B",
+    "text": "Slenderly"
+   },
+   {
+    "letter": "C",
+    "text": "Faithfully"
+   },
+   {
+    "letter": "D",
+    "text": "Constantly"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 61,
+  "stem": "Choose the word that has the same vowel sound as 'Brought'.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Roar"
+   },
+   {
+    "letter": "B",
+    "text": "Plough"
+   },
+   {
+    "letter": "C",
+    "text": "Drought"
+   },
+   {
+    "letter": "D",
+    "text": "Worse"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 62,
+  "stem": "Choose the word that has the same consonant sound as the underlined letter in 'Gritty'.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Asked"
+   },
+   {
+    "letter": "B",
+    "text": "Sachet"
+   },
+   {
+    "letter": "C",
+    "text": "Depot"
+   },
+   {
+    "letter": "D",
+    "text": "Wrestle"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 63,
+  "stem": "Choose the word that has the same consonant sound as the underlined letter in 'Zoo'.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Assault"
+   },
+   {
+    "letter": "B",
+    "text": "Assist"
+   },
+   {
+    "letter": "C",
+    "text": "Release"
+   },
+   {
+    "letter": "D",
+    "text": "Please"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 64,
+  "stem": "Choose the word that has the same consonant sound as the underlined letters in 'Chalet'.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Champion"
+   },
+   {
+    "letter": "B",
+    "text": "Chair"
+   },
+   {
+    "letter": "C",
+    "text": "Champagne"
+   },
+   {
+    "letter": "D",
+    "text": "Cheapen"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 65,
+  "stem": "Choose the word that has the same consonant sound as the underlined letter in 'dice'.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Shame"
+   },
+   {
+    "letter": "B",
+    "text": "Cue"
+   },
+   {
+    "letter": "C",
+    "text": "Chair"
+   },
+   {
+    "letter": "D",
+    "text": "Loss"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 66,
+  "stem": "Choose the word that has the same vowel sound as 'Mother'.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Labour"
+   },
+   {
+    "letter": "B",
+    "text": "Cargo"
+   },
+   {
+    "letter": "C",
+    "text": "Exhibit"
+   },
+   {
+    "letter": "D",
+    "text": "Council"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 67,
+  "stem": "Choose the word that rhymes with 'Worst'.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Burst"
+   },
+   {
+    "letter": "B",
+    "text": "Haste"
+   },
+   {
+    "letter": "C",
+    "text": "Guessed"
+   },
+   {
+    "letter": "D",
+    "text": "Perched"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 68,
+  "stem": "Choose the word that has the same vowel sound as 'Owl'.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Bowl"
+   },
+   {
+    "letter": "B",
+    "text": "Tow"
+   },
+   {
+    "letter": "C",
+    "text": "Howl"
+   },
+   {
+    "letter": "D",
+    "text": "Route"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 69,
+  "stem": "Choose the word that has the same vowel sound as 'granite'.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Lean"
+   },
+   {
+    "letter": "B",
+    "text": "Sit"
+   },
+   {
+    "letter": "C",
+    "text": "Contrite"
+   },
+   {
+    "letter": "D",
+    "text": "Light"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "English Language",
+  "num": 70,
+  "stem": "Choose the word that has the same consonant sound as the underlined letters in 'Straight'.",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Struggle"
+   },
+   {
+    "letter": "B",
+    "text": "Waste"
+   },
+   {
+    "letter": "C",
+    "text": "Waist"
+   },
+   {
+    "letter": "D",
+    "text": "Stare"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 1,
+  "stem": "What is the capital of Nigeria?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Lagos"
+   },
+   {
+    "letter": "B",
+    "text": "Abuja"
+   },
+   {
+    "letter": "C",
+    "text": "Kano"
+   },
+   {
+    "letter": "D",
+    "text": "Port Harcourt"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 2,
+  "stem": "Which is the longest river in the world?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Amazon"
+   },
+   {
+    "letter": "B",
+    "text": "Nile"
+   },
+   {
+    "letter": "C",
+    "text": "Mississippi"
+   },
+   {
+    "letter": "D",
+    "text": "Yangtze"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 3,
+  "stem": "What is the highest mountain in Africa?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Mount Kenya"
+   },
+   {
+    "letter": "B",
+    "text": "Mount Elgon"
+   },
+   {
+    "letter": "C",
+    "text": "Mount Kilimanjaro"
+   },
+   {
+    "letter": "D",
+    "text": "Mount Everest"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 4,
+  "stem": "Which Nigerian state is known as the 'Centre of Excellence'?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Lagos"
+   },
+   {
+    "letter": "B",
+    "text": "Rivers"
+   },
+   {
+    "letter": "C",
+    "text": "Enugu"
+   },
+   {
+    "letter": "D",
+    "text": "Kaduna"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 5,
+  "stem": "How many continents are there in the world?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "5"
+   },
+   {
+    "letter": "B",
+    "text": "6"
+   },
+   {
+    "letter": "C",
+    "text": "7"
+   },
+   {
+    "letter": "D",
+    "text": "8"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 6,
+  "stem": "Which country is the largest by land area?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "China"
+   },
+   {
+    "letter": "B",
+    "text": "United States"
+   },
+   {
+    "letter": "C",
+    "text": "Canada"
+   },
+   {
+    "letter": "D",
+    "text": "Russia"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 7,
+  "stem": "What is the smallest country in the world?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Monaco"
+   },
+   {
+    "letter": "B",
+    "text": "Vatican City"
+   },
+   {
+    "letter": "C",
+    "text": "San Marino"
+   },
+   {
+    "letter": "D",
+    "text": "Liechtenstein"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 8,
+  "stem": "Which desert is the largest hot desert in the world?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Kalahari"
+   },
+   {
+    "letter": "B",
+    "text": "Gobi"
+   },
+   {
+    "letter": "C",
+    "text": "Sahara"
+   },
+   {
+    "letter": "D",
+    "text": "Atacama"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 9,
+  "stem": "In which continent is the Amazon Rainforest located?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Africa"
+   },
+   {
+    "letter": "B",
+    "text": "North America"
+   },
+   {
+    "letter": "C",
+    "text": "South America"
+   },
+   {
+    "letter": "D",
+    "text": "Asia"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 10,
+  "stem": "What is the capital of Australia?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Sydney"
+   },
+   {
+    "letter": "B",
+    "text": "Melbourne"
+   },
+   {
+    "letter": "C",
+    "text": "Canberra"
+   },
+   {
+    "letter": "D",
+    "text": "Perth"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 11,
+  "stem": "Who is the current President of Nigeria?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Muhammadu Buhari"
+   },
+   {
+    "letter": "B",
+    "text": "Bola Ahmed Tinubu"
+   },
+   {
+    "letter": "C",
+    "text": "Atiku Abubakar"
+   },
+   {
+    "letter": "D",
+    "text": "Peter Obi"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 12,
+  "stem": "In what year did Nigeria gain independence from British rule?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "1957"
+   },
+   {
+    "letter": "B",
+    "text": "1960"
+   },
+   {
+    "letter": "C",
+    "text": "1963"
+   },
+   {
+    "letter": "D",
+    "text": "1966"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 13,
+  "stem": "When did Nigeria become a Republic?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "1960"
+   },
+   {
+    "letter": "B",
+    "text": "1961"
+   },
+   {
+    "letter": "C",
+    "text": "1963"
+   },
+   {
+    "letter": "D",
+    "text": "1999"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 14,
+  "stem": "Who was the first Prime Minister of Nigeria?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Nnamdi Azikiwe"
+   },
+   {
+    "letter": "B",
+    "text": "Obafemi Awolowo"
+   },
+   {
+    "letter": "C",
+    "text": "Ahmadu Bello"
+   },
+   {
+    "letter": "D",
+    "text": "Sir Abubakar Tafawa Balewa"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 15,
+  "stem": "How many geopolitical zones are in Nigeria?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "4"
+   },
+   {
+    "letter": "B",
+    "text": "5"
+   },
+   {
+    "letter": "C",
+    "text": "6"
+   },
+   {
+    "letter": "D",
+    "text": "7"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 16,
+  "stem": "How many constitutionally recognized Local Government Areas are in Nigeria?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "774"
+   },
+   {
+    "letter": "B",
+    "text": "776"
+   },
+   {
+    "letter": "C",
+    "text": "764"
+   },
+   {
+    "letter": "D",
+    "text": "784"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 17,
+  "stem": "Who is the current Governor of the Central Bank of Nigeria (CBN)?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Godwin Emefiele"
+   },
+   {
+    "letter": "B",
+    "text": "Sanusi Lamido Sanusi"
+   },
+   {
+    "letter": "C",
+    "text": "Olayemi Cardoso"
+   },
+   {
+    "letter": "D",
+    "text": "Charles Soludo"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 18,
+  "stem": "What is the official currency of Nigeria?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Cedi"
+   },
+   {
+    "letter": "B",
+    "text": "Naira"
+   },
+   {
+    "letter": "C",
+    "text": "Rand"
+   },
+   {
+    "letter": "D",
+    "text": "Dollar"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 19,
+  "stem": "The Nigerian National Assembly consists of the Senate and what other chamber?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "House of Lords"
+   },
+   {
+    "letter": "B",
+    "text": "House of Assembly"
+   },
+   {
+    "letter": "C",
+    "text": "House of Representatives"
+   },
+   {
+    "letter": "D",
+    "text": "House of Commons"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 20,
+  "stem": "How many senators make up the Nigerian Senate?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "109"
+   },
+   {
+    "letter": "B",
+    "text": "360"
+   },
+   {
+    "letter": "C",
+    "text": "72"
+   },
+   {
+    "letter": "D",
+    "text": "100"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 21,
+  "stem": "Who is the current Secretary-General of the United Nations?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Ban Ki-moon"
+   },
+   {
+    "letter": "B",
+    "text": "Kofi Annan"
+   },
+   {
+    "letter": "C",
+    "text": "António Guterres"
+   },
+   {
+    "letter": "D",
+    "text": "Tedros Adhanom"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 22,
+  "stem": "Where is the headquarters of the United Nations located?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Geneva"
+   },
+   {
+    "letter": "B",
+    "text": "London"
+   },
+   {
+    "letter": "C",
+    "text": "New York"
+   },
+   {
+    "letter": "D",
+    "text": "Paris"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 23,
+  "stem": "Which organization replaced the Organization of African Unity (OAU) in 2002?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "African Union (AU)"
+   },
+   {
+    "letter": "B",
+    "text": "ECOWAS"
+   },
+   {
+    "letter": "C",
+    "text": "SADC"
+   },
+   {
+    "letter": "D",
+    "text": "African Economic Community"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 24,
+  "stem": "Who was the first black President of South Africa?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Thabo Mbeki"
+   },
+   {
+    "letter": "B",
+    "text": "Jacob Zuma"
+   },
+   {
+    "letter": "C",
+    "text": "Desmond Tutu"
+   },
+   {
+    "letter": "D",
+    "text": "Nelson Mandela"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 25,
+  "stem": "What system of government involves the election of representatives by the people?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Monarchy"
+   },
+   {
+    "letter": "B",
+    "text": "Autocracy"
+   },
+   {
+    "letter": "C",
+    "text": "Democracy"
+   },
+   {
+    "letter": "D",
+    "text": "Oligarchy"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 26,
+  "stem": "What does the acronym ECOWAS stand for?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Economic Council of West African States"
+   },
+   {
+    "letter": "B",
+    "text": "Economic Community of West African States"
+   },
+   {
+    "letter": "C",
+    "text": "Economic Coalition of West African Societies"
+   },
+   {
+    "letter": "D",
+    "text": "Eastern Community of West African States"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 27,
+  "stem": "Where is the headquarters of ECOWAS?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Accra"
+   },
+   {
+    "letter": "B",
+    "text": "Dakar"
+   },
+   {
+    "letter": "C",
+    "text": "Lagos"
+   },
+   {
+    "letter": "D",
+    "text": "Abuja"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 28,
+  "stem": "How many member states are currently in the United Nations?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "190"
+   },
+   {
+    "letter": "B",
+    "text": "193"
+   },
+   {
+    "letter": "C",
+    "text": "195"
+   },
+   {
+    "letter": "D",
+    "text": "197"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 29,
+  "stem": "What is the constitutional term length for a United States President?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "4 years"
+   },
+   {
+    "letter": "B",
+    "text": "5 years"
+   },
+   {
+    "letter": "C",
+    "text": "6 years"
+   },
+   {
+    "letter": "D",
+    "text": "8 years"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 30,
+  "stem": "Who wrote the lyrics of the current Nigerian National Anthem, 'Nigeria, We Hail Thee'?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Benedict Odiase"
+   },
+   {
+    "letter": "B",
+    "text": "Wole Soyinka"
+   },
+   {
+    "letter": "C",
+    "text": "Lillian Jean Williams"
+   },
+   {
+    "letter": "D",
+    "text": "Tai Solarin"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 31,
+  "stem": "What does GDP stand for in economics?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Gross Domestic Product"
+   },
+   {
+    "letter": "B",
+    "text": "Gross Development Product"
+   },
+   {
+    "letter": "C",
+    "text": "General Domestic Profit"
+   },
+   {
+    "letter": "D",
+    "text": "Gross Domestic Profit"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 32,
+  "stem": "Which global financial institution is primarily known for providing loans to countries for capital programs?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "International Monetary Fund"
+   },
+   {
+    "letter": "B",
+    "text": "World Bank"
+   },
+   {
+    "letter": "C",
+    "text": "World Trade Organization"
+   },
+   {
+    "letter": "D",
+    "text": "African Development Bank"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 33,
+  "stem": "What is the primary mandate of the International Monetary Fund (IMF)?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Eradicate global poverty"
+   },
+   {
+    "letter": "B",
+    "text": "Ensure the stability of the international monetary system"
+   },
+   {
+    "letter": "C",
+    "text": "Regulate global trade"
+   },
+   {
+    "letter": "D",
+    "text": "Provide infrastructure loans"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 34,
+  "stem": "In finance, what does 'inflation' mean?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "A general decrease in prices"
+   },
+   {
+    "letter": "B",
+    "text": "An increase in the purchasing power of money"
+   },
+   {
+    "letter": "C",
+    "text": "A general increase in prices and fall in the purchasing value of money"
+   },
+   {
+    "letter": "D",
+    "text": "A stable economic period"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 35,
+  "stem": "The stock market is primarily a place where:",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Agricultural produce is sold"
+   },
+   {
+    "letter": "B",
+    "text": "Shares of public companies are traded"
+   },
+   {
+    "letter": "C",
+    "text": "Government bonds are issued"
+   },
+   {
+    "letter": "D",
+    "text": "Foreign currencies are exchanged"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 36,
+  "stem": "In financial markets, what is a 'Bull Market'?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "A market in which share prices are rising"
+   },
+   {
+    "letter": "B",
+    "text": "A market in which share prices are falling"
+   },
+   {
+    "letter": "C",
+    "text": "A stagnant market"
+   },
+   {
+    "letter": "D",
+    "text": "A market only for livestock"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 37,
+  "stem": "What does the acronym OPEC stand for?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Organization of Petroleum Exporting Countries"
+   },
+   {
+    "letter": "B",
+    "text": "Organization of Petrol Extracting Countries"
+   },
+   {
+    "letter": "C",
+    "text": "Oil Producing and Exporting Countries"
+   },
+   {
+    "letter": "D",
+    "text": "Organization of Petroleum Economic Communities"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 38,
+  "stem": "What is the primary function of a central bank?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "To collect taxes"
+   },
+   {
+    "letter": "B",
+    "text": "To manage a state's currency, money supply, and interest rates"
+   },
+   {
+    "letter": "C",
+    "text": "To provide personal loans to citizens"
+   },
+   {
+    "letter": "D",
+    "text": "To finance political campaigns"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 39,
+  "stem": "In financial markets, what is a 'Bear Market'?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "A market in which prices are falling"
+   },
+   {
+    "letter": "B",
+    "text": "A market in which prices are rising"
+   },
+   {
+    "letter": "C",
+    "text": "A rapidly expanding market"
+   },
+   {
+    "letter": "D",
+    "text": "A market driven by speculation"
+   }
+  ],
+  "bold": [
+   "A"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 40,
+  "stem": "Which cryptocurrency is widely considered the first decentralized digital currency?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Ethereum"
+   },
+   {
+    "letter": "B",
+    "text": "Ripple"
+   },
+   {
+    "letter": "C",
+    "text": "Bitcoin"
+   },
+   {
+    "letter": "D",
+    "text": "Litecoin"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 41,
+  "stem": "What is the largest ocean on Earth?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Atlantic Ocean"
+   },
+   {
+    "letter": "B",
+    "text": "Indian Ocean"
+   },
+   {
+    "letter": "C",
+    "text": "Arctic Ocean"
+   },
+   {
+    "letter": "D",
+    "text": "Pacific Ocean"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 42,
+  "stem": "Which Nigerian city is famous globally for its ancient bronze casting and rich history?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Kano"
+   },
+   {
+    "letter": "B",
+    "text": "Ibadan"
+   },
+   {
+    "letter": "C",
+    "text": "Benin City"
+   },
+   {
+    "letter": "D",
+    "text": "Calabar"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 43,
+  "stem": "What is the capital of Canada?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Toronto"
+   },
+   {
+    "letter": "B",
+    "text": "Vancouver"
+   },
+   {
+    "letter": "C",
+    "text": "Montreal"
+   },
+   {
+    "letter": "D",
+    "text": "Ottawa"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 44,
+  "stem": "Which African country is famously known for never being formally colonized?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Liberia"
+   },
+   {
+    "letter": "B",
+    "text": "Ethiopia"
+   },
+   {
+    "letter": "C",
+    "text": "Egypt"
+   },
+   {
+    "letter": "D",
+    "text": "Ghana"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 45,
+  "stem": "Who is the first female and first African Director-General of the World Trade Organization (WTO)?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Amina J. Mohammed"
+   },
+   {
+    "letter": "B",
+    "text": "Ngozi Okonjo-Iweala"
+   },
+   {
+    "letter": "C",
+    "text": "Arunma Oteh"
+   },
+   {
+    "letter": "D",
+    "text": "Obiageli Ezekwesili"
+   }
+  ],
+  "bold": [
+   "B"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 46,
+  "stem": "Which of these countries is NOT a member of the BRICS economic bloc?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Brazil"
+   },
+   {
+    "letter": "B",
+    "text": "Russia"
+   },
+   {
+    "letter": "C",
+    "text": "United Kingdom"
+   },
+   {
+    "letter": "D",
+    "text": "South Africa"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 47,
+  "stem": "What is the most widely spoken language in the world by total number of speakers?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Mandarin Chinese"
+   },
+   {
+    "letter": "B",
+    "text": "Spanish"
+   },
+   {
+    "letter": "C",
+    "text": "English"
+   },
+   {
+    "letter": "D",
+    "text": "Hindi"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 48,
+  "stem": "In which country would you find the Great Wall?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Japan"
+   },
+   {
+    "letter": "B",
+    "text": "India"
+   },
+   {
+    "letter": "C",
+    "text": "South Korea"
+   },
+   {
+    "letter": "D",
+    "text": "China"
+   }
+  ],
+  "bold": [
+   "D"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 49,
+  "stem": "Which of the following is considered a primary sector economic activity?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Manufacturing"
+   },
+   {
+    "letter": "B",
+    "text": "Banking"
+   },
+   {
+    "letter": "C",
+    "text": "Agriculture"
+   },
+   {
+    "letter": "D",
+    "text": "Retail"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ },
+ {
+  "section": "General Knowledge",
+  "num": 50,
+  "stem": "Who was the first President of the Fourth Republic of Nigeria?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "Goodluck Jonathan"
+   },
+   {
+    "letter": "B",
+    "text": "Umaru Musa Yar'Adua"
+   },
+   {
+    "letter": "C",
+    "text": "Olusegun Obasanjo"
+   },
+   {
+    "letter": "D",
+    "text": "Shehu Shagari"
+   }
+  ],
+  "bold": [
+   "C"
+  ]
+ }
+]
