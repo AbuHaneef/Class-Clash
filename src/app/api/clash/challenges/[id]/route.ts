@@ -59,6 +59,7 @@ export async function GET(
             correct: d?.correct ?? false,
             correctIndex: correctIdx(qid),
             text: qMap.get(qid)?.text ?? "",
+            imageUrl: qMap.get(qid)?.imageUrl ?? null,
           };
         }),
       };

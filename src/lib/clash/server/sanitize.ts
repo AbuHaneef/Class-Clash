@@ -21,6 +21,7 @@ export type SanitizedQuestion = {
   difficulty: string;
   points: number;
   timeLimit: number;
+  imageUrl: string | null;
   options: SanitizedOption[];
   subjectName: string;
   topicName: string;
@@ -51,6 +52,7 @@ export function sanitizeQuestion(
     difficulty: q.difficulty,
     points: q.points,
     timeLimit: q.timeLimit,
+    imageUrl: q.imageUrl ?? null,
     options: options.map((o) => ({ id: o.id, text: o.text })),
     subjectName: q.subject?.name ?? "",
     topicName: q.topic?.name ?? "",
@@ -73,6 +75,7 @@ export function sanitizeQuestionReview(
   return {
     id: q.id,
     text: q.text,
+    imageUrl: q.imageUrl ?? null,
     difficulty: q.difficulty,
     explanation: q.explanation,
     options: options.map((o) => o.text),

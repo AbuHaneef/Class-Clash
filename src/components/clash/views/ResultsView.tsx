@@ -5,6 +5,7 @@ import { navigate, absoluteUrl } from "@/lib/clash/client/router";
 import { apiGet, apiSend } from "@/lib/clash/client/api";
 import { useClash } from "@/lib/clash/client/store";
 import { Confetti, LoadingCard, ErrorState, Pill } from "@/components/clash/shared";
+import { QuestionImage } from "@/components/clash/QuestionImage";
 import { sfx } from "@/lib/clash/client/sound";
 import { toast } from "sonner";
 import { Check, X, Trophy, Crown, Share2, Link2, Zap, Flame, ArrowRight, RotateCcw } from "lucide-react";
@@ -186,6 +187,7 @@ export default function ResultsView({ sessionId }: { sessionId?: string }) {
                   <span className="text-xs text-muted-foreground group-open:hidden">explain ▾</span>
                 </summary>
                 <div className="mt-3 space-y-1.5 border-l-2 border-border/60 pl-4">
+                  {r.imageUrl && <div className="pb-2"><QuestionImage src={r.imageUrl} alt="Question illustration" maxHeight={150} /></div>}
                   {r.options.map((o, oi) => (
                     <p
                       key={oi}

@@ -58,6 +58,7 @@ type SanitizedQuestion = {
   difficulty: string;
   points: number;
   timeLimit: number;
+  imageUrl: string | null;
   options: { id: string; text: string }[];
   subjectName: string;
   topicName: string;

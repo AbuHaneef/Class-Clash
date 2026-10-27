@@ -39,6 +39,7 @@ export async function GET(req: NextRequest) {
       questions: questions.map((x) => ({
         id: x.id,
         text: x.text,
+        imageUrl: x.imageUrl ?? null,
         difficulty: x.difficulty,
         status: x.status,
         source: x.source,

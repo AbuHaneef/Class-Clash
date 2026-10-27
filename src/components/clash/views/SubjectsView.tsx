@@ -106,7 +106,7 @@ export default function SubjectsView() {
       )}
 
       <p className="rounded-2xl border border-border/50 bg-secondary/30 p-4 text-xs leading-relaxed text-muted-foreground">
-        📘 <strong className="text-foreground/80">Note:</strong> Question content for other classes (Primary 1–5, JSS 1, SS 1) is on the
+        📘 <strong className="text-foreground/80">Note:</strong> Mathematics is fully available from Primary 1 to Primary 6. Content for other classes (JSS 1, SS 1) and more subjects is on the
         roadmap and will be added by editors through the admin question bank. Every question shows its review status in review screens.
       </p>
     </div>

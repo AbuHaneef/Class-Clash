@@ -5,6 +5,7 @@ import { navigate } from "@/lib/clash/client/router";
 import { apiGet, apiSend } from "@/lib/clash/client/api";
 import { useClash } from "@/lib/clash/client/store";
 import { LoadingCard, ErrorState, Pill } from "@/components/clash/shared";
+import { QuestionImage } from "@/components/clash/QuestionImage";
 import { Avatar } from "@/lib/clash/avatars";
 import { toast } from "sonner";
 import {
@@ -141,7 +142,7 @@ function Stat({ label, value, highlight }: { label: string; value: number; highl
 
 type AdminQuestion = {
   id: string; text: string; difficulty: string; status: string; source: string; isDemo: boolean;
-  reviewNote: string | null; gradeName: string; subjectName: string; topicName: string;
+  reviewNote: string | null; gradeName: string; subjectName: string; topicName: string; imageUrl: string | null;
   options: { id: string; text: string; isCorrect: boolean }[]; explanation: string; createdAt: string;
 };
 
@@ -244,6 +245,11 @@ function QuestionsSection({ canReview }: { canReview: boolean }) {
                 <div className="flex items-start justify-between gap-3">
                   <div className="min-w-0">
                     <p className="text-sm font-semibold">{question.text}</p>
+                    {question.imageUrl && (
+                      <div className="mt-2">
+                        <QuestionImage src={question.imageUrl} alt="Question illustration" maxHeight={110} />
+                      </div>
+                    )}
                     <p className="mt-1 text-xs text-muted-foreground">
                       {question.gradeName} • {question.subjectName} • {question.topicName} • {question.difficulty} • {question.source}
                     </p>

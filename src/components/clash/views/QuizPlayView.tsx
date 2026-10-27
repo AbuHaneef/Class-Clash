@@ -9,10 +9,11 @@ import { sfx } from "@/lib/clash/client/sound";
 import { toast } from "sonner";
 import { Check, X, ArrowRight, Flag, ListChecks } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { QuestionImage } from "@/components/clash/QuestionImage";
 
 type SanitizedQuestion = {
   id: string; text: string; type: string; difficulty: string;
-  points: number; timeLimit: number;
+  points: number; timeLimit: number; imageUrl: string | null;
   options: { id: string; text: string }[];
   subjectName: string; topicName: string;
 };
@@ -200,6 +201,7 @@ function QuizRunner({ sessionId }: { sessionId: string }) {
           <span className="text-xs text-muted-foreground">{q.points} pts</span>
         </div>
         <h2 className="font-display text-lg font-semibold leading-relaxed sm:text-xl">{q.text}</h2>
+        {q.imageUrl && <div className="mt-4"><QuestionImage src={q.imageUrl} alt="Question illustration" /></div>}
 
         {/* options */}
         <div className="mt-5 space-y-2.5" role="group" aria-label="Answer options">
@@ -367,6 +369,7 @@ function GuestQuiz() {
           Sample question {qIndex + 1} of {demo.questions.length} • {q.subjectName}
         </p>
         <h2 className="mt-2 font-display text-lg font-semibold leading-relaxed sm:text-xl">{q.text}</h2>
+        {q.imageUrl && <div className="mt-4"><QuestionImage src={q.imageUrl} alt="Question illustration" /></div>}
         <div className="mt-5 space-y-2.5">
           {q.options.map((o, i) => {
             const isCorrectOption = feedback && feedback.correctIndex === i;

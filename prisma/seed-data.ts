@@ -248,6 +248,11 @@ export const GUARDIANS: {
   skill: number;
   avatar: string;
 }[] = [
+  { grade: "primary-1", subject: "mathematics", name: "Tally Turtle", skill: 0.45, avatar: "turtle" },
+  { grade: "primary-2", subject: "mathematics", name: "Plus Penguin", skill: 0.5, avatar: "penguin" },
+  { grade: "primary-3", subject: "mathematics", name: "Multiple Mongoose", skill: 0.55, avatar: "mongoose" },
+  { grade: "primary-4", subject: "mathematics", name: "Decimal Dragon", skill: 0.6, avatar: "dragon" },
+  { grade: "primary-5", subject: "mathematics", name: "Percent Pelican", skill: 0.62, avatar: "pelican" },
   { grade: "primary-6", subject: "mathematics", name: "Prime Panda", skill: 0.6, avatar: "panda" },
   { grade: "primary-6", subject: "english-language", name: "Lexi Lion", skill: 0.6, avatar: "lion" },
   { grade: "primary-6", subject: "basic-science", name: "Sparky Squirrel", skill: 0.55, avatar: "squirrel" },

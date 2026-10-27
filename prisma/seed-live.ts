@@ -8,6 +8,11 @@ const db = new PrismaClient();
 // Instant live-duel sparring partners. Emails start with
 // "live-trainer-" — the live engine looks them up by that prefix.
 const TRAINERS: { grade: string; name: string; skill: number; avatar: string }[] = [
+  { grade: "primary-1", name: "Count Cub", skill: 0.45, avatar: "cat" },
+  { grade: "primary-2", name: "Sum Turtle", skill: 0.5, avatar: "turtle" },
+  { grade: "primary-3", name: "Times Penguin", skill: 0.55, avatar: "penguin" },
+  { grade: "primary-4", name: "Divide Dolphin", skill: 0.58, avatar: "dolphin" },
+  { grade: "primary-5", name: "Fraction Swan", skill: 0.62, avatar: "swan" },
   { grade: "primary-6", name: "Blitz Bee", skill: 0.62, avatar: "bee" },
   { grade: "jss-2", name: "Volt Fox", skill: 0.68, avatar: "fox" },
   { grade: "jss-3", name: "Zap Dragon", skill: 0.72, avatar: "dragon" },

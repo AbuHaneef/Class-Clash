@@ -87,6 +87,7 @@ model Question {
   type         String           @default("mcq") // mcq | true_false
   text         String
   normalized   String           @unique
+  imageUrl     String?          // optional illustration (served from /qbank/...)
   points       Int              @default(100)
   timeLimit    Int              @default(30)
   explanation  String

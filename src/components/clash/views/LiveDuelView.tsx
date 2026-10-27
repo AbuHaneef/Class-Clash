@@ -7,6 +7,7 @@ import { useClash } from "@/lib/clash/client/store";
 import { getLiveSocket, isLiveAuthed, setLiveAuthed } from "@/lib/clash/client/live";
 import { Avatar } from "@/lib/clash/avatars";
 import { LoadingCard, EmptyState, Pill, TimerRing, Confetti } from "@/components/clash/shared";
+import { QuestionImage } from "@/components/clash/QuestionImage";
 import { sfx } from "@/lib/clash/client/sound";
 import { toast } from "sonner";
 import {
@@ -49,6 +50,7 @@ type LiveQuestion = {
   difficulty: string;
   points: number;
   timeLimit: number;
+  imageUrl: string | null;
   options: { id: string; text: string }[];
   subjectName: string;
   topicName: string;
@@ -708,6 +710,11 @@ export default function LiveDuelView() {
               </div>
 
               <p className="mb-4 font-display text-lg font-bold leading-snug sm:text-xl">{question.q.text}</p>
+              {question.q.imageUrl && (
+                <div className="mb-4">
+                  <QuestionImage src={question.q.imageUrl} alt="Question illustration" maxHeight={180} />
+                </div>
+              )}
 
               <div className="grid gap-2.5">
                 {question.q.options.map((opt, i) => {

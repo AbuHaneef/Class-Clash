@@ -6,6 +6,7 @@ import { apiGet, apiSend } from "@/lib/clash/client/api";
 import { useClash } from "@/lib/clash/client/store";
 import { Avatar } from "@/lib/clash/avatars";
 import { LoadingCard, ErrorState, Pill, ResultBadge } from "@/components/clash/shared";
+import { QuestionImage } from "@/components/clash/QuestionImage";
 import { toast } from "sonner";
 import { ArrowLeft, Play, Crown, Swords, Check, X, Timer, Radio } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -25,11 +26,11 @@ type ChallengeDetail = {
     theirSessionDone: boolean;
     creatorResult: {
       score: number; correctCount: number; totalCount: number; totalTimeMs: number;
-      detail: { questionId: string; chosen: number; correct: boolean; correctIndex: number; text: string }[];
+      detail: { questionId: string; chosen: number; correct: boolean; correctIndex: number; text: string; imageUrl: string | null }[];
     } | null;
     opponentResult: {
       score: number; correctCount: number; totalCount: number; totalTimeMs: number;
-      detail: { questionId: string; chosen: number; correct: boolean; correctIndex: number; text: string }[];
+      detail: { questionId: string; chosen: number; correct: boolean; correctIndex: number; text: string; imageUrl: string | null }[];
     } | null;
     questionCount: number;
   };
@@ -185,6 +186,11 @@ export default function DuelDetailView({ challengeId }: { challengeId?: string }
                   <p className="text-sm font-medium">
                     <span className="text-muted-foreground">Q{i + 1}.</span> {d.text}
                   </p>
+                  {d.imageUrl && (
+                    <div className="mt-2">
+                      <QuestionImage src={d.imageUrl} alt="Question illustration" maxHeight={130} />
+                    </div>
+                  )}
                   <div className="mt-2.5 grid gap-1.5 sm:grid-cols-2">
                     <CompareRow label="You" correct={d.correct} />
                     <CompareRow label={c.opponent && meIsCreator ? c.opponent.displayName : c.creator.displayName} correct={their?.correct ?? false} isBot={c.opponent?.isBot} />
