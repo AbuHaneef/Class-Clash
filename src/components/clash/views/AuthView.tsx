@@ -38,7 +38,8 @@ export default function AuthView({ mode }: { mode: "login" | "register" }) {
     }
     const me = await fetchMe();
     toast(mode === "register" ? "Account created! Let's set you up." : `Welcome back${me ? ", " + me.displayName : ""}!`);
-    navigate(me && !me.onboarded ? "/onboarding" : "/", true);
+    const staff = me?.role === "admin" || me?.role === "reviewer";
+    navigate(me && !me.onboarded ? "/onboarding" : staff ? "/admin/dashboard" : "/", true);
   };
 
   return (

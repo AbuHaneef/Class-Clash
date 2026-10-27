@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, lazy, Suspense } from "react";
+import React, { useEffect, useRef, lazy, Suspense } from "react";
 import { useRoute, navigate } from "@/lib/clash/client/router";
 import { useClash } from "@/lib/clash/client/store";
 import { apiGet, apiSend } from "@/lib/clash/client/api";
@@ -45,7 +45,8 @@ const AdminView = lazy(() => import("./views/AdminView"));
 
 export default function AppShell() {
   const route = useRoute();
-  const { me, fetchMe, soundOn, liveMatchActive } = useClash();
+  const { me, meLoading, fetchMe, soundOn, liveMatchActive } = useClash();
+  const isStaff = me?.role === "admin" || me?.role === "reviewer";
 
   // session bootstrap
   useEffect(() => {
@@ -84,6 +85,18 @@ export default function AppShell() {
       navigate("/onboarding", true);
     }
   }, [me, path0]);
+
+  // ── Staff bootstrap: opening the site root lands staff in the Admin Panel ──
+  // Runs once per page load, only for the bare root path — deep links and the
+  // sidebar "Dashboard" entry still show the student view when chosen.
+  const staffBootstrapped = useRef(false);
+  useEffect(() => {
+    if (meLoading || staffBootstrapped.current) return;
+    staffBootstrapped.current = true;
+    if (isStaff && (route.path === "/" || route.path === "")) {
+      navigate("/admin/dashboard", true);
+    }
+  }, [meLoading, isStaff, route.path]);
 
   const view = renderRoute(route.segments, Boolean(me));
 
@@ -196,6 +209,16 @@ function TopBar({ me, hidden }: { me: ReturnType<typeof useClash.getState>["me"]
             </div>
             <LevelBadge level={me.levelInfo?.level ?? 1} size={30} />
             <StreakFlame count={me.streakCount} />
+            {(me.role === "admin" || me.role === "reviewer") && (
+              <button
+                onClick={() => navigate("/admin/dashboard")}
+                className="cc-tap flex items-center justify-center rounded-xl bg-violet-500/15"
+                aria-label="Open Admin Panel"
+                title="Open Admin Panel"
+              >
+                <ShieldCheck size={18} className="m-2.5 text-violet-300" aria-hidden />
+              </button>
+            )}
             <button
               onClick={() => navigate("/notifications")}
               className="cc-tap relative flex items-center justify-center rounded-xl bg-secondary/70"

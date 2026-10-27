@@ -13,7 +13,7 @@ import { sfx } from "@/lib/clash/client/sound";
 import { toast } from "sonner";
 import {
   Zap, CalendarCheck, Swords, Trophy, Flame, ArrowRight, Play, Crown,
-  Target, Gift, ChevronRight, BookOpen, TrendingUp, Sparkles, Radio, Flag, Medal,
+  Target, Gift, ChevronRight, BookOpen, TrendingUp, Sparkles, Radio, Flag, Medal, ShieldCheck,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -59,6 +59,8 @@ type HomeData = {
 export default function DashboardView() {
   const [data, setData] = useState<HomeData | null>(null);
   const [loading, setLoading] = useState(true);
+  const me = useClash((s) => s.me);
+  const staffRole = me?.role === "admin" ? "Platform Admin" : me?.role === "reviewer" ? "Lead Reviewer" : null;
   const [league, setLeague] = useState<{
     mySchool: { name: string; color: string; rank: number | null; totalPoints: number; memberCount: number } | null;
     leader: { name: string; totalPoints: number } | null;
@@ -93,6 +95,27 @@ export default function DashboardView() {
 
   return (
     <div className="space-y-7">
+      {/* ── Staff banner: make the role obvious, panel one tap away ── */}
+      {staffRole && (
+        <section className="flex flex-wrap items-center gap-3 rounded-3xl border border-violet-500/40 bg-violet-500/10 p-4">
+          <ShieldCheck size={22} className="shrink-0 text-violet-300" aria-hidden />
+          <div className="min-w-0 flex-1">
+            <p className="text-sm font-bold text-violet-200">
+              Signed in as {staffRole} — this is the student view
+            </p>
+            <p className="text-xs text-muted-foreground">
+              Platform stats, the question bank, users, moderation and config live in your Admin Panel.
+            </p>
+          </div>
+          <button
+            onClick={() => navigate("/admin/dashboard")}
+            className="cc-tap shrink-0 rounded-xl bg-violet-500/20 px-4 py-2 text-sm font-bold text-violet-200 hover:bg-violet-500/30"
+          >
+            Open Admin Panel
+          </button>
+        </section>
+      )}
+
       {/* ── Welcome + XP ── */}
       <section className="cc-hero-bg rounded-3xl border border-border/60 p-5 sm:p-6">
         <div className="flex items-center gap-4">
@@ -102,7 +125,7 @@ export default function DashboardView() {
               Hey, {m.displayName}! <LevelBadge level={m.level.level} size={30} />
             </h1>
             <p className="mt-0.5 text-sm text-muted-foreground">
-              {m.gradeName} • {m.level.title} • Rating {m.rating}
+              {m.gradeName ?? staffRole ?? "Unassigned"} • {m.level.title} • Rating {m.rating}
               {m.myTitles > 0 && <span className="text-yellow-400"> • {m.myTitles} 👑</span>}
             </p>
           </div>

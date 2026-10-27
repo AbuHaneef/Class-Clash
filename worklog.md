@@ -86,3 +86,25 @@ Verification:
 Stage Summary:
 - ClassClash is now a real platform: open email/password registration (anyone can join and play), genuine admin account with full admin panel (question CRUD/CSV/review, users & roles, moderation, audit log, config), reviewer account, and a fully verified 226-question Launch Bank (every answer checked + machine-verified against the DB).
 - Staff credentials (deliver to operator, never published in-app): admin@classclash.com / Admin#ClassClash2026 · reviewer@classclash.com / Review#ClassClash2026.
+
+---
+Task ID: 4
+Agent: Main agent (Z.ai)
+Task: Fix admin login not landing in the Admin Panel (user reported admin experience identical to students)
+
+Work Log:
+- Root cause: AuthView redirected EVERY user to "/" (student dashboard) after login, regardless of role; Admin Panel existed and worked but was never the landing experience, and mobile had no admin entry point at all.
+- AuthView.tsx: role-based post-login redirect — admin/reviewer → /admin/dashboard; students → / (or /onboarding if not onboarded).
+- AppShell.tsx: staff bootstrap redirect — on first page load, staff opening the site root ("/") lands in the Admin Panel; deep links and the sidebar "Dashboard" entry still show the student view when explicitly chosen (runs once per page load via ref guard).
+- AppShell.tsx TopBar: violet ShieldCheck "Open Admin Panel" button for staff (admin + reviewer) — gives mobile users a persistent entry point (sidebar is desktop-only).
+- DashboardView.tsx: staff banner ("Signed in as Platform Admin — this is the student view" + Open Admin Panel button) shown only to staff; welcome line now shows the role label instead of empty grade for staff accounts.
+- Verified DB: admin@classclash.com (admin) and reviewer@classclash.com (reviewer) both onboarded=true, active.
+- Cleanup: deleted the throwaway E2E registration (scripts/cleanup-test-user.ts) — Challenge participant field is creatorId (not challengerId), XP model client property is xPTransaction.
+
+Verification:
+- Browser E2E (agent-browser): admin login → lands on #/admin/dashboard with all 7 sections ("Admin — Dashboard" heading); admin clicking logo sees student dashboard + staff banner; admin reload on "/" auto-bounces back to Admin Panel; student register → onboarding → "/" dashboard with NO staff banner; student reload on "/" stays put; reviewer login → #/admin/dashboard with "Reviewer (limited)" pill; mobile 390px admin: shield button visible, no horizontal overflow.
+- Regression: scripts/test-real-platform.ts → 27/27 passing. ESLint: 0 errors/warnings on all 3 changed files.
+- Screenshots: download/classclash-admin-login-redirect.png (desktop Admin Panel), download/classclash-admin-mobile.png (mobile).
+
+Stage Summary:
+- Staff now get a real admin experience: logging in as admin/reviewer goes straight to the Admin Panel, reopening the site as staff keeps landing there, mobile has a one-tap shield button, and the student view is clearly labelled when staff deliberately browse it. Students are completely unaffected.
