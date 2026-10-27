@@ -168,7 +168,7 @@ export default function OnboardingView() {
               {[
                 { icon: "🎓", text: "Practise subjects topic by topic with instant explanations" },
                 { icon: "⚔️", text: "Duel classmates and enter the Quick Arena" },
-                { icon: "👑", text: "Challenge Demo Guardians to win real championship crowns" },
+                { icon: "👑", text: "Challenge Guardian bots to win real championship crowns" },
                 { icon: "🔥", text: "Build streaks, complete missions, earn XP and badges" },
               ].map((x) => (
                 <p key={x.text} className="flex items-center gap-3 rounded-xl bg-secondary/40 px-4 py-3 text-sm">

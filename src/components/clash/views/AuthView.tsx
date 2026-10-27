@@ -168,7 +168,7 @@ export default function AuthView({ mode }: { mode: "login" | "register" }) {
         </button>
 
         <p className="mt-4 text-center text-xs leading-relaxed text-muted-foreground">
-          Forgot your password? Email support is not enabled in this demo build —
+          Forgot your password? Email support is not enabled yet —
           contact your teacher or platform support to reset it.
         </p>
       </div>

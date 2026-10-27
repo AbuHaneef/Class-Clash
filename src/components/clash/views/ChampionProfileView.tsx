@@ -81,7 +81,7 @@ export default function ChampionProfileView({ gradeId, subjectId }: { gradeId?: 
           {data.subject.name} Champion • {data.grade.name}
         </p>
         {c?.user.isBot ? (
-          <Pill color="violet" className="mt-2">🤖 Demo Guardian</Pill>
+          <Pill color="violet" className="mt-2">🤖 Guardian bot</Pill>
         ) : (
           <div className="mt-2 flex items-center justify-center gap-2">
             <LevelBadge level={c?.user.level ?? null} size={28} />

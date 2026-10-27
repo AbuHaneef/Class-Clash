@@ -127,7 +127,7 @@ export default function DuelDetailView({ challengeId }: { challengeId?: string }
           {c.subject.name} • {c.gradeName} • {c.questionCount} questions
           {c.opponent?.isBot && (c.isLive
             ? " • Live Trainer — answered in real time during your match"
-            : " • Demo Guardian (fixed attempt, generated before you played)")}
+            : " • Guardian bot (fixed attempt, generated before you played)")}
         </p>
 
         {/* status / actions */}
@@ -230,7 +230,7 @@ function PlayerCard({
     <div className="min-w-0 text-center">
       <Avatar avatar={avatar} size={56} ring={you ? "#f5c518" : undefined} className="mx-auto" />
       <p className="mt-2 max-w-24 truncate text-sm font-bold sm:max-w-32">{name}</p>
-      {isBot && <Pill className="mt-1">Demo Guardian</Pill>}
+      {isBot && <Pill className="mt-1">Guardian bot</Pill>}
       {score !== undefined && score !== null && (
         <p className="mt-1 font-display text-2xl font-bold">{score}</p>
       )}

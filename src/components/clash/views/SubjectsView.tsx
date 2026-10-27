@@ -107,7 +107,7 @@ export default function SubjectsView() {
 
       <p className="rounded-2xl border border-border/50 bg-secondary/30 p-4 text-xs leading-relaxed text-muted-foreground">
         📘 <strong className="text-foreground/80">Note:</strong> Question content for other classes (Primary 1–5, JSS 1, SS 1) is on the
-        roadmap and will be added by editors through the admin question bank. Demo questions are clearly labelled in review screens.
+        roadmap and will be added by editors through the admin question bank. Every question shows its review status in review screens.
       </p>
     </div>
   );

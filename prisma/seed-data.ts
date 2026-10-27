@@ -239,8 +239,8 @@ export const MISSIONS: {
   { code: "m_duel", name: "Bring It On", description: "Play 1 duel or champion challenge", icon: "swords", metric: "duel_play", target: 1, xpReward: 20 },
 ];
 
-// Demo guardians: clearly-labelled bots that hold the first titles so the
-// championship system is playable from day one. Beating one crowns YOU.
+// Guardian bots: clearly-labelled practice champions that hold the first
+// titles so the championship system is playable from day one. Beating one crowns YOU.
 export const GUARDIANS: {
   grade: string;
   subject: string;

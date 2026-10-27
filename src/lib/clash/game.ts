@@ -135,7 +135,7 @@ export const MODE_LABEL: Record<string, string> = {
   duel: "Duel",
   champion: "Champion Challenge",
   daily: "Daily Challenge",
-  guest: "Guest Demo",
+  guest: "Guest Preview",
 };
 
 export const COMPETITIVE_MODES: QuizMode[] = [

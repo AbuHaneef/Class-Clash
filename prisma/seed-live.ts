@@ -15,7 +15,7 @@ const TRAINERS: { grade: string; name: string; skill: number; avatar: string }[]
   { grade: "ss-3", name: "Ace Alien", skill: 0.76, avatar: "alien" },
 ];
 
-// ── Demo schools (staffed by guardian bots) ──────────────────
+// ── Seeded rival schools (staffed by guardian bots) ──────────
 const SCHOOLS: {
   name: string;
   motto: string;

@@ -60,3 +60,29 @@ Stage Summary:
 - School leagues fully live: found/join/leave by code, league table driven by members' competitive season points, per-school squad + recent form, demo rival squads to beat.
 - Ops note: duel service runs via mini-services/duel-service (bun --hot, port 3003); in-flight live matches are in-memory (void on restart — documented in Help); internal endpoints guarded by shared secret; answer keys never reach browsers.
 - Known beta note: bun --hot module reloads can leave a stale port-holding instance — restart cleanly (pkill + bun run dev) after service code edits.
+
+---
+Task ID: 3
+Agent: Main agent (Z.ai)
+Task: Verify all questions/answers are correct + convert platform from demo to a real platform (real admin account, open registration, admin panel)
+
+Work Log:
+- Manual Q-by-Q correctness review of all 226 seed questions (P6/JSS2/JSS3/SS2/SS3: math recomputed, science facts, grammar rules, economics) — all answers confirmed correct.
+- Programmatic seed⇄DB verification (scripts/migrate-to-real.ts): every seed question present with exactly the reviewed correct option, exactly one correct per question, no duplicate options, all published.
+- Found & fixed via verification: (1) 8 leftover E2E test questions deleted (+orphan attempts); (2) P6 punctuation question had case-only near-duplicate options — replaced with clean comma-list question; (3) duplicate normalized stems had silently skipped 2 seed questions (JSS2 comma placement, JSS3 spelling) — given unique stems and inserted; bank now 226/226 published.
+- Question bank relabelled: source "ClassClash Demo Bank" → "ClassClash Launch Bank", reviewNote "Reviewed for launch."
+- Real staff accounts created in place (preserving FK references): admin@classclash.com / Admin#ClassClash2026 (Platform Admin), reviewer@classclash.com / Review#ClassClash2026 (Lead Reviewer). Old .demo credentials verified rejected (401). displayName UNIQUE constraint handled (retire duplicate rows before rename).
+- Removed published admin credentials from HelpView (real platforms never publish staff passwords) — replaced with "Real platform" info box.
+- Purged "demo" wording platform-wide: LandingView (4), OnboardingView, ChampionProfileView, DuelDetailView (2), ChampionsView (2), SubjectsView, SchoolLeagueView ("Demo squad"→"Seeded squad"), AuthView, QuizPlayView guest labels, game.ts mode label, API strings (onboarding mission, guest disclaimer, profile levelTitle). "Demo Guardian" → "Guardian bot" everywhere user-visible. Internal isDemo/demoSquad flags kept (leaderboard filtering, live-trainer lookup).
+- Updated seed.ts/seed-data.ts/seed-live.ts so future re-seeds stay consistent with the real accounts/labels.
+
+Verification:
+- scripts/audit-questions.ts + migrate-to-real.ts: 226/226 seed questions verified in DB (0 missing, 0 mismatched, 0 orphans), all published, all source=ClassClash Launch Bank.
+- scripts/test-real-platform.ts (new): 27/27 passing — old demo creds rejected, admin login + panel APIs (stats/question bank/audit), open registration + duplicate-email rejection, onboarding, practice quiz start with sanitized questions (no answer leak), server-side answer validation, double-answer blocked, quiz completion, student+reviewer blocked from admin (403), guest preview, champions/leagues/leaderboard public. Rate limiter confirmed working (429 on burst).
+- Browser E2E via gateway :81: landing clean (only "democracy" substring match), admin login as "Platform Admin" → Admin Panel renders 7 sections, stats 32 students / 226 questions / 0 pending, Question Bank shows "ClassClash Launch Bank", Help page has no old creds + "Real platform" box, Champions view shows "Guardian bot" with zero "Demo Guardian" strings. Duel service up on :3003.
+- ESLint: 0 errors, 0 warnings on all changed files.
+- Screenshots: download/classclash-real-admin-panel.png, download/classclash-real-platform-help.png.
+
+Stage Summary:
+- ClassClash is now a real platform: open email/password registration (anyone can join and play), genuine admin account with full admin panel (question CRUD/CSV/review, users & roles, moderation, audit log, config), reviewer account, and a fully verified 226-question Launch Bank (every answer checked + machine-verified against the DB).
+- Staff credentials (deliver to operator, never published in-app): admin@classclash.com / Admin#ClassClash2026 · reviewer@classclash.com / Review#ClassClash2026.

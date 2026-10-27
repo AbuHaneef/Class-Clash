@@ -12,7 +12,7 @@ const SAMPLE_IDS_LOCK = "guest-demo-v1";
 export async function GET(req: NextRequest) {
   try {
     rateLimit(clientKey(req, "guest"), 20, 60_000);
-    if (cachedSet) return ok({ demo: cachedSet, disclaimer: "Demo content — results are not saved. Create an account to earn XP, badges and titles!" });
+    if (cachedSet) return ok({ demo: cachedSet, disclaimer: "Preview content — results are not saved. Create an account to earn XP, badges and titles!" });
 
     // A fun cross-grade sample: 2 questions from 5 different subjects
     const picks: string[] = [];
@@ -41,7 +41,7 @@ export async function GET(req: NextRequest) {
       id: SAMPLE_IDS_LOCK,
       questions: ordered.map((q) => sanitizeQuestion(q as never)),
     };
-    return ok({ demo: cachedSet, disclaimer: "Demo content — results are not saved. Create an account to earn XP, badges and titles!" });
+    return ok({ demo: cachedSet, disclaimer: "Preview content — results are not saved. Create an account to earn XP, badges and titles!" });
   } catch (e) {
     return fail(e);
   }

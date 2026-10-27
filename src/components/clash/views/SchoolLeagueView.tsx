@@ -208,7 +208,7 @@ export default function SchoolLeagueView() {
                     <Medal size={12} aria-hidden /> League #{mySchool.rank}
                   </Pill>
                 )}
-                {mySchool.demoSquad && <Pill>Demo squad</Pill>}
+                {mySchool.demoSquad && <Pill>Seeded squad</Pill>}
               </div>
               {mySchool.motto && <p className="text-xs italic text-muted-foreground">“{mySchool.motto}”</p>}
               <div className="mt-1.5 flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted-foreground">
@@ -388,7 +388,7 @@ export default function SchoolLeagueView() {
                       <span className="flex flex-wrap items-center gap-1.5">
                         <span className="truncate text-sm font-bold">{row.name}</span>
                         {row.isMySchool && <Pill color="gold" className="!px-1.5 !py-0 !text-[10px]">Yours</Pill>}
-                        {row.demoSquad && <Pill className="!px-1.5 !py-0 !text-[10px]">Demo squad</Pill>}
+                        {row.demoSquad && <Pill className="!px-1.5 !py-0 !text-[10px]">Seeded squad</Pill>}
                       </span>
                       {row.topContributor && (
                         <span className="block truncate text-[11px] text-muted-foreground">
@@ -419,7 +419,7 @@ export default function SchoolLeagueView() {
         )}
         <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
           League points = the season points your members earn in duels, champion matches and live duels
-          (win 3 · draw 2 · loss 1). Demo squads are seeded rival schools — beat their scores!
+          (win 3 · draw 2 · loss 1). Seeded squads are rival schools staffed by Guardian bots — beat their scores!
         </p>
       </section>
     </div>

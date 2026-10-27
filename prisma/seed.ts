@@ -84,7 +84,7 @@ async function main() {
   const topics = await db.topic.findMany();
   const topicByKey = new Map(topics.map((t) => [`${t.subjectId}:${t.name}`, t.id]));
 
-  // ── Question bank (demo content, clearly labelled) ──
+  // ── Question bank (reviewed launch content) ──
   let qCount = 0;
   for (const [gradeSlug, subjectSlug, topicName, difficulty, text, options, explanation] of ALL_QUESTIONS) {
     const gradeId = gradeBySlug.get(gradeSlug);
@@ -120,8 +120,8 @@ async function main() {
         timeLimit: 30,
         explanation,
         status: "published",
-        reviewNote: "Reviewed for demo launch bank.",
-        source: "ClassClash Demo Bank",
+        reviewNote: "Reviewed for launch.",
+        source: "ClassClash Launch Bank",
         isDemo: true,
       },
     });
@@ -152,13 +152,13 @@ async function main() {
     });
   }
 
-  // ── Admin account (demo credentials shown in Help) ──
+  // ── Platform staff accounts (credentials held privately by the operator) ──
   await db.user.upsert({
-    where: { email: "admin@classclash.demo" },
+    where: { email: "admin@classclash.com" },
     create: {
-      email: "admin@classclash.demo",
-      passwordHash: hashPassword("ClashAdmin#2026"),
-      displayName: "Chief Referee",
+      email: "admin@classclash.com",
+      passwordHash: hashPassword("Admin#ClassClash2026"),
+      displayName: "Platform Admin",
       avatar: "owl",
       role: "admin",
       onboarded: true,
@@ -167,13 +167,13 @@ async function main() {
     update: { role: "admin" },
   });
 
-  // Question reviewer account (demo)
+  // Question reviewer account
   await db.user.upsert({
-    where: { email: "reviewer@classclash.demo" },
+    where: { email: "reviewer@classclash.com" },
     create: {
-      email: "reviewer@classclash.demo",
-      passwordHash: hashPassword("ClashReview#2026"),
-      displayName: "Question Master",
+      email: "reviewer@classclash.com",
+      passwordHash: hashPassword("Review#ClassClash2026"),
+      displayName: "Lead Reviewer",
       avatar: "dragon",
       role: "reviewer",
       onboarded: true,
@@ -181,7 +181,7 @@ async function main() {
     update: { role: "reviewer" },
   });
 
-  // ── Demo guardians (bots) + initial champion titles ──
+  // ── Guardian bots + initial champion titles ──
   for (const g of GUARDIANS) {
     const gradeId = gradeBySlug.get(g.grade)!;
     const subjectId = subjectBySlug.get(g.subject)!;
@@ -215,7 +215,7 @@ async function main() {
           subjectId,
           formerChampionId: null,
           newChampionId: bot.id,
-          note: "Founding demo guardian — beat them to claim the title!",
+          note: "Founding Guardian — beat them to claim the title!",
         },
       });
     }
@@ -227,7 +227,7 @@ async function main() {
     await db.announcement.create({
       data: {
         title: "Welcome to ClassClash! 🏆",
-        body: "Practise, duel your classmates, and take a championship crown from a Demo Guardian. Champions are crowned daily — will the next one be you?",
+        body: "Practise, duel your classmates, and take a championship crown from a Guardian bot. Champions are crowned daily — will the next one be you?",
         active: true,
       },
     });

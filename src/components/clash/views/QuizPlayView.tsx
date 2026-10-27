@@ -331,14 +331,14 @@ function GuestQuiz() {
   };
 
   if (loading) return <LoadingCard label="Loading sample questions…" />;
-  if (!demo) return <ErrorState message="Couldn't load the demo quiz right now." onRetry={() => location.reload()} />;
+  if (!demo) return <ErrorState message="Couldn't load the preview quiz right now." onRetry={() => location.reload()} />;
 
   if (done) {
     return (
       <div className="mx-auto max-w-md space-y-5 py-4 text-center">
         <div className="cc-hero-bg rounded-3xl border border-border/60 p-8">
           <p className="font-display text-5xl font-bold cc-gradient-text">{correctCount}/{demo.questions.length}</p>
-          <p className="mt-2 text-muted-foreground">Demo score: {score} pts (not saved)</p>
+          <p className="mt-2 text-muted-foreground">Preview score: {score} pts (not saved)</p>
           <p className="mt-4 text-sm text-muted-foreground">{demo.disclaimer}</p>
           <div className="mt-6 flex flex-col gap-2.5">
             <button
@@ -360,7 +360,7 @@ function GuestQuiz() {
   return (
     <div className="mx-auto max-w-2xl space-y-4">
       <div className="rounded-2xl border border-violet-500/30 bg-violet-500/10 px-4 py-2.5 text-center text-xs font-semibold text-violet-300">
-        Guest demo — nothing is saved. Sign up for XP, badges and championships!
+        Guest preview — nothing is saved. Register for XP, badges and championships!
       </div>
       <div className="rounded-3xl border border-border/60 bg-card/80 p-5 sm:p-7">
         <p className="text-xs text-muted-foreground">
@@ -399,7 +399,7 @@ function GuestQuiz() {
             </p>
             <p className="mt-1.5 text-sm text-foreground/85">{feedback.explanation}</p>
             <button onClick={next} className="cc-tap mt-3.5 w-full rounded-xl bg-gradient-to-r from-yellow-400 to-orange-500 font-display font-bold text-yellow-950 active:scale-95 sm:w-auto sm:px-6">
-              <span className="my-2.5 inline-block">{qIndex + 1 >= demo.questions.length ? "Finish demo" : "Next"}</span>
+              <span className="my-2.5 inline-block">{qIndex + 1 >= demo.questions.length ? "Finish preview" : "Next"}</span>
             </button>
           </div>
         )}

@@ -36,7 +36,7 @@ export async function POST(req: NextRequest) {
         userId: user.id,
         type: "system",
         title: "Welcome to ClassClash, " + displayName + "! 🎉",
-        body: "Practise a subject, then challenge a Demo Guardian to win your first championship crown!",
+        body: "Practise a subject, then challenge a Guardian bot to win your first championship crown!",
         link: "/#/subjects",
       },
     });

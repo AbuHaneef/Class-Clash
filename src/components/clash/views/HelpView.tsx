@@ -114,7 +114,7 @@ function HelpRules() {
 
       <H2>What's fully working in this build</H2>
       <ul className="list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-muted-foreground">
-        <li>Accounts, onboarding, profiles, guest demo quiz</li>
+        <li>Accounts, onboarding, profiles, guest preview quiz</li>
         <li>Question bank engine with server-validated answers & explanations</li>
         <li>Practice, Exam Prep, Quick Arena, Daily Challenge (per class)</li>
         <li><strong>Real-time Live Duels:</strong> Quick Match matchmaking, instant Live Trainer bots and friend room codes — same questions, synced rounds, forfeit on leaving</li>
@@ -134,16 +134,20 @@ function HelpRules() {
         <li><strong>Live duels & school leagues on shared infrastructure:</strong> the live server keeps match state in memory — if the sandbox restarts mid-match, in-flight live duels are void (no rating change), and completed results are safely stored.</li>
       </ul>
 
-      <H2>Demo content & accounts</H2>
+      <H2>Question bank & Guardian champions</H2>
       <p className="text-sm leading-relaxed text-muted-foreground">
-        All seed questions are labelled <em>ClassClash Demo Bank</em> — they are reviewed for learning value but are
-        not past examination papers. Demo Guardians (bots) hold initial titles so championships are playable from
-        day one; their attempts are generated the moment a challenge is created, before you play.
+        Every question in the bank is part of the <em>ClassClash Launch Bank</em> — reviewed for correctness and
+        learning value, with worked explanations. Guardian bots hold the initial titles so championships are playable
+        from day one; their attempts are generated the moment a challenge is created, before you play. New questions
+        are added by editors through the admin review queue.
       </p>
-      <div className="rounded-2xl border border-violet-500/30 bg-violet-500/8 p-4 text-sm">
-        <p className="font-bold text-violet-300">Demo admin access (sandbox only)</p>
-        <p className="mt-1 text-muted-foreground">Admin: <code>admin@classclash.demo</code> / <code>ClashAdmin#2026</code></p>
-        <p className="text-muted-foreground">Reviewer: <code>reviewer@classclash.demo</code> / <code>ClashReview#2026</code></p>
+      <div className="rounded-2xl border border-emerald-500/30 bg-emerald-500/8 p-4 text-sm">
+        <p className="font-bold text-emerald-300">Real platform</p>
+        <p className="mt-1 text-muted-foreground">
+          Anyone can register with an email and password and play immediately — practice, arenas, live duels,
+          school leagues and championships. Staff accounts (admin &amp; reviewer) are issued privately by the
+          platform operator and are never published on the site.
+        </p>
       </div>
 
       <H2>Getting help</H2>
@@ -217,7 +221,7 @@ function Terms() {
       </p>
       <H2>Content</H2>
       <p className="text-sm leading-relaxed text-muted-foreground">
-        Demo questions are educational samples, not official examination papers. Curriculum alignment labels appear
+        Launch questions are reviewed educational content, not official examination papers. Curriculum alignment labels appear
         only after editorial review. The platform is provided "as is" for learning and friendly competition.
       </p>
     </article>

@@ -54,7 +54,7 @@ export async function GET(
         isMe,
         gradeName: user.grade?.name ?? null,
         level: user.isBot ? null : levelProgress(user.xp).level,
-        levelTitle: user.isBot ? "Demo Guardian" : levelProgress(user.xp).title,
+        levelTitle: user.isBot ? "Guardian bot" : levelProgress(user.xp).title,
         xp: user.isBot ? null : user.xp,
         rating: user.isBot ? null : user.rating,
         streak: user.isBot ? null : user.streakCount,

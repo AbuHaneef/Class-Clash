@@ -52,7 +52,7 @@ export default function LandingView() {
           </button>
         </div>
         <p className="mt-5 text-xs text-muted-foreground">
-          No app install needed — plays right in your browser. Guest demo available.
+          No app install needed — plays right in your browser. Guest preview available.
         </p>
 
         {/* floating trophy cluster */}
@@ -193,7 +193,7 @@ export default function LandingView() {
           <button onClick={() => navigate("/terms")} className="hover:text-foreground">Terms</button>
         </div>
         <p className="mt-4 text-xs">
-          ClassClash — built for Nigerian primary & secondary schools. Demo questions are clearly labelled and reviewed for learning value.
+          ClassClash — built for Nigerian primary & secondary schools. Every question is reviewed for correctness and learning value.
         </p>
       </footer>
     </div>
@@ -225,7 +225,7 @@ function ChampionsPreview() {
         </button>
       </div>
       <p className="mt-1 text-sm text-muted-foreground">
-        Current champions include Demo Guardians — clearly-labelled practice champions. Beat one and the real crown becomes yours.
+        Current champions include Guardian bots — practice champions holding the first titles. Beat one and the real crown becomes yours.
       </p>
       <div className="mt-5 grid gap-3 sm:grid-cols-2">
         {champions.map((c, i) => (
@@ -241,7 +241,7 @@ function ChampionsPreview() {
             <div className="min-w-0 flex-1">
               <p className="truncate font-display font-bold">{c.subject.name} · {c.gradeName}</p>
               <p className="truncate text-sm text-muted-foreground">
-                {c.champion.isBot ? `${c.champion.displayName} — Demo Guardian` : `Champion: ${c.champion.displayName}`}
+                {c.champion.isBot ? `${c.champion.displayName} — Guardian bot` : `Champion: ${c.champion.displayName}`}
               </p>
             </div>
             <Pill color="gold">Take it</Pill>

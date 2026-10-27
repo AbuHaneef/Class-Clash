@@ -74,7 +74,7 @@ export default function ChampionsView() {
                     <div className="min-w-0">
                       <p className="truncate text-sm font-bold">{c.champion.displayName}</p>
                       <p className="text-xs text-muted-foreground">
-                        {c.champion.isBot ? "Demo Guardian — beat it to claim" : `Champion since ${new Date(c.wonAt).toLocaleDateString()}`}
+                        {c.champion.isBot ? "Guardian bot — beat it to claim" : `Champion since ${new Date(c.wonAt).toLocaleDateString()}`}
                       </p>
                     </div>
                   </div>
@@ -89,7 +89,7 @@ export default function ChampionsView() {
       )}
 
       <p className="rounded-2xl border border-border/50 bg-secondary/30 p-4 text-xs leading-relaxed text-muted-foreground">
-        🤖 <strong className="text-foreground/80">About Demo Guardians:</strong> seed champions are clearly-labelled bots so every
+        🤖 <strong className="text-foreground/80">About Guardian bots:</strong> seeded practice champions hold the first titles so every
         title is winnable from day one. Their attempts are generated the moment a challenge is created — before you play — and
         their skill level is fixed. Beat one and the crown is officially yours. Ratings are not affected by bot matches
         (only real duels move your rating), but season points and titles are real.
