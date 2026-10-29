@@ -37,12 +37,14 @@ export async function GET(req: NextRequest) {
           gradeName: c.grade.name,
           opponent: openInvite
             ? null
-            : {
-                id: other.id,
-                displayName: other.displayName,
-                avatar: other.avatar,
-                isBot: other.isBot,
-              },
+            : other
+              ? {
+                  id: other.id,
+                  displayName: other.displayName,
+                  avatar: other.avatar,
+                  isBot: other.isBot,
+                }
+              : null,
           openInvite,
           iAmCreator: mine,
           expiresAt: c.expiresAt,

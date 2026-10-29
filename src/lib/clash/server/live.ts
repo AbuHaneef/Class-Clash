@@ -79,16 +79,17 @@ export async function liveStart(body: {
   if (!p1 || p1.deletedAt) throw new ApiError(404, "Player not found.");
   if (!p1.onboarded || !p1.gradeId) throw new ApiError(400, "Finish setting up your profile first.");
 
-  let p2: typeof p1;
+  let p2: typeof p1 | null;
   if (wantsTrainer) {
     const trainer = await db.user.findFirst({
       where: { isBot: true, isDemo: true, gradeId: p1.gradeId, email: { startsWith: "live-trainer-" } },
+      include: { grade: true },
     });
     if (!trainer) throw new ApiError(404, "No live trainer available for your class yet.");
     p2 = trainer;
   } else {
     if (!isId(body.p2Id)) throw new ApiError(400, "Bad request.");
-    p2 = await db.user.findUnique({ where: { id: body.p2Id } });
+    p2 = await db.user.findUnique({ where: { id: body.p2Id }, include: { grade: true } });
     if (!p2 || p2.deletedAt) throw new ApiError(404, "Opponent not found.");
     if (!p2.onboarded || !p2.gradeId) throw new ApiError(400, "Opponent isn't ready.");
     if (p2.suspendedUntil && p2.suspendedUntil > new Date())

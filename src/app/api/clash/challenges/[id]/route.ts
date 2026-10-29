@@ -100,7 +100,7 @@ export async function GET(
           c.creatorId === user.id ? c.opponentSession : c.creatorSession
         ),
         creatorResult: buildResult(c.creatorId),
-        opponentResult: buildResult(c.opponentId),
+        opponentResult: c.opponentId ? buildResult(c.opponentId) : null,
         questionCount: qOrder.length,
       },
     });

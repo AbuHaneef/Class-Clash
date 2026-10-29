@@ -30,6 +30,7 @@ type CompleteResult = {
   review: {
     id: string; text: string; difficulty: string; explanation: string;
     options: string[]; correctIndex: number; chosenIndex: number; topicName: string;
+    imageUrl: string | null;
   }[];
   challenge?: {
     challengeId: string; status: string; winnerId: string | null; draw: boolean;
@@ -53,7 +54,7 @@ export default function ResultsView({ sessionId }: { sessionId?: string }) {
       const res = (r as unknown as { result: CompleteResult }).result;
       setResult(res);
       const wonChallenge = res.challenge && res.challenge.winnerId === me?.id;
-      if (res.accuracy >= 60 || wonChallenge || res.titleChanged) {
+      if (res.accuracy >= 60 || wonChallenge || res.challenge?.titleChanged) {
         setConfettiKey(Date.now());
         sfx.win();
       }

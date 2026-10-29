@@ -346,9 +346,9 @@ export async function resolveChallengeIfReady(
       creatorResult.totalTimeMs < opponentResult.totalTimeMs
         ? challenge.creatorId
         : challenge.opponentId;
-  } else if (!challenge.creator.isBot && !challenge.opponent.isBot) {
+  } else if (!challenge.creator.isBot && !challenge.opponent?.isBot) {
     winnerId =
-      challenge.creator.rating >= challenge.opponent.rating
+      challenge.creator.rating >= (challenge.opponent?.rating ?? 0)
         ? challenge.creatorId
         : challenge.opponentId;
   }

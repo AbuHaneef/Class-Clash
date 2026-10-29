@@ -155,3 +155,29 @@ Verification:
 
 Stage Summary:
 - The question bank now covers the complete Primary 1–6 Mathematics ladder (Nigerian curriculum): 983 verified questions with 120 illustrated ones, every answer machine-verified (recomputation for text, AI vision + deterministic geometry for images), every question explained, all corrections and skips documented in reviewNotes. Primary 1–5 students can now register, practise, duel (async + live vs trainers), take daily challenges and fight for championship crowns.
+
+---
+Task ID: 7
+Agent: Main agent (Z.ai)
+Task: Full platform verification — check everything has been done right, no errors or bugs
+
+Work Log:
+- Services health: Next.js :3000 (200), gateway :81 (200), duel service :3003 (Socket.IO handshake OK). dev.log clean.
+- Regression suite: 27/27 passing.
+- Wrote scripts/verify-all-integrity.ts (10 check groups): 1619/1619 published across 3 banks; 0 questions without exactly-one correct option; 0 multi/zero-option; every question has an explanation; no duplicate normalized stems; 120 image questions with all files on disk; 0 orphans; 10 content grades all populated (P1 166, P2 166, P3 153, P4 165, P5 163, P6 212, JSS2 48, JSS3 44, SS2 46, SS3 456); staff accounts active; no leftover test accounts; 30 champions all linked to active users; 40 bots (5 P1–P5 trainers + 5 guardians).
+- FIXED data bug #1: stress question "In which syllable does the primary stress occur in 'EDUCATION'?" had case-insensitively duplicate options ("E-du-ca-tion" vs "e-DU-ca-tion") — options rewritten to ordinal form (First/Second/Third/Fourth syllable), correct answer unchanged, reviewNote documents the change.
+- FIXED runtime bug #2 (500 on GET /api/clash/tournaments + admin variant): Tournament model has no subject/grade relations (raw subjectId/gradeId columns) but both GETs used include:{subject,grade} → PrismaClientValidationError. Replaced with ID→name maps; both endpoints now 200, admin Tournaments tab renders.
+- FIXED runtime bug #3 (Home dashboard 500): /api/clash/home dereferenced c.opponent.displayName for pending challenges — any student with an open-invite duel (room code awaiting challenger) got a broken dashboard. Reproduced live (200→500→fixed→200). Now shows "Open invite" gracefully.
+- Hardened 6 more null-unsafe spots found via tsc: challenges list/detail (open invite), champions recentMatches, challenge resolution rating tiebreak, claimMission union return (now always {awarded, levelUp, newLevel}), live trainer lookup (grade include).
+- FIXED logic bug #4: ResultsView confetti read res.titleChanged (always undefined — it lives on res.challenge) → now res.challenge?.titleChanged; also added missing imageUrl to the review item type; removed duplicate SUBJECT_ICONS keys (trending-up, book-open) in shared.tsx; removed dead "connecting" comparison + stray style prop; uncircularized QuestionWithMeta type.
+- TypeScript: src/ went from 40+ errors to 0 errors (tsc --noEmit clean). ESLint: 0 errors/warnings. (next.config typescript.ignoreBuildErrors left as-is — now moot for src/.)
+- scripts/test-null-safety.ts (new): 8/8 endpoint checks with open-invite challenge — list, detail (opponentResult null), home, schools, tournaments, missions claim graceful miss, champions board + detail.
+- Browser E2E (agent-browser via :81): landing clean (no console/page errors); admin login → #/admin/dashboard with all 7 tabs; admin Tournaments tab renders create form (was broken by the 500); registered P1 student → onboarding offers P1–P5 → Mathematics → Shapes practice with picture question rendering + answer flow → results with Review & Learn showing images + explanations; Live Duels: "Live server connected", full 8-round trainer battle vs Count Cub (rounds advance, opponent AI answers, scores update, timeout flow) → end screen with Rematch/breakdown → duel detail with LIVE DUEL badge. Screenshot: download/classclash-verify-live-breakdown.png. Zero page errors throughout.
+- Cleanup: all E2E/repro test users + their challenges, match records, sessions, XP, missions, badges, notifications deleted (scripts/cleanup-e2e-verify-user.ts; MatchRecord/QuestionAttempt FK naming documented).
+
+Verification:
+- Final state: 27/27 regression, 10/10 integrity groups, 8/8 null-safety checks, tsc 0 errors on src/, ESLint clean, dev.log clean, all services healthy.
+- Question bank: 1619 published (Launch 226 + Competition 410 + Primary Maths 983), every answer machine-verified.
+
+Stage Summary:
+- Platform verified end-to-end and hardened: 2 reproduced-and-fixed 500s (tournaments API, Home dashboard with open invites), 1 data fix (duplicate stress options), 1 logic fix (title-change confetti), 6 null-safety hardenings, and the codebase is now fully TypeScript-clean. All prior features (duels, leagues, admin panel, primary maths, image questions) re-verified working.

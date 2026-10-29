@@ -466,7 +466,7 @@ export default function LiveDuelView() {
       )}
 
       {/* ── lobby ── */}
-      {(phase === "lobby" || phase === "connecting") && !authMsg && (
+      {phase === "lobby" && !authMsg && (
         <>
           <section className="rounded-3xl border border-border/60 bg-card/70 p-5">
             <div className="mb-2 flex items-center justify-between">

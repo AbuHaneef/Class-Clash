@@ -10,7 +10,11 @@ export async function GET(req: NextRequest) {
     const me = await getUserFromRequest(req);
     const table = await leagueTable(me?.id ?? null);
 
-    let mySchool = null;
+    let mySchool: {
+      id: string; name: string; motto: string | null; color: string; joinCode: string;
+      memberCount: number; totalPoints: number; crowns: number; rank: number | null;
+      topContributor: { displayName: string; avatar: string; points: number } | null; demoSquad: boolean;
+    } | null = null;
     if (me?.schoolId) {
       const s = await db.school.findUnique({ where: { id: me.schoolId } });
       if (s) {

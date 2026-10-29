@@ -12,13 +12,18 @@ import {
 } from "./gamification";
 import { resolveChallengeIfReady, ChallengeOutcome } from "./challenge";
 
-type QuestionWithMeta = Awaited<ReturnType<typeof fetchQuestionsWithMeta>>[number];
-
-export async function fetchQuestionsWithMeta(ids: string[]) {
-  const qs = await db.question.findMany({
+// Helper exists so the element type can be derived without a circular
+// type alias (fetchQuestionsWithMeta itself returns QuestionWithMeta[]).
+async function queryQuestionsWithMeta(ids: string[]) {
+  return db.question.findMany({
     where: { id: { in: ids }, status: "published" },
     include: { options: true, topic: true, subject: true },
   });
+}
+type QuestionWithMeta = Awaited<ReturnType<typeof queryQuestionsWithMeta>>[number];
+
+export async function fetchQuestionsWithMeta(ids: string[]) {
+  const qs = await queryQuestionsWithMeta(ids);
   const map = new Map(qs.map((q) => [q.id, q]));
   return ids.map((id) => map.get(id)).filter(Boolean) as QuestionWithMeta[];
 }

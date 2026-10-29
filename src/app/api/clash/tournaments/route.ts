@@ -8,22 +8,29 @@ export async function GET(req: NextRequest) {
   try {
     const tournaments = await db.tournament.findMany({
       include: {
-        subject: true,
-        grade: true,
         participants: { include: { user: true } },
         matches: true,
       },
       orderBy: { createdAt: "desc" },
       take: 20,
     });
+    // Tournament stores raw subjectId/gradeId (no relations) — map names manually
+    const [subjects, grades] = await Promise.all([
+      db.subject.findMany({ select: { id: true, name: true } }),
+      db.grade.findMany({ select: { id: true, name: true } }),
+    ]);
+    const subjectName = (id: string | null) =>
+      (id && subjects.find((s) => s.id === id)?.name) || "All subjects";
+    const gradeName = (id: string | null) =>
+      (id && grades.find((g) => g.id === id)?.name) || "All classes";
     return ok({
       tournaments: tournaments.map((t) => ({
         id: t.id,
         name: t.name,
         description: t.description,
         status: t.status,
-        subjectName: t.subject?.name ?? "All subjects",
-        gradeName: t.grade?.name ?? "All classes",
+        subjectName: subjectName(t.subjectId),
+        gradeName: gradeName(t.gradeId),
         maxParticipants: t.maxParticipants,
         participantCount: t.participants.length,
         startsAt: t.startsAt,

@@ -85,8 +85,8 @@ export async function GET(
       })),
       recentMatches: defences.map((d) => ({
         id: d.id,
-        challenger: d.creator.displayName,
-        championName: d.opponent.displayName,
+        challenger: d.creator?.displayName ?? "—",
+        championName: d.opponent?.displayName ?? "—",
         winnerId: d.winnerId,
         draw: d.draw,
         challengerWon: d.winnerId === d.creatorId,

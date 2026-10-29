@@ -83,7 +83,7 @@ export default function TournamentsView() {
                     <p className="font-display text-lg font-bold">{t.name}</p>
                     <p className="mt-0.5 text-sm text-muted-foreground">{t.description}</p>
                     <div className="mt-2 flex flex-wrap gap-1.5">
-                      <Pill style={{}} color="violet">{t.subjectName}</Pill>
+                      <Pill color="violet">{t.subjectName}</Pill>
                       <Pill>{t.gradeName}</Pill>
                       <span
                         className="rounded-full px-2.5 py-0.5 text-xs font-bold"

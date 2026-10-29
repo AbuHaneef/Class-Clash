@@ -4,8 +4,8 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import {
   Calculator, BookOpen, Microscope, Wrench, Scale, Globe2, Monitor,
   Atom, Orbit, Leaf, TrendingUp, Flame, Crown, Star, Zap, Trophy,
-  Flag, Target, TrendingUp as TrendUp, Swords, Users, RotateCcw,
-  Shield, CalendarCheck, ListChecks, BookOpen as Book, Sparkles,
+  Flag, Target, Swords, Users, RotateCcw,
+  Shield, CalendarCheck, ListChecks, Sparkles,
   type LucideIcon,
 } from "lucide-react";
 import { Avatar } from "@/lib/clash/avatars";
@@ -29,7 +29,7 @@ const SUBJECT_ICONS: Record<string, LucideIcon> = {
   flag: Flag, target: Target, flame: Flame, zap: Zap, trophy: Trophy,
   swords: Swords, users: Users, "rotate-ccw": RotateCcw, crown: Crown,
   shield: Shield, "calendar-check": CalendarCheck, "list-checks": ListChecks,
-  star: Star, "trending-up": TrendUp, "book-open": Book, sparkles: Sparkles,
+  star: Star, sparkles: Sparkles,
 };
 
 export function SubjectIcon({

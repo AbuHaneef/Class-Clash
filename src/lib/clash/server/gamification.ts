@@ -242,13 +242,17 @@ export async function progressMissions(
 }
 
 /** Claim a completed mission's XP reward (once). */
-export async function claimMission(userId: string, missionCode: string, localDate: string) {
+export async function claimMission(
+  userId: string,
+  missionCode: string,
+  localDate: string
+): Promise<{ awarded: number; levelUp: boolean; newLevel: number }> {
   const mission = await db.mission.findUnique({ where: { code: missionCode } });
-  if (!mission) return { awarded: 0 };
+  if (!mission) return { awarded: 0, levelUp: false, newLevel: 0 };
   const row = await db.userMission.findUnique({
     where: { userId_missionCode_date: { userId, missionCode, date: localDate } },
   });
-  if (!row || !row.completed || row.claimed) return { awarded: 0 };
+  if (!row || !row.completed || row.claimed) return { awarded: 0, levelUp: false, newLevel: 0 };
   await db.userMission.update({ where: { id: row.id }, data: { claimed: true } });
   return awardXp(userId, mission.xpReward, "mission");
 }
