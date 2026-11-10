@@ -1,10 +1,11 @@
 import { PrismaClient } from "@prisma/client";
 import { readFileSync } from "fs";
+import path from "path";
 const db = new PrismaClient();
 
 function norm(t: string) { return t.toLowerCase().replace(/\s+/g, " ").replace(/[^\p{L}\p{N} ?]/gu, "").trim(); }
 
-const parsed: { section: string; num: number; stem: string }[] = JSON.parse(readFileSync("/home/z/my-project/scripts/parsed-questions.json", "utf8"));
+const parsed: { section: string; num: number; stem: string }[] = JSON.parse(readFileSync(path.join(process.cwd(), "scripts", "parsed-questions.json"), "utf8"));
 const eng = parsed.filter((q) => q.section === "English Language");
 
 const dbEng = await db.question.findMany({

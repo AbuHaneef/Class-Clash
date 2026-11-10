@@ -1,6 +1,7 @@
 // Generates PWA icons for ClassClash using sharp (crown on gradient background).
 const sharp = require("sharp");
 const fs = require("fs");
+const path = require("path");
 
 const SVG = `<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
   <defs>
@@ -24,9 +25,10 @@ const SVG = `<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" vi
 </svg>`;
 
 (async () => {
-  fs.mkdirSync("/home/z/my-project/public/icons", { recursive: true });
+  const iconsDir = path.join(process.cwd(), "public", "icons");
+  fs.mkdirSync(iconsDir, { recursive: true });
   for (const size of [192, 512]) {
-    await sharp(Buffer.from(SVG)).resize(size, size).png().toFile(`/home/z/my-project/public/icons/icon-${size}.png`);
+    await sharp(Buffer.from(SVG)).resize(size, size).png().toFile(path.join(iconsDir, `icon-${size}.png`));
     console.log(`✓ icon-${size}.png`);
   }
 })();

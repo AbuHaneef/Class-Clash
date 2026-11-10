@@ -334,6 +334,7 @@ export async function answerQuestion(
     return {
       correct: isCorrect,
       correctIndex,
+      correctOptionId: options[correctIndex]?.id ?? null,
       explanation: question.explanation,
       points,
     };

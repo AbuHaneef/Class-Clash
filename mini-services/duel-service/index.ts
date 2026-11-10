@@ -663,7 +663,11 @@ const httpServer = createServer();
 
 const io = new Server(httpServer, {
   path: "/",
-  cors: { origin: "*", methods: ["GET", "POST"] },
+  cors: {
+    origin: (origin, callback) => callback(null, origin || "*"),
+    methods: ["GET", "POST"],
+    credentials: true,
+  },
   pingTimeout: 60000,
   pingInterval: 25000,
 });
@@ -673,7 +677,9 @@ io.on("connection", (socket) => {
   console.log(`[conn] socket=${socket.id.slice(0, 8)} cookie=${Boolean(socket.handshake.headers.cookie)} transport=${socket.conn.transport.name}`);
 
   const cookies = parseCookies(socket.handshake.headers.cookie);
-  const token = cookies["clash_session"];
+  const token =
+    cookies["clash_session"] ||
+    (typeof socket.handshake.auth?.token === "string" ? socket.handshake.auth.token : undefined);
 
   if (!token) {
     socket.emit("auth:failed", { message: "Sign in to play live duels." });

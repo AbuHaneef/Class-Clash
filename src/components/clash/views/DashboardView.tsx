@@ -44,7 +44,7 @@ type HomeData = {
     isBot: boolean; isMe: boolean; defences: number;
   }[];
   recentSessions: {
-    id: string; subjectName: string; subjectColor: string; subjectIcon: string;
+    id: string; subjectId?: string; subjectName: string; subjectColor: string; subjectIcon: string;
     score: number; correctCount: number; totalCount: number; mode: string; completedAt: string;
   }[];
   activeChallenges: {
@@ -350,6 +350,7 @@ export default function DashboardView() {
 }
 
 function subjectIdFromName(data: HomeData, s: HomeData["recentSessions"][number]): string {
+  if (s.subjectId) return s.subjectId;
   const champ = data.champions.find((c) => c.subjectName === s.subjectName);
   if (champ) return champ.subjectId;
   const weak = data.weakTopics.find((w) => w.subject === s.subjectName);

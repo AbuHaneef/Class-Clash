@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { navigate } from "@/lib/clash/client/router";
 import { apiSend } from "@/lib/clash/client/api";
 import { useClash } from "@/lib/clash/client/store";
+import { disconnectLive } from "@/lib/clash/client/live";
 import { toast } from "sonner";
 import { Eye, EyeOff, Mail, Lock, User as UserIcon, Play, Loader2 } from "lucide-react";
 
@@ -36,6 +37,7 @@ export default function AuthView({ mode }: { mode: "login" | "register" }) {
       setError(r.error);
       return;
     }
+    disconnectLive();
     const me = await fetchMe();
     toast(mode === "register" ? "Account created! Let's set you up." : `Welcome back${me ? ", " + me.displayName : ""}!`);
     const staff = me?.role === "admin" || me?.role === "reviewer";

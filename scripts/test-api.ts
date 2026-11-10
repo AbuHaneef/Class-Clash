@@ -262,3 +262,5 @@ main().catch((e) => {
   console.error("E2E crashed:", e);
   process.exit(1);
 });
+
+export {};

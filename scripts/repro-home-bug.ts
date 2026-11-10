@@ -75,3 +75,5 @@ async function main() {
 }
 
 main().catch((e) => { console.error('SCRIPT ERROR:', e.message); process.exit(1); });
+
+export {};

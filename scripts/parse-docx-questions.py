@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Parse Master_Competition_Questions.docx -> questions JSON with bold-detected answers."""
-import json, re, sys
+import json, os, re, sys
 import docx
 
-DOC = "/home/z/my-project/upload/Master_Competition_Questions.docx"
-OUT = "/home/z/my-project/scripts/parsed-questions.json"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DOC = os.path.join(ROOT, "upload", "Master_Competition_Questions.docx")
+OUT = os.path.join(ROOT, "scripts", "parsed-questions.json")
 
 d = docx.Document(DOC)
 paras = []

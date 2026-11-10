@@ -4,9 +4,11 @@ import { ok, fail } from "@/lib/clash/server/api";
 import { getUserFromRequest } from "@/lib/clash/server/auth";
 import { meUser } from "@/lib/clash/server/sanitize";
 import { levelProgress } from "@/lib/clash/game";
+import { ensureDuelServer } from "@/lib/clash/server/duel-server";
 
 export async function GET(req: NextRequest) {
   try {
+    ensureDuelServer();
     const user = await getUserFromRequest(req);
     if (!user) return ok({ user: null });
     const me = meUser(

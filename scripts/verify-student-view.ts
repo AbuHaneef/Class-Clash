@@ -46,3 +46,5 @@ if (start.error) {
 const chemSubject = st.structure.subjects?.find((s: { slug: string }) => s.slug === "chemistry");
 const cd = await api("GET", "/subject/" + chemSubject.id);
 console.log("\nChemistry topics:", cd.topics?.map((t: { name: string }) => t.name).join(", "));
+
+export {};

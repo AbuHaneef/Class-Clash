@@ -81,7 +81,7 @@ export function sessionCookieOptions(expiresAt: Date) {
     value: "",
     httpOnly: true,
     sameSite: "lax" as const,
-    secure: false, // sandbox gateway terminates TLS upstream
+    secure: process.env.COOKIE_SECURE === "true",
     path: "/",
     expires: expiresAt,
   };

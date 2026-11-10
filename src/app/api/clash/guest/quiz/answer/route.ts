@@ -22,6 +22,7 @@ export async function POST(req: NextRequest) {
     return ok({
       correct: isCorrect,
       correctIndex,
+      correctOptionId: options[correctIndex]?.id ?? null,
       explanation: question.explanation,
     });
   } catch (e) {

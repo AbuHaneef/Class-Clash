@@ -9,6 +9,7 @@ import { toast } from "sonner";
 import { Volume2, VolumeX, LogOut, Trash2, Save, Palette } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { sfx } from "@/lib/clash/client/sound";
+import { disconnectLive } from "@/lib/clash/client/live";
 
 export default function SettingsView() {
   const { me, setMe, fetchMe, soundOn, setSound } = useClash();
@@ -37,6 +38,7 @@ export default function SettingsView() {
 
   const logout = async () => {
     await apiSend("POST", "/auth/logout");
+    disconnectLive();
     setMe(null);
     toast("Signed out. See you soon!");
     navigate("/");

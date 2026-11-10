@@ -3,6 +3,7 @@
 // Every answer hand-verified; source errors corrected with reviewNote audit trail.
 import { PrismaClient } from "@prisma/client";
 import { readFileSync } from "fs";
+import path from "path";
 import { CHEM_META } from "./import-meta-chem";
 import { PHYS_META, PHYS_EXTRA } from "./import-meta-phys";
 import { BIO_META } from "./import-meta-bio";
@@ -54,7 +55,7 @@ const META_BY_SECTION: Record<string, Map<number, Meta>> = {
 };
 
 async function main() {
-  const parsed: ParsedQ[] = JSON.parse(readFileSync("/home/z/my-project/scripts/parsed-questions.json", "utf8"));
+  const parsed: ParsedQ[] = JSON.parse(readFileSync(path.join(process.cwd(), "scripts", "parsed-questions.json"), "utf8"));
   console.log(`Parsed questions: ${parsed.length}`);
 
   // ── Subject + grade ids ──

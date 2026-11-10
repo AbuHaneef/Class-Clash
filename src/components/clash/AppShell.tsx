@@ -7,6 +7,7 @@ import { apiGet, apiSend } from "@/lib/clash/client/api";
 import { Avatar } from "@/lib/clash/avatars";
 import { LevelBadge, XPBar, StreakFlame, LoadingCard } from "./shared";
 import { sfx } from "@/lib/clash/client/sound";
+import { disconnectLive } from "@/lib/clash/client/live";
 import { toast } from "sonner";
 import {
   Home, Swords, Trophy, BarChart3, User as UserIcon, Bell, Zap,
@@ -66,11 +67,19 @@ export default function AppShell() {
     return () => clearInterval(iv);
   }, [me, fetchMe]);
 
-  // register service worker (PWA)
+  // register service worker (PWA in production only; unregister in dev to avoid stale chunk cache)
   useEffect(() => {
-    if ("serviceWorker" in navigator && window.location.protocol === "https:" || "serviceWorker" in navigator) {
-      navigator.serviceWorker.register("/sw.js").catch(() => {});
+    if (!("serviceWorker" in navigator)) return;
+    if (process.env.NODE_ENV !== "production") {
+      navigator.serviceWorker.getRegistrations().then((regs) => {
+        for (const r of regs) r.unregister();
+      }).catch(() => {});
+      if ("caches" in window) {
+        caches.keys().then((keys) => Promise.all(keys.map((k) => caches.delete(k)))).catch(() => {});
+      }
+      return;
     }
+    navigator.serviceWorker.register("/sw.js").catch(() => {});
   }, []);
 
   const [path0, path1, path2] = route.segments;
@@ -331,6 +340,7 @@ function SidebarNav({ path0 }: { path0: string }) {
 
   const logout = async () => {
     await apiSend("POST", "/auth/logout");
+    disconnectLive();
     setMe(null);
     toast("Signed out. See you soon!");
     navigate("/");

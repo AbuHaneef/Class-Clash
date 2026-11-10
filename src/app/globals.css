@@ -246,3 +246,8 @@
 .cc-safe-bottom {
   padding-bottom: max(env(safe-area-inset-bottom), 0px);
 }
+
+/* Hide Next.js DevTools bottom-left indicator pill */
+nextjs-portal {
+  display: none !important;
+}

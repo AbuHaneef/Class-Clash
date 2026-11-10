@@ -7,7 +7,7 @@ import { useClash } from "@/lib/clash/client/store";
 import { TimerRing, useCountdown, LoadingCard, ErrorState } from "@/components/clash/shared";
 import { sfx } from "@/lib/clash/client/sound";
 import { toast } from "sonner";
-import { Check, X, ArrowRight, Flag, ListChecks } from "lucide-react";
+import { Check, X, ArrowRight, ArrowLeft, Flag, ListChecks, Square } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { QuestionImage } from "@/components/clash/QuestionImage";
 
@@ -27,23 +27,29 @@ type SessionState = {
   questions: SanitizedQuestion[];
 };
 
-type Feedback = { correct: boolean; correctIndex: number; explanation: string; points: number } | null;
+// correctOptionId is authoritative: options are shuffled for display, so the
+// canonical correctIndex does NOT match the on-screen position.
+type Feedback = { correct: boolean; correctIndex: number; correctOptionId: string | null; explanation: string; points: number } | null;
 
 const IMMEDIATE_MODES = ["practice", "guest"];
 const DIFF_COLOR: Record<string, string> = { easy: "#34d399", medium: "#f5c518", hard: "#ef4444" };
 
 export default function QuizPlayView({ sessionId }: { sessionId?: string }) {
   const me = useClash((s) => s.me);
+  const meLoading = useClash((s) => s.meLoading);
+
+  useEffect(() => {
+    if (sessionId === "guest" || meLoading) return;
+    if (!me) {
+      navigate("/login");
+    } else if (!sessionId) {
+      navigate("/");
+    }
+  }, [sessionId, me, meLoading]);
 
   if (sessionId === "guest") return <GuestQuiz />;
-  if (!me) {
-    navigate("/login");
-    return null;
-  }
-  if (!sessionId) {
-    navigate("/");
-    return null;
-  }
+  if (meLoading) return <LoadingCard label="Loading session…" />;
+  if (!me || !sessionId) return null;
   return <QuizRunner sessionId={sessionId} />;
 }
 
@@ -101,6 +107,29 @@ function QuizRunner({ sessionId }: { sessionId: string }) {
     if (soundTick && timed && left <= 5 && left > 0 && !feedback) sfx.tick();
   }, [left]);
 
+  const finish = async () => {
+    setFinishing(true);
+    const r = await apiSend("POST", `/quiz/${sessionId}/complete`, { localDate: localDateStr() });
+    setFinishing(false);
+    if (!r.ok) {
+      toast.error(r.error);
+      return;
+    }
+    navigate(`/results/${sessionId}`, true);
+  };
+
+  const advance = () => {
+    setFeedback(null);
+    setSelected(null);
+    setLocked(false);
+    questionStart.current = Date.now();
+    if (state && qIndex + 1 >= state.questions.length) {
+      finish();
+    } else {
+      setQIndex(qIndex + 1);
+    }
+  };
+
   const answer = async (optionId: string | null) => {
     if (!state || !q || locked || feedback) return;
     setLocked(true);
@@ -126,30 +155,9 @@ function QuizRunner({ sessionId }: { sessionId: string }) {
       else sfx.wrong();
     }
   };
-  answerRef.current = answer;
-
-  const advance = () => {
-    setFeedback(null);
-    setSelected(null);
-    setLocked(false);
-    questionStart.current = Date.now();
-    if (state && qIndex + 1 >= state.questions.length) {
-      finish();
-    } else {
-      setQIndex(qIndex + 1);
-    }
-  };
-
-  const finish = async () => {
-    setFinishing(true);
-    const r = await apiSend("POST", `/quiz/${sessionId}/complete`, { localDate: localDateStr() });
-    setFinishing(false);
-    if (!r.ok) {
-      toast.error(r.error);
-      return;
-    }
-    navigate(`/results/${sessionId}`, true);
-  };
+  useEffect(() => {
+    answerRef.current = answer;
+  });
 
   // ── safety: leaving an in-progress quiz is fine (session resumes) ──
 
@@ -177,9 +185,18 @@ function QuizRunner({ sessionId }: { sessionId: string }) {
               Question {qIndex + 1} of {session.totalCount} • Score {session.score}
             </p>
           </div>
-          {timed && !feedback && (
-            <TimerRing secondsLeft={left} total={session.timeLimitPer} />
-          )}
+          <div className="flex items-center gap-2">
+            {timed && !feedback && (
+              <TimerRing secondsLeft={left} total={session.timeLimitPer} />
+            )}
+            <button
+              onClick={() => navigate("/")}
+              className="cc-tap flex items-center gap-1 rounded-xl border border-border/60 bg-secondary/60 px-3 py-1.5 text-xs font-semibold text-muted-foreground hover:bg-secondary hover:text-foreground"
+              title="Leave quiz (progress is saved)"
+            >
+              <ArrowLeft size={14} aria-hidden /> Exit
+            </button>
+          </div>
         </div>
         <div className="mt-2.5 h-1.5 overflow-hidden rounded-full bg-secondary">
           <div
@@ -208,7 +225,7 @@ function QuizRunner({ sessionId }: { sessionId: string }) {
           {options.map((o, i) => {
             const isSelected = selected === o.id;
             const isCorrectOption =
-              feedback && feedback.correctIndex === i;
+              feedback && (feedback.correctOptionId ? feedback.correctOptionId === o.id : feedback.correctIndex === i);
             const isWrongSelection = feedback && isSelected && !feedback.correct;
             return (
               <button
@@ -361,19 +378,40 @@ function GuestQuiz() {
   if (!q) return null;
   return (
     <div className="mx-auto max-w-2xl space-y-4">
-      <div className="rounded-2xl border border-violet-500/30 bg-violet-500/10 px-4 py-2.5 text-center text-xs font-semibold text-violet-300">
-        Guest preview — nothing is saved. Register for XP, badges and championships!
+      <div className="flex flex-wrap items-center justify-between gap-2 rounded-2xl border border-violet-500/30 bg-violet-500/10 px-3.5 py-2 text-xs font-semibold text-violet-300">
+        <button
+          onClick={() => navigate("/")}
+          className="cc-tap inline-flex items-center gap-1.5 rounded-xl border border-violet-400/30 bg-violet-500/15 px-3 py-1.5 text-xs font-bold text-violet-200 transition hover:bg-violet-500/30"
+        >
+          <ArrowLeft size={14} aria-hidden /> Exit to Home
+        </button>
+        <span className="text-center text-violet-300/90">
+          Guest preview — nothing is saved. Register for XP, badges &amp; championships!
+        </span>
+        <button
+          onClick={() => setDone(true)}
+          className="cc-tap inline-flex items-center gap-1.5 rounded-xl border border-red-400/30 bg-red-500/15 px-3 py-1.5 text-xs font-bold text-red-200 transition hover:bg-red-500/30"
+        >
+          <Square size={12} aria-hidden /> Stop Test
+        </button>
       </div>
       <div className="rounded-3xl border border-border/60 bg-card/80 p-5 sm:p-7">
-        <p className="text-xs text-muted-foreground">
-          Sample question {qIndex + 1} of {demo.questions.length} • {q.subjectName}
-        </p>
+        <div className="flex items-center justify-between gap-2">
+          <p className="text-xs text-muted-foreground">
+            Sample question {qIndex + 1} of {demo.questions.length} • {q.subjectName}
+          </p>
+          <p className="text-xs font-semibold text-muted-foreground">
+            Score: {score} pts
+          </p>
+        </div>
         <h2 className="mt-2 font-display text-lg font-semibold leading-relaxed sm:text-xl">{q.text}</h2>
         {q.imageUrl && <div className="mt-4"><QuestionImage src={q.imageUrl} alt="Question illustration" /></div>}
         <div className="mt-5 space-y-2.5">
           {q.options.map((o, i) => {
-            const isCorrectOption = feedback && feedback.correctIndex === i;
-            const isWrong = feedback && selected === o.id && !feedback.correct;
+            const isSelected = selected === o.id;
+            const isCorrectOption =
+              feedback && (feedback.correctOptionId ? feedback.correctOptionId === o.id : feedback.correctIndex === i);
+            const isWrong = feedback && isSelected && !feedback.correct;
             return (
               <button
                 key={o.id}
@@ -381,16 +419,27 @@ function GuestQuiz() {
                 disabled={Boolean(feedback)}
                 className={cn(
                   "cc-tap flex w-full items-center gap-3 rounded-2xl border-2 px-4 py-3.5 text-left text-sm font-medium sm:text-base",
-                  !feedback && "border-border/60 bg-secondary/40 hover:border-yellow-500/50",
+                  !feedback && !isSelected && "border-border/60 bg-secondary/40 hover:border-yellow-500/50",
+                  !feedback && isSelected && "border-yellow-400 bg-yellow-500/10",
                   isCorrectOption && "border-emerald-500 bg-emerald-500/15 text-emerald-300",
                   isWrong && "cc-shake border-red-500 bg-red-500/15 text-red-300",
                   feedback && !isCorrectOption && !isWrong && "opacity-60"
                 )}
               >
-                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-border text-xs font-bold" aria-hidden>
+                <span
+                  className={cn(
+                    "flex h-7 w-7 shrink-0 items-center justify-center rounded-full border text-xs font-bold",
+                    isSelected || isCorrectOption || isWrong ? "border-transparent" : "border-border"
+                  )}
+                  style={{
+                    background: isCorrectOption ? "#10b981" : isWrong ? "#ef4444" : isSelected ? "#f5c518" : "transparent",
+                    color: isSelected || isCorrectOption || isWrong ? "#0a0a0a" : undefined,
+                  }}
+                  aria-hidden
+                >
                   {isCorrectOption ? <Check size={15} /> : isWrong ? <X size={15} /> : String.fromCharCode(65 + i)}
                 </span>
-                {o.text}
+                <span className="flex-1">{o.text}</span>
               </button>
             );
           })}

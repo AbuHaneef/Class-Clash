@@ -131,7 +131,7 @@ function HelpRules() {
         <li><strong>Teacher dashboards:</strong> teacher & school-admin roles exist; class dashboards are on the roadmap.</li>
         <li><strong>Google sign-in & email delivery:</strong> not configured in this environment — email/password works.</li>
         <li><strong>Offline practice caching:</strong> the PWA shell installs; question caching for offline play is planned.</li>
-        <li><strong>Live duels & school leagues on shared infrastructure:</strong> the live server keeps match state in memory — if the sandbox restarts mid-match, in-flight live duels are void (no rating change), and completed results are safely stored.</li>
+        <li><strong>Live duels & school leagues:</strong> the live server keeps match state in memory — if the server restarts mid-match, in-flight live duels are void (no rating change), and completed results are safely stored.</li>
       </ul>
 
       <H2>Question bank & Guardian champions</H2>

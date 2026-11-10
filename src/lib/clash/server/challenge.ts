@@ -158,7 +158,7 @@ export async function acceptChallenge(userId: string, challengeId: string) {
   if (!accepter) throw new ApiError(404, "Player not found.");
 
   const isDesignatedOpponent = challenge.opponentId === userId;
-  const isOpenInvite = challenge.opponentId === "";
+  const isOpenInvite = !challenge.opponentId;
   if (!isDesignatedOpponent && !isOpenInvite)
     throw new ApiError(403, "Only the challenged player can accept.");
   if (isOpenInvite) {

@@ -63,12 +63,12 @@ export default function AdminView({ section }: { section: string }) {
         ))}
       </div>
 
-      {active.key === "dashboard" && <DashboardSection />}
+      {active.key === "dashboard" && <DashboardSection isAdmin={me.role === "admin"} />}
       {active.key === "questions" && <QuestionsSection canReview={me.role === "admin" || me.role === "reviewer"} />}
       {active.key === "users" && me.role === "admin" ? <UsersSection /> : active.key === "users" && <ErrorState message="Admin role required for user management." />}
       {active.key === "reports" && <ReportsSection />}
       {active.key === "tournaments" && me.role === "admin" ? <TournamentsSection /> : active.key === "tournaments" && <ErrorState message="Admin role required for tournaments." />}
-      {active.key === "audit" && <AuditSection />}
+      {active.key === "audit" && me.role === "admin" ? <AuditSection /> : active.key === "audit" && <ErrorState message="Admin role required for audit log." />}
       {active.key === "config" && me.role === "admin" ? <ConfigSection /> : active.key === "config" && <ErrorState message="Admin role required for configuration." />}
     </div>
   );
@@ -76,21 +76,63 @@ export default function AdminView({ section }: { section: string }) {
 
 // ── Dashboard ────────────────────────────────────────────────
 
-function DashboardSection() {
+function DashboardSection({ isAdmin }: { isAdmin: boolean }) {
   const [data, setData] = useState<{
     stats: Record<string, number>;
     recentSignups: { id: string; displayName: string; email: string; gradeName: string; createdAt: string; role: string }[];
   } | null>(null);
+  const [reviewerData, setReviewerData] = useState<{
+    published: number;
+    pendingReview: number;
+    openReports: number;
+  } | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    apiGet<{ stats: Record<string, number>; recentSignups: { id: string; displayName: string; email: string; gradeName: string; createdAt: string; role: string }[] }>("/admin/stats").then((r) => {
-      if (r.ok) setData(r as never);
-      setLoading(false);
-    });
-  }, []);
+    if (isAdmin) {
+      apiGet<{ stats: Record<string, number>; recentSignups: { id: string; displayName: string; email: string; gradeName: string; createdAt: string; role: string }[] }>("/admin/stats").then((r) => {
+        if (r.ok) setData(r as never);
+        setLoading(false);
+      });
+    } else {
+      Promise.all([
+        apiGet<{ total: number }>("/admin/questions?page=1&status=published"),
+        apiGet<{ total: number }>("/admin/questions?page=1&status=pending"),
+        apiGet<{ reports: { status: string }[] }>("/admin/reports"),
+      ]).then(([pub, pend, rep]) => {
+        setReviewerData({
+          published: pub.ok ? (pub as unknown as { total: number }).total : 0,
+          pendingReview: pend.ok ? (pend as unknown as { total: number }).total : 0,
+          openReports: rep.ok
+            ? (rep as unknown as { reports: { status: string }[] }).reports.filter((x) => x.status === "open").length
+            : 0,
+        });
+        setLoading(false);
+      });
+    }
+  }, [isAdmin]);
 
   if (loading) return <LoadingCard />;
+  if (!isAdmin) {
+    if (!reviewerData) return <ErrorState message="Could not load reviewer overview." />;
+    return (
+      <div className="space-y-5">
+        <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-3">
+          <Stat label="Questions published" value={reviewerData.published} />
+          <Stat label="Pending review" value={reviewerData.pendingReview} highlight={reviewerData.pendingReview > 0} />
+          <Stat label="Open reports" value={reviewerData.openReports} highlight={reviewerData.openReports > 0} />
+        </div>
+        <div className="flex flex-wrap gap-2">
+          <button onClick={() => navigate("/admin/questions")} className="cc-tap rounded-xl bg-violet-500/20 px-4 py-2.5 text-sm font-bold text-violet-300">
+            Open Question Bank
+          </button>
+          <button onClick={() => navigate("/admin/reports")} className="cc-tap rounded-xl bg-secondary px-4 py-2.5 text-sm font-bold">
+            Open Moderation Queue
+          </button>
+        </div>
+      </div>
+    );
+  }
   if (!data) return <ErrorState message="Could not load stats." />;
   const s = data.stats;
 

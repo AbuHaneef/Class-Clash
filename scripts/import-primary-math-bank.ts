@@ -163,13 +163,14 @@ async function main() {
   console.log(`Seeded ${GUARDIANS.length} founding guardians with Mathematics crowns (Primary 1–5)`);
 
   // 3. Topic cache (find-or-create under Mathematics)
+  const mathId = math.id;
   const topicCache = new Map<string, string>();
   async function topicIdFor(name: string): Promise<string> {
     const hit = topicCache.get(name);
     if (hit) return hit;
-    const found = await db.topic.findUnique({ where: { subjectId_name: { subjectId: math.id, name } } });
+    const found = await db.topic.findUnique({ where: { subjectId_name: { subjectId: mathId, name } } });
     if (found) { topicCache.set(name, found.id); return found.id; }
-    const created = await db.topic.create({ data: { subjectId: math.id, name, order: 0 } });
+    const created = await db.topic.create({ data: { subjectId: mathId, name, order: 0 } });
     topicCache.set(name, created.id);
     return created.id;
   }

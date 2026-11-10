@@ -33,7 +33,7 @@ async function main() {
   for (const ev of ["auth:ok", "auth:failed", "match:ready", "match:countdown", "question:show", "round:result", "match:over", "match:error", "live:error", "match:rejoin", "opponent:answered", "match:opponent_left"]) {
     sock.on(ev, (d: unknown) => console.log(`${ev}:`, JSON.stringify(d)?.slice(0, 300)));
   }
-  await new Promise((r) => sock.on("connect", r));
+  await new Promise<void>((r) => sock.on("connect", () => r()));
   console.log("--- connected, starting bot:play ---");
   sock.emit("bot:play", { subjectId: subject.id });
   sock.on("question:show", (d: { question: { id: string; options: { id: string }[] }; index: number }) => {

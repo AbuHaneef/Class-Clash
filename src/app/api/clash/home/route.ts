@@ -165,6 +165,7 @@ export async function GET(req: NextRequest) {
       })),
       recentSessions: recentSessions.map((s) => ({
         id: s.id,
+        subjectId: s.subjectId,
         subjectName: s.subject.name,
         subjectColor: s.subject.color,
         subjectIcon: s.subject.icon,

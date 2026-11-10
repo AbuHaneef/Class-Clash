@@ -45,8 +45,8 @@ async function main() {
   const sb = io("http://127.0.0.1:3003", { path: "/", transports: ["websocket"], extraHeaders: { Cookie: b.cookie }, reconnection: false });
   wire(sa, "A");
   wire(sb, "B");
-  await new Promise((r) => sa.on("connect", r));
-  await new Promise((r) => sb.on("connect", r));
+  await new Promise<void>((r) => sa.on("connect", () => r()));
+  await new Promise<void>((r) => sb.on("connect", () => r()));
   console.log("--- both connected; joining queue ---");
   sa.emit("queue:join", { subjectId: a.subject.id });
   setTimeout(() => sb.emit("queue:join", { subjectId: a.subject.id }), 400);

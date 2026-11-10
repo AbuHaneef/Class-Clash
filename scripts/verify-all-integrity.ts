@@ -74,8 +74,9 @@ async function main() {
   for (const q of imgQs) {
     if (!q.imageUrl) continue;
     const fs = await import('fs');
-    const path = `/home/z/my-project/public${q.imageUrl}`;
-    if (!fs.existsSync(path)) missingImages.push(q.imageUrl);
+    const pathMod = await import('path');
+    const filePath = pathMod.join(process.cwd(), 'public', q.imageUrl);
+    if (!fs.existsSync(filePath)) missingImages.push(q.imageUrl);
   }
   if (missingImages.length === 0) pass('all referenced image files exist on disk'); else fail(`missing files: ${missingImages.slice(0, 5).join(', ')}`);
 

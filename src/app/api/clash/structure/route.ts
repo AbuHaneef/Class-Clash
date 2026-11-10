@@ -2,12 +2,14 @@ import { NextRequest } from "next/server";
 import { db } from "@/lib/db";
 import { ok, fail } from "@/lib/clash/server/api";
 import { getUserFromRequest } from "@/lib/clash/server/auth";
+import { ensureDuelServer } from "@/lib/clash/server/duel-server";
 
 // Public education structure + announcements. Cached in-process for 60s.
 let cache: { at: number; data: unknown } | null = null;
 
 export async function GET(req: NextRequest) {
   try {
+    ensureDuelServer();
     const user = await getUserFromRequest(req);
     if (cache && Date.now() - cache.at < 60_000) {
       return ok({ structure: cache.data, user: user ? { id: user.id, gradeId: user.gradeId } : null });

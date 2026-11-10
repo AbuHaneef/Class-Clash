@@ -81,10 +81,28 @@ export async function liveStart(body: {
 
   let p2: typeof p1 | null;
   if (wantsTrainer) {
-    const trainer = await db.user.findFirst({
-      where: { isBot: true, isDemo: true, gradeId: p1.gradeId, email: { startsWith: "live-trainer-" } },
+    let trainer = await db.user.findFirst({
+      where: { isBot: true, gradeId: p1.gradeId, email: { startsWith: "live-trainer-" } },
       include: { grade: true },
     });
+    if (!trainer && p1.grade) {
+      trainer = await db.user.create({
+        data: {
+          email: `live-trainer-${p1.grade.slug}@classclash.demo`,
+          passwordHash: "BOT",
+          displayName: "Swift Owl",
+          avatar: "owl",
+          role: "student",
+          gradeId: p1.gradeId,
+          onboarded: true,
+          isBot: true,
+          isDemo: true,
+          botSkill: 0.72,
+          rating: 1000,
+        },
+        include: { grade: true },
+      });
+    }
     if (!trainer) throw new ApiError(404, "No live trainer available for your class yet.");
     p2 = trainer;
   } else {

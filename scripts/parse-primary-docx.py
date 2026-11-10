@@ -6,11 +6,13 @@ Outputs a JSON stream: /tmp/docx-extract/flow.json
 Each item: {"type": "text", "text": ...} or {"type": "image", "media": "image12.png"}
 """
 import json
+import os
 import re
 import zipfile
 from xml.etree import ElementTree as ET
 
-DOCX = "/home/z/my-project/upload/PRIMARY SCHOOL MATHEMATICS.docx"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DOCX = os.path.join(ROOT, "upload", "PRIMARY SCHOOL MATHEMATICS.docx")
 OUT = "/tmp/docx-extract/flow.json"
 
 NS = {
